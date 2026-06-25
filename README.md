@@ -112,4 +112,10 @@ The BIR catalog is maintained by an automated job — **[`tools/bir-capture`](to
 
 ---
 
+## License
+
+**[MIT](LICENSE).** The underlying government figures are public information; the license covers the compilation, curation, verification, and tooling.
+
+---
+
 *This repository reorganizes public Philippine government information for accuracy and machine-readability. For high-stakes decisions, confirm against the cited primary source. Not legal or tax advice.*
