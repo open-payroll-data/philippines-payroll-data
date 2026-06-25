@@ -1,0 +1,52 @@
+{
+  "name": "philippines-payroll-data",
+  "version": "1.0.0",
+  "description": "Machine-readable, primary-sourced Philippine payroll reference data — SSS, PhilHealth, Pag-IBIG, BIR withholding & income tax, 13th-month pay, minimum wage, premium pay & leaves — every figure cited to the agency circular.",
+  "type": "module",
+  "exports": {
+    ".": "./index.mjs",
+    "./data/*": "./data/*",
+    "./schema": "./schemas/payroll-data.schema.json"
+  },
+  "files": [
+    "data/",
+    "schemas/",
+    "index.mjs",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CITATION.cff"
+  ],
+  "scripts": {
+    "validate": "node tools/build-data.mjs --check"
+  },
+  "keywords": [
+    "philippines",
+    "payroll",
+    "sss",
+    "philhealth",
+    "pag-ibig",
+    "bir",
+    "withholding-tax",
+    "income-tax",
+    "13th-month-pay",
+    "minimum-wage",
+    "de-minimis",
+    "train-law",
+    "tax",
+    "contribution-table",
+    "json",
+    "dataset",
+    "open-data"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-payroll-data/philippines-payroll-data.git"
+  },
+  "homepage": "https://github.com/open-payroll-data/philippines-payroll-data#readme",
+  "bugs": {
+    "url": "https://github.com/open-payroll-data/philippines-payroll-data/issues"
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Philippine Payroll Knowledge Base"
+message: "If you use this data, please cite it; for high-stakes figures confirm against the cited primary government issuance."
+type: dataset
+authors:
+  - name: "Philippine Payroll Knowledge Base maintainers"
+abstract: >-
+  AI-ready, primary-sourced reference for Philippine payroll — SSS, BIR income
+  tax & withholding, PhilHealth, Pag-IBIG, 13th-month pay, de minimis benefits,
+  and regional minimum wage — plus a linked catalog of 894 BIR issuances
+  (2022–2026) and 142 SSS circulars. Every figure is transcribed from and cited
+  to the issuing government document; a machine-readable JSON layer (data/) is
+  generated from and validated against the verified markdown.
+keywords:
+  - philippines
+  - payroll
+  - sss
+  - philhealth
+  - pag-ibig
+  - bir
+  - withholding-tax
+  - income-tax
+  - 13th-month-pay
+  - train-law
+  - minimum-wage
+  - dataset
+  - open-data
+license: MIT
+date-released: "2026-06-25"

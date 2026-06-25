@@ -1,0 +1,14 @@
+{
+  "name": "bir-capture",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Automated capture of BIR Revenue Issuances (RR/RMO/RMC) into the payroll-data archive.",
+  "scripts": {
+    "test": "node parse.mjs",
+    "capture": "node capture.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}

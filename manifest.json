@@ -1,0 +1,728 @@
+{
+  "name": "Philippine Payroll Knowledge Base",
+  "description": "AI-ready, primary-sourced Philippine payroll reference (BIR, SSS, PhilHealth, Pag-IBIG, benefits, minimum wage) + linked catalogs of 894 BIR issuances and 142 SSS circulars.",
+  "generated": "2026-06-25",
+  "entry_points": {
+    "ai_navigation": "AGENTS.md",
+    "ai_navigation_claude": "CLAUDE.md",
+    "llms_txt": "llms.txt",
+    "human_readme": "README.md",
+    "answer_router": "ph/INDEX.md"
+  },
+  "structured_data": {
+    "data/index.json": "Machine-readable rate-table layer (SSS, income tax, PhilHealth, Pag-IBIG, 13th-month, minimum wage, premium pay, leaves) — typed JSON generated from and validated against the verified markdown; the index lists each file. Use for payroll computation. Build/validate with tools/build-data.mjs. Installable on npm as philippines-payroll-data.",
+    "schemas/payroll-data.schema.json": "JSON Schema (2020-12) that every data/*.json rate file conforms to; enforced by tools/build-data.mjs --check.",
+    "ph/bir/issuances/issuances.json": "Every BIR RR/RMO/RMC issuance (2022-2026), one record each (number, type, year, date, subject, payroll tag, source PDF links).",
+    "ph/sss/circulars.json": "Every SSS circular (2020-2026), one record each (number, year, title, payroll tag, PDF link)."
+  },
+  "file_count": 39,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "CHANGELOG.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "CLAUDE.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "INDEX.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "README.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "SCHEMA.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "ph/INDEX.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "ph/benefits/13th_month_pay.md",
+      "country": "ph",
+      "category": "benefits",
+      "record_type": "topic",
+      "topic": "13th month pay — who qualifies, computation, deadline, and tax treatment",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-24",
+      "tags": [
+        "13th-month",
+        "benefits",
+        "non-taxable",
+        "tax-exempt",
+        "90000",
+        "dole",
+        "pd-851",
+        "year-end",
+        "bonus",
+        "2025"
+      ]
+    },
+    {
+      "path": "ph/benefits/de_minimis_benefits.md",
+      "country": "ph",
+      "category": "benefits",
+      "record_type": "topic",
+      "topic": "De minimis benefits — BIR list and peso ceilings, non-taxable if within limit",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "de-minimis",
+        "non-taxable",
+        "benefits",
+        "bir",
+        "tax-exempt",
+        "ceiling",
+        "2026",
+        "rr-29-2025",
+        "rr-11-2018"
+      ]
+    },
+    {
+      "path": "ph/benefits/non_taxable_benefits.md",
+      "country": "ph",
+      "category": "benefits",
+      "record_type": "topic",
+      "topic": "Complete list of non-taxable compensation items under TRAIN Law for employees",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "non-taxable",
+        "tax-exempt",
+        "train-law",
+        "benefits",
+        "compensation",
+        "bir",
+        "2026",
+        "rr-29-2025",
+        "withholding"
+      ]
+    },
+    {
+      "path": "ph/bir/income_tax_table_2025.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "topic",
+      "topic": "Graduated income tax table for individual employees, TRAIN Law 2023+ rates",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-24",
+      "tags": [
+        "income-tax",
+        "graduated-tax",
+        "train-law",
+        "bir",
+        "withholding",
+        "annualization",
+        "2025",
+        "2026",
+        "2023",
+        "ra-10963"
+      ]
+    },
+    {
+      "path": "ph/bir/issuances/INDEX.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "archive-index",
+      "topic": "BIR Revenue Issuances archive — index, taxonomy, capture status, and the automated capture job",
+      "source_tier": null,
+      "volatility": "stable",
+      "last_verified": "2026-06-24",
+      "tags": [
+        "bir",
+        "issuances",
+        "archive",
+        "rr",
+        "rmo",
+        "rmc",
+        "index",
+        "automated"
+      ]
+    },
+    {
+      "path": "ph/bir/issuances/rmc/2022.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2022 BIR Revenue Memorandum Circulars (RMCs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rmc",
+        "archive",
+        "index",
+        "2022",
+        "issuances"
+      ],
+      "captured_count": 160
+    },
+    {
+      "path": "ph/bir/issuances/rmc/2023.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2023 BIR Revenue Memorandum Circulars (RMCs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rmc",
+        "archive",
+        "index",
+        "2023",
+        "issuances"
+      ],
+      "captured_count": 126
+    },
+    {
+      "path": "ph/bir/issuances/rmc/2024.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2024 BIR Revenue Memorandum Circulars (RMCs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rmc",
+        "archive",
+        "index",
+        "2024",
+        "issuances"
+      ],
+      "captured_count": 135
+    },
+    {
+      "path": "ph/bir/issuances/rmc/2025.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2025 BIR Revenue Memorandum Circulars (RMCs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rmc",
+        "archive",
+        "index",
+        "2025",
+        "issuances"
+      ],
+      "captured_count": 110
+    },
+    {
+      "path": "ph/bir/issuances/rmc/2026.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2026 BIR Revenue Memorandum Circulars (RMCs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rmc",
+        "archive",
+        "index",
+        "2026",
+        "issuances"
+      ],
+      "captured_count": 71
+    },
+    {
+      "path": "ph/bir/issuances/rmo/2022.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2022 BIR Revenue Memorandum Orders (RMOs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rmo",
+        "archive",
+        "index",
+        "2022",
+        "issuances"
+      ],
+      "captured_count": 59
+    },
+    {
+      "path": "ph/bir/issuances/rmo/2023.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2023 BIR Revenue Memorandum Orders (RMOs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rmo",
+        "archive",
+        "index",
+        "2023",
+        "issuances"
+      ],
+      "captured_count": 40
+    },
+    {
+      "path": "ph/bir/issuances/rmo/2024.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2024 BIR Revenue Memorandum Orders (RMOs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rmo",
+        "archive",
+        "index",
+        "2024",
+        "issuances"
+      ],
+      "captured_count": 51
+    },
+    {
+      "path": "ph/bir/issuances/rmo/2025.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2025 BIR Revenue Memorandum Orders (RMOs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rmo",
+        "archive",
+        "index",
+        "2025",
+        "issuances"
+      ],
+      "captured_count": 48
+    },
+    {
+      "path": "ph/bir/issuances/rmo/2026.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2026 BIR Revenue Memorandum Orders (RMOs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rmo",
+        "archive",
+        "index",
+        "2026",
+        "issuances"
+      ],
+      "captured_count": 13
+    },
+    {
+      "path": "ph/bir/issuances/rr/2022.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2022 BIR Revenue Regulations (RRs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rr",
+        "archive",
+        "index",
+        "2022",
+        "issuances"
+      ],
+      "captured_count": 15
+    },
+    {
+      "path": "ph/bir/issuances/rr/2023.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2023 BIR Revenue Regulations (RRs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rr",
+        "archive",
+        "index",
+        "2023",
+        "issuances"
+      ],
+      "captured_count": 16
+    },
+    {
+      "path": "ph/bir/issuances/rr/2024.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2024 BIR Revenue Regulations (RRs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rr",
+        "archive",
+        "index",
+        "2024",
+        "issuances"
+      ],
+      "captured_count": 17
+    },
+    {
+      "path": "ph/bir/issuances/rr/2025.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2025 BIR Revenue Regulations (RRs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rr",
+        "archive",
+        "index",
+        "2025",
+        "issuances"
+      ],
+      "captured_count": 29
+    },
+    {
+      "path": "ph/bir/issuances/rr/2026.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of all 2026 BIR Revenue Regulations (RRs), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "bir",
+        "rr",
+        "archive",
+        "index",
+        "2026",
+        "issuances"
+      ],
+      "captured_count": 4
+    },
+    {
+      "path": "ph/bir/train_law_summary.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "topic",
+      "topic": "TRAIN Law (RA 10963) summary — what changed for payroll and withholding tax",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-24",
+      "tags": [
+        "train-law",
+        "income-tax",
+        "withholding",
+        "de-minimis",
+        "bir",
+        "2018",
+        "2023",
+        "tax-exempt"
+      ]
+    },
+    {
+      "path": "ph/bir/withholding_tax_procedures.md",
+      "country": "ph",
+      "category": "bir",
+      "record_type": "topic",
+      "topic": "How to compute, withhold, remit, and file monthly/annual withholding tax on compensation",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-24",
+      "tags": [
+        "withholding",
+        "bir",
+        "1601-c",
+        "1604-c",
+        "2316",
+        "annualization",
+        "remittance",
+        "deadline",
+        "2025"
+      ]
+    },
+    {
+      "path": "ph/labor/final_pay.md",
+      "country": "ph",
+      "category": "labor",
+      "record_type": "topic",
+      "topic": "Final pay (last pay / back pay), Certificate of Employment, and separation pay",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "labor-standards",
+        "final-pay",
+        "back-pay",
+        "last-pay",
+        "certificate-of-employment",
+        "separation-pay",
+        "dole",
+        "labor-advisory-06-2020",
+        "labor-code",
+        "2026"
+      ]
+    },
+    {
+      "path": "ph/labor/leaves.md",
+      "country": "ph",
+      "category": "labor",
+      "record_type": "topic",
+      "topic": "Statutory leave benefits — SIL, maternity, paternity, solo-parent, special leave for women, VAWC",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "labor-standards",
+        "leave",
+        "service-incentive-leave",
+        "maternity",
+        "paternity",
+        "solo-parent",
+        "magna-carta-women",
+        "vawc",
+        "ra-11210",
+        "ra-8187",
+        "ra-11861",
+        "2026"
+      ]
+    },
+    {
+      "path": "ph/labor/premium_pay.md",
+      "country": "ph",
+      "category": "labor",
+      "record_type": "topic",
+      "topic": "Premium pay multipliers — overtime, night-shift differential, rest day, special day, and holiday pay",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "labor-standards",
+        "overtime",
+        "night-differential",
+        "holiday-pay",
+        "premium-pay",
+        "rest-day",
+        "special-day",
+        "dole",
+        "labor-code",
+        "eemr",
+        "2026"
+      ]
+    },
+    {
+      "path": "ph/min-wage/by_region_2025.md",
+      "country": "ph",
+      "category": "min-wage",
+      "record_type": "topic",
+      "topic": "Daily minimum wage rates by region (latest Wage Orders) + Kasambahay rates",
+      "source_tier": "primary",
+      "volatility": "continuously-changing",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "minimum-wage",
+        "dole",
+        "nwpc",
+        "ncr",
+        "region",
+        "daily-wage",
+        "rtwpb",
+        "wage-order",
+        "kasambahay"
+      ]
+    },
+    {
+      "path": "ph/pagibig/contribution_table_2025.md",
+      "country": "ph",
+      "category": "pagibig",
+      "record_type": "topic",
+      "topic": "Pag-IBIG (HDMF) mandatory contribution rates and remittance (MFS ₱10,000 since Feb 2024)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-24",
+      "tags": [
+        "pagibig",
+        "hdmf",
+        "contribution",
+        "employee-share",
+        "employer-share",
+        "mfs",
+        "circular-460",
+        "remittance",
+        "2025"
+      ]
+    },
+    {
+      "path": "ph/philhealth/contribution_rate_2025.md",
+      "country": "ph",
+      "category": "philhealth",
+      "record_type": "topic",
+      "topic": "PhilHealth premium contribution rate and computation for 2025",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-24",
+      "tags": [
+        "philhealth",
+        "premium",
+        "contribution",
+        "employee-share",
+        "employer-share",
+        "2025",
+        "2026",
+        "remittance",
+        "health-insurance",
+        "uhc",
+        "advisory-2025-0002"
+      ]
+    },
+    {
+      "path": "ph/sss/circulars.md",
+      "country": "ph",
+      "category": "sss",
+      "record_type": "circular-archive-index",
+      "topic": "Complete index of SSS Circulars (2020-2026), with payroll-relevance tagging",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-25",
+      "tags": [
+        "sss",
+        "circular",
+        "archive",
+        "index",
+        "contributions",
+        "issuances"
+      ],
+      "captured_count": 142
+    },
+    {
+      "path": "ph/sss/contribution_table_2025.md",
+      "country": "ph",
+      "category": "sss",
+      "record_type": "topic",
+      "topic": "Monthly SSS contribution table by salary bracket — 2025 rates (15% total)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-24",
+      "tags": [
+        "sss",
+        "contribution-table",
+        "employee-share",
+        "employer-share",
+        "ec",
+        "mpf",
+        "wisp",
+        "salary-credit",
+        "2025",
+        "remittance",
+        "circular-2024-006"
+      ]
+    },
+    {
+      "path": "tools/bir-capture/README.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "tools/sss-capture/README.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    }
+  ]
+}

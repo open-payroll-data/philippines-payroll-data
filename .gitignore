@@ -1,0 +1,22 @@
+# Dependencies & build artifacts (the capture tools install these locally)
+node_modules/
+
+# Machine-generated state & logs (auto-regenerated each run; not source of truth)
+state.json
+*.log
+last-run.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.swp
+
+# Env / secrets — none expected in this public data repo, but guard anyway
+.env
+.env.*
+*.local
+secrets.*
+
+# Maintainer-internal docs — kept locally, not published
+HANDOFF.md
+PUBLISHING.md

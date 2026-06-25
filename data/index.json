@@ -1,0 +1,79 @@
+{
+  "name": "Philippine Payroll Knowledge Base — machine-readable data layer",
+  "description": "JSON parse-layer generated from (and validated against) the verified markdown in ph/**. The markdown is the human/AI reading layer and the source of truth; these files are for programmatic use. Regenerate with `node tools/build-data.mjs`.",
+  "generated_by": "tools/build-data.mjs",
+  "files": [
+    {
+      "file": "data/sss_2025.json",
+      "topic": "SSS monthly contribution by salary bracket",
+      "effective_date": "2025-01-01",
+      "volatility": "stable",
+      "source_markdown": "ph/sss/contribution_table_2025.md",
+      "source_issuance": "SSS Circular No. 2024-006"
+    },
+    {
+      "file": "data/income_tax_2025.json",
+      "topic": "Graduated income tax / withholding on compensation (2023-onward TRAIN)",
+      "effective_date": "2023-01-01",
+      "volatility": "stable",
+      "source_markdown": "ph/bir/income_tax_table_2025.md",
+      "source_issuance": "BIR Revenue Regulations No. 8-2018 (RA 10963 / TRAIN)"
+    },
+    {
+      "file": "data/philhealth_2025.json",
+      "topic": "PhilHealth monthly premium",
+      "effective_date": "2025-01-01",
+      "volatility": "stable",
+      "source_markdown": "ph/philhealth/contribution_rate_2025.md",
+      "source_issuance": "PhilHealth Advisory No. PA2025-0002 (RA 11223)"
+    },
+    {
+      "file": "data/pagibig_2025.json",
+      "topic": "Pag-IBIG (HDMF) monthly contribution",
+      "effective_date": "2024-02-01",
+      "volatility": "stable",
+      "source_markdown": "ph/pagibig/contribution_table_2025.md",
+      "source_issuance": "HDMF Circular No. 460 (via DBM Circular Letter 2024-2)"
+    },
+    {
+      "file": "data/13th_month_pay.json",
+      "topic": "13th-month pay — mandate, computation, tax treatment",
+      "effective_date": "2018-01-01",
+      "volatility": "stable",
+      "source_markdown": "ph/benefits/13th_month_pay.md",
+      "source_issuance": "Presidential Decree 851 (mandate); RA 10963 / TRAIN (₱90,000 tax-free ceiling)"
+    },
+    {
+      "file": "data/min_wage_2025.json",
+      "topic": "Daily minimum wage by region (private sector, non-agri high / agri-small low)",
+      "effective_date": "2026-02-25",
+      "volatility": "continuously-changing",
+      "source_markdown": "ph/min-wage/by_region_2025.md",
+      "source_issuance": "NWPC \"Latest Wage Orders\" matrix"
+    },
+    {
+      "file": "data/premium_pay.json",
+      "topic": "Premium pay multipliers — overtime, night differential, rest day, special day, holiday",
+      "effective_date": null,
+      "volatility": "stable",
+      "source_markdown": "ph/labor/premium_pay.md",
+      "source_issuance": "DOLE Handbook on Workers' Statutory Monetary Benefits (2024 ed.); Labor Code (PD 442) Arts. 86-94"
+    },
+    {
+      "file": "data/leaves.json",
+      "topic": "Statutory leave durations (SIL, maternity, paternity, solo-parent, special leave for women, VAWC)",
+      "effective_date": null,
+      "volatility": "stable",
+      "source_markdown": "ph/labor/leaves.md",
+      "source_issuance": "Labor Code Art. 95; RA 11210; RA 8187; RA 8972/RA 11861; RA 9710; RA 9262 (maternity tax exemption: BIR RMC 105-2019)"
+    },
+    {
+      "file": "data/examples.json",
+      "topic": "Worked monthly net-pay examples (employee-side), computed from the rate files",
+      "effective_date": null,
+      "volatility": "stable",
+      "source_markdown": "ph/bir/income_tax_table_2025.md",
+      "source_issuance": "Derived from the data/ rate files (SSS Circular 2024-006, BIR RR 8-2018, PhilHealth PA2025-0002, HDMF Circular 460)"
+    }
+  ]
+}

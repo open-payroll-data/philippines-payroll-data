@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Philippine Payroll Knowledge Base",
+  "alternateName": "philippines-payroll-data",
+  "description": "Machine-readable, primary-sourced Philippine payroll reference: SSS contribution table, PhilHealth premium, Pag-IBIG, BIR withholding & income tax (TRAIN), 13th-month pay, de minimis benefits, regional minimum wage, premium pay (overtime/holiday/night) and statutory leaves. Every figure is transcribed from and cited to the issuing government circular; typed JSON is generated from and validated against the verified markdown.",
+  "url": "https://github.com/open-payroll-data/philippines-payroll-data",
+  "sameAs": "https://www.npmjs.com/package/philippines-payroll-data",
+  "license": "https://opensource.org/licenses/MIT",
+  "version": "1.0.0",
+  "isAccessibleForFree": true,
+  "creator": { "@type": "Organization", "name": "Philippine Payroll Knowledge Base maintainers" },
+  "spatialCoverage": { "@type": "Country", "name": "Philippines" },
+  "temporalCoverage": "2025-01-01/..",
+  "keywords": [
+    "Philippines payroll",
+    "SSS contribution table 2025",
+    "PhilHealth premium",
+    "Pag-IBIG contribution",
+    "BIR withholding tax",
+    "income tax TRAIN law",
+    "13th month pay",
+    "de minimis benefits",
+    "minimum wage Philippines",
+    "overtime and holiday pay",
+    "statutory leave"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Rate-table index (JSON)",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/open-payroll-data/philippines-payroll-data/main/data/index.json"
+    }
+  ],
+  "citation": "Each table cites its primary issuance (BIR RR / SSS Circular / PhilHealth Advisory / HDMF Circular / NWPC Wage Order)."
+}

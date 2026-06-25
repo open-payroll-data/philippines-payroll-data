@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Philippine Payroll Knowledge Base — data file",
+  "description": "The common envelope every data/*.json rate file conforms to. Per-file payload (brackets, annual, matrix, leaves, examples, …) is allowed as additional properties. Validated on every push by tools/build-data.mjs --check; external consumers can validate with any JSON Schema 2020-12 validator. (data/index.json is the directory index, not a rate file, and is exempt.)",
+  "type": "object",
+  "required": ["topic", "country", "source"],
+  "properties": {
+    "topic": { "type": "string", "minLength": 1 },
+    "country": { "type": "string", "examples": ["PH"] },
+    "currency": { "type": "string" },
+    "effective_date": { "type": ["string", "null"] },
+    "matrix_as_of": { "type": "string" },
+    "volatility": {
+      "type": "string",
+      "enum": ["stable", "continuously-changing"],
+      "description": "continuously-changing = re-pull the cited golden source before relying on it (today only minimum wage)."
+    },
+    "notes": { "type": "string" },
+    "source": { "$ref": "#/$defs/source" }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": ["issuance", "source_tier", "last_verified", "markdown"],
+      "properties": {
+        "issuance": { "type": "string", "minLength": 1, "description": "The exact issuing document (circular / regulation / advisory)." },
+        "source_tier": { "type": "string", "enum": ["primary", "secondary"] },
+        "last_verified": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "markdown": { "type": "string", "description": "The verified markdown file this JSON is generated from and validated against." },
+        "url": { "type": "string", "format": "uri" }
+      }
+    }
+  }
+}
