@@ -38,6 +38,19 @@ Start at the Singapore answer router (`sg/INDEX.md`). Currency S$; authorities I
 - [Termination & retrenchment](sg/employment-act/termination_and_retrenchment.md): notice periods (1 day → 4 weeks), retrenchment benefit (tripartite norm 2 weeks–1 month/yr, not mandated) + mandatory MOM notification (≥10 employees, 5 working days), AWS not compulsory — MOM
 - [Wage floors](sg/wages/wage_floors.md): no universal minimum wage; Local Qualifying Salary $1,600/mo (→ $1,800 from 1 Jul 2026) and the Progressive Wage Model — MOM
 
+## Malaysia — rule & rate files (verified, source_tier: primary)
+
+Start at the Malaysia answer router (`my/INDEX.md`). Currency RM; authorities LHDN/IRBM (tax), EPF/KWSP (provident fund), PERKESO (SOCSO + EIS), MOHR (labour). EA 1955 covers Peninsular Malaysia + Labuan (Sabah/Sarawak separate). KWSP blocks server fetch (use a browser); PERKESO publishes SOCSO/EIS as RM band tables.
+
+- [Income tax 2025](my/lhdn/income_tax_2025.md): resident 0%–30% (top 30% above RM2,000,000, scale unchanged YA2023–2025) + non-resident flat 30%; mandatory MTD/PCB monthly withholding (remit by 15th); employer Form E (31 Mar) / EA (end Feb) / CP22 — LHDN
+- [EPF contributions](my/epf/contributions.md): below 60 — employee 11%, employer 13% (≤RM5,000) / 12% (>RM5,000); age 60+ citizen 0%/4%; Third Schedule band method to RM20,000 (no ceiling); non-citizen 2%+2% mandatory from 1 Oct 2025 — KWSP
+- [SOCSO + EIS](my/socso/socso_eis.md): SOCSO Act 4 First Category employer ~1.75% + employee 0.5%; EIS Act 800 0.2% + 0.2%; both capped at the RM6,000 wage ceiling (from 1 Oct 2024) — PERKESO
+- [HRD Corp levy](my/levies/hrd_corp_levy.md): employer-only training levy 1% (10+ employees) / 0.5% optional — PSMB Act 2001
+- [Hours & overtime](my/employment-act/working_hours_overtime.md): EA covers all; OT/rest-day/PH pay + termination benefits excluded above RM4,000/month; 45-hour week; OT 1.5× / rest-day-excess 2× / public-holiday-excess 3× — MOHR
+- [Leave](my/employment-act/leave.md): annual 8/12/16; sick 14/18/22 (+60 hospitalisation); ≥11 public holidays; maternity 98 days; paternity 7 days — Employment Act 1955 (amended 2022)
+- [Termination & retrenchment](my/employment-act/termination_and_retrenchment.md): lay-off/termination benefit 10/15/20 days' wages per year of service — 1980 Regulations
+- [Minimum wage](my/wages/minimum_wage.md): RM1,700/month (RM8.72/hr), eff 1 Feb 2025 (employers <5 staff deferred to 1 Aug 2025) — Minimum Wages Order 2024, P.U.(A) 376
+
 ## BIR & SSS issuance catalogs (direct official PDF links)
 
 - [BIR issuance catalog (ph/bir/issuances/INDEX.md)](ph/bir/issuances/INDEX.md): every Revenue Regulation / Memorandum Order / Memorandum Circular, 2022–2026 (894 total), payroll-tagged, each with a direct bir-cdn PDF link

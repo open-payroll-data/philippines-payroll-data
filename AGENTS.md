@@ -54,6 +54,8 @@ For repo / issuance indexing:
 |------|---------|--------|
 | `ph` | Philippines | **Complete** — BIR, SSS, PhilHealth, Pag-IBIG, benefits, minimum wage + 894 issuances + 142 SSS circulars |
 | `sg` | Singapore | **Core complete** — IRAS income tax, CPF + SDL, Employment Act (leave, hours/OT, termination), wage floors + `data/sg_*.json`. See [`sg/INDEX.md`](sg/INDEX.md). Issuance archive pending |
+| `my` | Malaysia | **Core complete** — LHDN income tax + MTD/PCB, EPF, SOCSO + EIS, HRD Corp levy, Employment Act, RM1,700 min wage. See [`my/INDEX.md`](my/INDEX.md). `data/` JSON pending |
+| `th` / `id` / `vn` | Thailand / Indonesia / Vietnam | Planned — Southeast Asia rollout |
 | `us` | United States | Planned — federal payroll taxes, FICA |
 
 ## Contributing / maintenance

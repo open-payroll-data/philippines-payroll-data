@@ -66,6 +66,17 @@ Always verify and cite from these official agency channels — never a summary s
 
 > SG sources are mostly **clean digital pages/PDFs** (not scanned), so transcription is reliable — but the IRAS rate tables are JavaScript-rendered, so a plain fetch returns them empty (render the page).
 
+**Malaysia golden sources (monitor + cite):**
+
+| Agency | Golden source | Change cadence |
+|--------|---------------|----------------|
+| LHDN/IRBM (income tax, MTD/PCB) | [hasil.gov.my → Tax Rate / Responsibility of Employer](https://www.hasil.gov.my/en/employers/responsibility-of-employer/); annual PCB computerised-calc specification | Federal Budget (Oct); PCB spec reissued yearly |
+| EPF/KWSP | [kwsp.gov.my → Mandatory contribution + Third Schedule](https://www.kwsp.gov.my/en/employer/responsibilities/mandatory-contribution) (blocks server fetch — use a browser) | Year-start; non-citizen tier (2% from Oct 2025) may step up |
+| PERKESO (SOCSO + EIS) | [perkeso.gov.my → Rate of Contribution](https://www.perkeso.gov.my/en/rate-of-contribution.html) (Act 4 + Act 800 band-table PDFs) | Ceiling raised to RM6,000 (Oct 2024); watch Employers Circulars |
+| MOHR (Employment Act, minimum wage) | Employment Act 1955 (jtksm.mohr.gov.my); Minimum Wages Order (Federal Gazette, lom.agc.gov.my) | EA amended ~2022; minimum wage by periodic Orders |
+
+> MY sources mix clean HTML (LHDN), browser-only pages (KWSP), and band-table PDFs (PERKESO). Store SOCSO/EIS and the EPF Third Schedule as **RM band tables** (they are published as bands, not percentages).
+
 **Note on scanned PDFs:** Some issuances (e.g. SSS circulars) are image-only scans with no text layer — a plain text fetch returns nothing. They must be rendered to images and read visually (or OCR'd). This is exactly the friction this KB removes for every downstream AI.
 
 ## Trust signals — make every derived file self-verifying
@@ -99,8 +110,17 @@ Why it matters: the sources are scanned image PDFs that an AI's own OCR reads *w
 |------|--------|
 | `iras` | IRAS — personal income tax, employer reporting (IR8A/AIS), tax clearance (IR21) |
 | `cpf` | CPF Board — CPF contributions and the Skills Development Levy (SDL) |
-| `employment-act` | Employment Act — coverage, hours/overtime (Part IV), leave, termination, retrenchment |
-| `wages` | Wage floors — Local Qualifying Salary (LQS), Progressive Wage Model (PWM) |
+| `employment-act` | Employment Act — coverage, hours/overtime, leave, termination, retrenchment (shared by SG + MY) |
+| `wages` | Wage floors / minimum wage (shared by SG LQS/PWM + MY Minimum Wages Order) |
+
+**Malaysia (`my/`) categories:**
+
+| Code | Covers |
+|------|--------|
+| `lhdn` | LHDN/IRBM — income tax, MTD/PCB monthly withholding, employer returns (Form E/EA) |
+| `epf` | EPF / KWSP — Employees Provident Fund contributions |
+| `socso` | PERKESO — SOCSO (Act 4) + EIS (Act 800) |
+| `levies` | Employer levies — HRD Corp / HRDF training levy |
 
 ## Tag vocabulary (reuse these for consistency)
 

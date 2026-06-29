@@ -91,8 +91,26 @@ Full index: [`sg/INDEX.md`](sg/INDEX.md)
 
 ---
 
+## Malaysia (`my/`)
+
+Full index: [`my/INDEX.md`](my/INDEX.md)
+
+| File | Summary |
+|------|---------|
+| [`my/lhdn/income_tax_2025.md`](my/lhdn/income_tax_2025.md) | Resident (0%–30%) & non-resident (30%) income tax, MTD/PCB monthly withholding, employer forms (E, EA, CP22) |
+| [`my/epf/contributions.md`](my/epf/contributions.md) | EPF (KWSP) rates by age/wage/citizenship, Third Schedule band method, the 2025 non-citizen mandate |
+| [`my/socso/socso_eis.md`](my/socso/socso_eis.md) | SOCSO (Act 4) + EIS (Act 800) contribution rates and the RM6,000 wage ceiling |
+| [`my/levies/hrd_corp_levy.md`](my/levies/hrd_corp_levy.md) | HRD Corp (HRDF) employer training levy (1% / 0.5%) |
+| [`my/employment-act/working_hours_overtime.md`](my/employment-act/working_hours_overtime.md) | EA coverage, RM4,000 threshold, 45-hour week, overtime (1.5× / 2× / 3×) |
+| [`my/employment-act/leave.md`](my/employment-act/leave.md) | Annual, sick, public holidays, maternity (98 days), paternity (7 days) |
+| [`my/employment-act/termination_and_retrenchment.md`](my/employment-act/termination_and_retrenchment.md) | Termination/lay-off (retrenchment) benefits — 10/15/20 days per year |
+| [`my/wages/minimum_wage.md`](my/wages/minimum_wage.md) | RM1,700 national minimum wage (Minimum Wages Order 2024) |
+
+---
+
 ## Coming soon
 
+- `th/` — Thailand · `id/` — Indonesia · `vn/` — Vietnam (Southeast Asia rollout)
 - `us/` — Federal payroll taxes, FICA, state examples
 
 ---

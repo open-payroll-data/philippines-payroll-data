@@ -15,7 +15,7 @@
     "ph/bir/issuances/issuances.json": "Every BIR RR/RMO/RMC issuance (2022-2026), one record each (number, type, year, date, subject, payroll tag, source PDF links).",
     "ph/sss/circulars.json": "Every SSS circular (2020-2026), one record each (number, year, title, payroll tag, PDF link)."
   },
-  "file_count": 47,
+  "file_count": 56,
   "files": [
     {
       "path": "AGENTS.md",
@@ -93,6 +93,188 @@
       "volatility": "stable",
       "last_verified": null,
       "tags": []
+    },
+    {
+      "path": "my/INDEX.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "my/employment-act/leave.md",
+      "country": "my",
+      "category": "employment-act",
+      "record_type": "topic",
+      "topic": "Malaysia statutory leave — annual, sick, public holidays, maternity (98 days) and paternity (7 days)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "employment-act",
+        "act-265",
+        "annual-leave",
+        "sick-leave",
+        "public-holidays",
+        "maternity",
+        "paternity",
+        "98-days",
+        "2023",
+        "mohr"
+      ]
+    },
+    {
+      "path": "my/employment-act/termination_and_retrenchment.md",
+      "country": "my",
+      "category": "employment-act",
+      "record_type": "topic",
+      "topic": "Termination/lay-off (retrenchment) benefits under the Employment (Termination and Lay-Off Benefits) Regulations 1980",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "employment-act",
+        "termination",
+        "retrenchment",
+        "lay-off-benefits",
+        "1980-regulations",
+        "severance",
+        "rm4000",
+        "mohr"
+      ]
+    },
+    {
+      "path": "my/employment-act/working_hours_overtime.md",
+      "country": "my",
+      "category": "employment-act",
+      "record_type": "topic",
+      "topic": "Employment Act 1955 coverage, the RM4,000 overtime threshold, working hours, and overtime rates",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "employment-act",
+        "act-265",
+        "overtime",
+        "rm4000",
+        "working-hours",
+        "coverage",
+        "peninsular-malaysia",
+        "2023",
+        "mohr"
+      ]
+    },
+    {
+      "path": "my/epf/contributions.md",
+      "country": "my",
+      "category": "epf",
+      "record_type": "topic",
+      "topic": "EPF (KWSP) Employees Provident Fund contribution rates — by age, wage band, and citizenship (incl. the 2025 non-citizen mandate)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "epf",
+        "kwsp",
+        "provident-fund",
+        "employer-share",
+        "employee-share",
+        "third-schedule",
+        "non-citizen",
+        "age-60",
+        "2025"
+      ]
+    },
+    {
+      "path": "my/levies/hrd_corp_levy.md",
+      "country": "my",
+      "category": "levies",
+      "record_type": "topic",
+      "topic": "HRD Corp (HRDF) human-resource development levy",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "hrd-corp",
+        "hrdf",
+        "levy",
+        "training-levy",
+        "psmb-act",
+        "employer-only",
+        "2025"
+      ]
+    },
+    {
+      "path": "my/lhdn/income_tax_2025.md",
+      "country": "my",
+      "category": "lhdn",
+      "record_type": "topic",
+      "topic": "Malaysia resident & non-resident personal income tax on employment income, plus Monthly Tax Deduction (MTD/PCB) and employer obligations",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "income-tax",
+        "lhdn",
+        "irbm",
+        "resident",
+        "non-resident",
+        "mtd",
+        "pcb",
+        "withholding",
+        "form-e",
+        "form-ea",
+        "cp22",
+        "ya2024",
+        "ya2025"
+      ]
+    },
+    {
+      "path": "my/socso/socso_eis.md",
+      "country": "my",
+      "category": "socso",
+      "record_type": "topic",
+      "topic": "SOCSO (PERKESO, Act 4) and EIS (Act 800) contribution rates and the RM6,000 wage ceiling",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "socso",
+        "perkeso",
+        "eis",
+        "act-4",
+        "act-800",
+        "employment-injury",
+        "invalidity",
+        "employer-share",
+        "employee-share",
+        "wage-ceiling",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "path": "my/wages/minimum_wage.md",
+      "country": "my",
+      "category": "wages",
+      "record_type": "topic",
+      "topic": "Malaysia national minimum wage — RM1,700/month (Minimum Wages Order 2024)",
+      "source_tier": "primary",
+      "volatility": "continuously-changing",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "minimum-wage",
+        "wage-floor",
+        "rm1700",
+        "pua-376",
+        "minimum-wages-order-2024",
+        "2025",
+        "mohr"
+      ]
     },
     {
       "path": "ph/INDEX.md",
