@@ -56,6 +56,16 @@ Always verify and cite from these official agency channels — never a summary s
 | Minimum wage | [nwpc.dole.gov.ph](https://nwpc.dole.gov.ph) → Wage Orders + the consolidated "Latest Wage Orders Matrix" PDF |
 | Laws (Republic Acts) | [Official Gazette](https://www.officialgazette.gov.ph/section/laws/) — laws & executive issuances only (NOT agency circulars) |
 
+**Singapore golden sources (monitor + cite):**
+
+| Agency | Golden source | Change cadence |
+|--------|---------------|----------------|
+| IRAS (income tax) | [iras.gov.sg → Individual Income Tax rates](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates) (rate tables are JS accordions — render, don't plain-fetch) | Budget-driven (Feb); rebate set per YA |
+| CPF Board (CPF + SDL) | [cpf.gov.sg → Employer contribution rates](https://www.cpf.gov.sg/employer/employer-obligations/cpf-contribution-and-allocation-rates) — dated rate-table PDFs | Year-start (1 Jan); senior-rate phase-ins + OW-ceiling steps through 2026 |
+| MOM (Employment Act, leave, wage floors) | [mom.gov.sg → Employment practices](https://www.mom.gov.sg/employment-practices) | Parental-leave reforms keyed to child DOB (1 Apr 2025, 1 Apr 2026); LQS step 1 Jul 2026 |
+
+> SG sources are mostly **clean digital pages/PDFs** (not scanned), so transcription is reliable — but the IRAS rate tables are JavaScript-rendered, so a plain fetch returns them empty (render the page).
+
 **Note on scanned PDFs:** Some issuances (e.g. SSS circulars) are image-only scans with no text layer — a plain text fetch returns nothing. They must be rendered to images and read visually (or OCR'd). This is exactly the friction this KB removes for every downstream AI.
 
 ## Trust signals — make every derived file self-verifying
@@ -82,6 +92,15 @@ Why it matters: the sources are scanned image PDFs that an AI's own OCR reads *w
 | `min-wage` | Minimum wage by region |
 | `labor` | Labor standards — premium pay (OT/holiday/night-diff), statutory leaves, final pay, separation pay |
 | `general` | Payroll process, general rules |
+
+**Singapore (`sg/`) categories:**
+
+| Code | Covers |
+|------|--------|
+| `iras` | IRAS — personal income tax, employer reporting (IR8A/AIS), tax clearance (IR21) |
+| `cpf` | CPF Board — CPF contributions and the Skills Development Levy (SDL) |
+| `employment-act` | Employment Act — coverage, hours/overtime (Part IV), leave, termination, retrenchment |
+| `wages` | Wage floors — Local Qualifying Salary (LQS), Progressive Wage Model (PWM) |
 
 ## Tag vocabulary (reuse these for consistency)
 

@@ -59,11 +59,42 @@ Full index: [`ph/INDEX.md`](ph/INDEX.md)
 
 ---
 
+## Singapore (`sg/`)
+
+Full index: [`sg/INDEX.md`](sg/INDEX.md)
+
+### IRAS / Income Tax
+
+| File | Summary |
+|------|---------|
+| [`sg/iras/income_tax_2025.md`](sg/iras/income_tax_2025.md) | Resident (0%–24%) & non-resident income tax, residency test, employer reporting (IR8A/AIS), IR21 tax clearance, no monthly PAYE |
+
+### CPF & SDL
+
+| File | Summary |
+|------|---------|
+| [`sg/cpf/contribution_rates_2025.md`](sg/cpf/contribution_rates_2025.md) | CPF rates by age band (2025 & 2026), OW/AW ceilings, SC/PR coverage, PR rates, and the Skills Development Levy |
+
+### Employment Act
+
+| File | Summary |
+|------|---------|
+| [`sg/employment-act/leave.md`](sg/employment-act/leave.md) | Annual, sick, public holidays, and government-paid parental leave (incl. 2025 reforms) |
+| [`sg/employment-act/working_hours_overtime.md`](sg/employment-act/working_hours_overtime.md) | EA coverage, Part IV thresholds, hours of work, overtime (1.5×, $2,600 cap) |
+| [`sg/employment-act/termination_and_retrenchment.md`](sg/employment-act/termination_and_retrenchment.md) | Notice periods, retrenchment benefit & MOM notification, AWS / "13th month" |
+
+### Wages
+
+| File | Summary |
+|------|---------|
+| [`sg/wages/wage_floors.md`](sg/wages/wage_floors.md) | No universal minimum wage; Local Qualifying Salary (LQS) and the Progressive Wage Model (PWM) |
+
+---
+
 ## Coming soon
 
-- `sg/` — Singapore CPF, income tax, levy
 - `us/` — Federal payroll taxes, FICA, state examples
 
 ---
 
-_Last updated: 2026-06-24_
+_Last updated: 2026-06-29_

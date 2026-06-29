@@ -26,7 +26,7 @@ You should be able to find any specific fact in **2 hops maximum**.
 | Code | Country | Status |
 |------|---------|--------|
 | `ph` | Philippines | Active — BIR, SSS, PhilHealth, Pag-IBIG, Benefits, Min Wage |
-| `sg` | Singapore | Planned |
+| `sg` | Singapore | Active (core) — IRAS income tax, CPF + SDL, Employment Act, wage floors. See [`sg/INDEX.md`](sg/INDEX.md) |
 | `us` | United States | Planned |
 
 ## File naming convention

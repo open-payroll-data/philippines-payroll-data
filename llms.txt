@@ -27,6 +27,17 @@ Start at the Answer router (`ph/INDEX.md`): match the question to one row and op
 - [Statutory leaves](ph/labor/leaves.md): SIL, maternity (RA 11210, 105 days), paternity, solo-parent, special leave for women, VAWC
 - [Final pay & separation pay](ph/labor/final_pay.md): final pay within 30 days, Certificate of Employment within 3 days, separation-pay rates — DOLE Labor Advisory 06-2020 + Labor Code Arts. 298–299
 
+## Singapore — rule & rate files (verified, source_tier: primary)
+
+Start at the Singapore answer router (`sg/INDEX.md`). Currency S$; authorities IRAS (tax), CPF Board (provident fund + levy), MOM (labour). SG government sources are mostly clean digital pages — but IRAS rate tables are JavaScript-rendered (render, don't plain-fetch).
+
+- [Income tax 2025](sg/iras/income_tax_2025.md): resident 0%–24% (top rate above $1,000,000) + non-resident 15%/24%; residency 183-day rule; employer reporting via IR8A / Auto-Inclusion Scheme by 1 Mar; IR21 tax clearance; no monthly PAYE for residents — IRAS
+- [CPF contribution rates 2025 & 2026](sg/cpf/contribution_rates_2025.md): age-band rates (≤55 = 37% total, 17% employer + 20% employee), OW ceiling $7,400 (2025) → $8,000 (2026), AW ceiling, SC/PR-only coverage, PR graduated rates, and the Skills Development Levy (0.25%, $2–$11.25) — CPF Board
+- [Employment Act leave](sg/employment-act/leave.md): annual (7→14 days), sick (14 outpatient / 60 hospitalisation), 11 public holidays, and government-paid parental leave incl. the 2025 reforms (paternity 4 weeks + shared parental leave, keyed to child DOB) — MOM
+- [Hours & overtime](sg/employment-act/working_hours_overtime.md): Employment Act coverage, Part IV thresholds ($2,600 non-workman / $4,500 workman), overtime 1.5× capped at $2,600 ($13.60/hr), 72-hour monthly limit — MOM
+- [Termination & retrenchment](sg/employment-act/termination_and_retrenchment.md): notice periods (1 day → 4 weeks), retrenchment benefit (tripartite norm 2 weeks–1 month/yr, not mandated) + mandatory MOM notification (≥10 employees, 5 working days), AWS not compulsory — MOM
+- [Wage floors](sg/wages/wage_floors.md): no universal minimum wage; Local Qualifying Salary $1,600/mo (→ $1,800 from 1 Jul 2026) and the Progressive Wage Model — MOM
+
 ## BIR & SSS issuance catalogs (direct official PDF links)
 
 - [BIR issuance catalog (ph/bir/issuances/INDEX.md)](ph/bir/issuances/INDEX.md): every Revenue Regulation / Memorandum Order / Memorandum Circular, 2022–2026 (894 total), payroll-tagged, each with a direct bir-cdn PDF link

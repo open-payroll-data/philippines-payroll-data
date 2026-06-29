@@ -15,7 +15,7 @@
     "ph/bir/issuances/issuances.json": "Every BIR RR/RMO/RMC issuance (2022-2026), one record each (number, type, year, date, subject, payroll tag, source PDF links).",
     "ph/sss/circulars.json": "Every SSS circular (2020-2026), one record each (number, year, title, payroll tag, PDF link)."
   },
-  "file_count": 40,
+  "file_count": 47,
   "files": [
     {
       "path": "AGENTS.md",
@@ -711,6 +711,150 @@
         "2025",
         "remittance",
         "circular-2024-006"
+      ]
+    },
+    {
+      "path": "sg/INDEX.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "sg/cpf/contribution_rates_2025.md",
+      "country": "sg",
+      "category": "cpf",
+      "record_type": "topic",
+      "topic": "CPF contribution rates by age band (2025 & 2026), Ordinary/Additional Wage ceilings, coverage, plus the Skills Development Levy (SDL)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "cpf",
+        "contribution-rates",
+        "employer-share",
+        "employee-share",
+        "ow-ceiling",
+        "aw-ceiling",
+        "sdl",
+        "skills-development-levy",
+        "age-band",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "path": "sg/employment-act/leave.md",
+      "country": "sg",
+      "category": "employment-act",
+      "record_type": "topic",
+      "topic": "Singapore statutory leave — annual, sick, public holidays, and government-paid parental leave (with the 2025 reforms)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "leave",
+        "annual-leave",
+        "sick-leave",
+        "public-holidays",
+        "maternity",
+        "paternity",
+        "shared-parental-leave",
+        "childcare-leave",
+        "adoption-leave",
+        "mom",
+        "2025",
+        "parental-leave-reform"
+      ]
+    },
+    {
+      "path": "sg/employment-act/termination_and_retrenchment.md",
+      "country": "sg",
+      "category": "employment-act",
+      "record_type": "topic",
+      "topic": "Termination notice periods, retrenchment benefit & notification, and salary in lieu",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "termination",
+        "notice-period",
+        "retrenchment",
+        "retrenchment-benefit",
+        "mandatory-notification",
+        "salary-in-lieu",
+        "mom",
+        "2025"
+      ]
+    },
+    {
+      "path": "sg/employment-act/working_hours_overtime.md",
+      "country": "sg",
+      "category": "employment-act",
+      "record_type": "topic",
+      "topic": "Employment Act coverage, hours of work, rest days, and overtime pay (Part IV)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "employment-act",
+        "overtime",
+        "part-iv",
+        "workman",
+        "hours-of-work",
+        "rest-day",
+        "mom",
+        "coverage",
+        "2025"
+      ]
+    },
+    {
+      "path": "sg/iras/income_tax_2025.md",
+      "country": "sg",
+      "category": "iras",
+      "record_type": "topic",
+      "topic": "Singapore resident & non-resident personal income tax on employment income, plus employer obligations (IR8A/AIS, IR21)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "income-tax",
+        "iras",
+        "resident",
+        "non-resident",
+        "withholding",
+        "ir8a",
+        "ais",
+        "ir21",
+        "tax-clearance",
+        "ya2024",
+        "ya2025",
+        "ya2026"
+      ]
+    },
+    {
+      "path": "sg/wages/wage_floors.md",
+      "country": "sg",
+      "category": "wages",
+      "record_type": "topic",
+      "topic": "Singapore wage floors — no universal minimum wage; Progressive Wage Model (PWM) and Local Qualifying Salary (LQS)",
+      "source_tier": "primary",
+      "volatility": "continuously-changing",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "minimum-wage",
+        "wage-floor",
+        "progressive-wage-model",
+        "pwm",
+        "local-qualifying-salary",
+        "lqs",
+        "mom",
+        "2025",
+        "2026"
       ]
     },
     {
