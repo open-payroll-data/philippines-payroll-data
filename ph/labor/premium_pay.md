@@ -8,7 +8,7 @@ effective_date_end:
 source: "DOLE Handbook on Workers' Statutory Monetary Benefits (2024 Edition), DOLE Bureau of Working Conditions; Labor Code of the Philippines (PD 442) Arts. 82–94 — https://bwc.dole.gov.ph/wp-content/uploads/2024/10/Workers-Statutory-Monetary-Benefits-Handbook-2024-Edition.pdf"
 source_tier: primary
 mirror_url: "https://library.laborlaw.ph/wp-content/uploads/2023/10/2023-Handbook-on-Workers-Statutory-Benefits.pdf"
-last_verified: 2026-06-25
+last_verified: 2026-06-29
 verified_from: "Read from the DOLE Bureau of Working Conditions 'Handbook on Workers' Statutory Monetary Benefits' (the unmodified DOLE-BWC file — the live bwc.dole.gov.ph host is Cloudflare-gated to bots, so the same government PDF was read via the laborlaw.ph mirror) plus the Labor Code Arts. 82–94. The combined-multiplier matrix below is transcribed from the Handbook's own 'Guide Computations' table. These multipliers are statutory and unchanged across the 2022–2024 editions and through 2026."
 tags: [labor-standards, overtime, night-differential, holiday-pay, premium-pay, rest-day, special-day, dole, labor-code, eemr, 2026]
 ---
@@ -94,7 +94,7 @@ OT, NSD, premium pay, and holiday pay all **exclude** the same core groups:
 | Employee type | Factor |
 |---------------|:------:|
 | Monthly-paid (paid all days incl. rest days & holidays) | **365** |
-| Daily-paid, works every day incl. rest/holidays | ~**394.4** |
+| Daily-paid, works every day incl. rest/holidays | **393.5** (older DOLE Handbook editions: 392.5) |
 | Daily-paid, unpaid on rest days | **313** (or **305** if the 8 special days are unpaid) |
 | Daily-paid, unpaid Sat + Sun | **261** (or **253** if special days unpaid) |
 

@@ -55,6 +55,16 @@ OW ceiling **$8,000**. Max contribution on OW/month (55 & below): total **$2,960
 
 **What changed on 1 Jan 2026:** only the two senior bands rose — *above 55–60* 32.5→**34%** and *above 60–65* 23.5→**25%**. The ≤55, 65–70 and >70 bands are unchanged.
 
+### Already published: effective 1 January 2027
+CPF Board has published the next senior-worker step (Budget 2025). Listed here as a heads-up — **use the 2025/2026 tables above for current payroll**:
+
+| Employee age | Total % | Employer % | Employee % |
+|--------------|---------|------------|------------|
+| Above 55 to 60 | **35.5** | **16.5** | **19** |
+| Above 60 to 65 | **26** | **13** | **13** |
+
+Only these two bands change again; ≤55 (37%), 65–70 (16.5%) and >70 (12.5%) stay the same, and the **OW ceiling stays $8,000** (no further increase scheduled after 2026). Source: [CPF Board — contribution changes from 1 Jan 2027](https://www.cpf.gov.sg/employer/infohub/news/cpf-related-announcements/new-contribution-rates).
+
 ### Wage phase-in (low earners — both years)
 - Monthly wages **≤ $50**: **no CPF**.
 - **> $50 to $500**: **employer share only** (employer rate on total wages); no employee share.
@@ -111,7 +121,7 @@ Separate from CPF. Payable by the employer for **all** employees (full-time, par
 
 ## Source & Notes
 - Official sources: [CPF rates from 1 Jan 2025 (PDF)](https://www.cpf.gov.sg/content/dam/web/employer/employer-obligations/documents/CPF_contribution_rates_from_1_Jan_2025.pdf) · [from 1 Jan 2026 (PDF)](https://www.cpf.gov.sg/content/dam/web/employer/employer-obligations/documents/CPFcontributionratesfrom1Jan2026.pdf) · [OW ceiling](https://www.cpf.gov.sg/service/article/what-is-the-ordinary-wage-ow-ceiling) · [Who should receive CPF](https://www.cpf.gov.sg/employer/employer-obligations/who-should-receive-cpf-contributions) · [SDL calculation](https://www.cpf.gov.sg/service/article/how-do-i-calculate-skills-development-levy-sdl).
-- Use directly — these are verbatim from CPF Board and stable within each effective period. Note the **1 Jan 2026** senior-band + OW-ceiling step (already captured above); the next year-start is the time to re-check CPF Board for further senior-rate phase-ins.
+- Use directly — these are verbatim from CPF Board and stable within each effective period. The senior-band steps for **1 Jan 2026** and **1 Jan 2027** are both already captured above; the OW ceiling is $8,000 from 2026 with no further increase scheduled. Re-check CPF Board at each year-start in case a later Budget adds a new phase-in.
 
 ## See Also
 - [`../iras/income_tax_2025.md`](../iras/income_tax_2025.md) — income tax (CPF is not income-tax withholding)

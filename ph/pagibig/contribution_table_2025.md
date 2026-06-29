@@ -5,15 +5,15 @@ topic: Pag-IBIG (HDMF) mandatory contribution rates and remittance (MFS ₱10,00
 effective_year: 2025
 effective_date_start: 2024-02-01
 effective_date_end:
-source: "Pag-IBIG (HDMF) Fund Circular No. 460 (dated 12 Jan 2024; increase in Maximum Fund Salary, effective February 2024) under RA 9679 — figures confirmed via DBM Circular Letter No. 2024-2 (1 Feb 2024) reproducing Circular 460 §C — https://www.dbm.gov.ph/wp-content/uploads/Issuances/2024/Circular-Letter/CIRCULAR-LETTER-NO-2024-2-DATED-FEBRUARY-01-2024.pdf"
+source: "Pag-IBIG (HDMF) Fund Circular No. 460 (dated 15 Jan 2024; increase in Maximum Fund Salary, effective February 2024) under RA 9679 — figures confirmed via DBM Circular Letter No. 2024-2 (1 Feb 2024) reproducing Circular 460 §C — https://www.dbm.gov.ph/wp-content/uploads/Issuances/2024/Circular-Letter/CIRCULAR-LETTER-NO-2024-2-DATED-FEBRUARY-01-2024.pdf"
 source_tier: primary
-last_verified: 2026-06-24
+last_verified: 2026-06-29
 verified_from: "Confirmed from a government source: read DBM Circular Letter 2024-2 directly, which reproduces Pag-IBIG Circular 460 §C (rate table 1%/2% and 2%/2%) and the MFS increase ₱5,000→₱10,000 (max ₱200/side), eff Feb 2024. HDMF-hosted original is reCAPTCHA-walled, but contents are government-corroborated."
 tags: [pagibig, hdmf, contribution, employee-share, employer-share, mfs, circular-460, remittance, 2025]
 ---
 
 ## ✅ Provenance (government-confirmed)
-The figures below are confirmed from a **government source**: DBM **Circular Letter No. 2024-2** (1 Feb 2024) reproduces **Pag-IBIG Fund Circular No. 460** (dated 12 Jan 2024) — Section C's contribution-rate table and the **Maximum Fund Salary increase from ₱5,000 → ₱10,000** (max ₱200 per side), **effective February 2024**. The HDMF-hosted original of Circular 460 sits behind a reCAPTCHA, but its contents are corroborated verbatim by the DBM circular, so this file is `source_tier: primary`.
+The figures below are confirmed from a **government source**: DBM **Circular Letter No. 2024-2** (1 Feb 2024) reproduces **Pag-IBIG Fund Circular No. 460** (dated 15 Jan 2024) — Section C's contribution-rate table and the **Maximum Fund Salary increase from ₱5,000 → ₱10,000** (max ₱200 per side), **effective February 2024**. The HDMF-hosted original of Circular 460 sits behind a reCAPTCHA, but its contents are corroborated verbatim by the DBM circular, so this file is `source_tier: primary`.
 
 ---
 
@@ -80,7 +80,7 @@ Submit via Virtual Pag-IBIG (online) or accredited collecting partners. Confirm 
 ---
 
 ## Source & Notes
-- **Governing issuance:** Pag-IBIG (HDMF) Fund Circular No. 460, dated 12 Jan 2024 — MFS increase to ₱10,000, effective February 2024
+- **Governing issuance:** Pag-IBIG (HDMF) Fund Circular No. 460, dated 15 Jan 2024 — MFS increase to ₱10,000, effective February 2024
 - **Government confirmation (read directly):** DBM Circular Letter No. 2024-2 (1 Feb 2024) — [PDF](https://www.dbm.gov.ph/wp-content/uploads/Issuances/2024/Circular-Letter/CIRCULAR-LETTER-NO-2024-2-DATED-FEBRUARY-01-2024.pdf) — reproduces Circular 460 §C (rate table) and the MFS figure
 - Legal basis: RA 9679 (HDMF Law of 2009)
 - HDMF-hosted original of Circular 460 is reCAPTCHA-protected; contents corroborated by the DBM circular above. To attach the HDMF original later, download it in a browser and re-read.

@@ -7,7 +7,7 @@ effective_date_start: 2023-01-01
 effective_date_end:
 source: "BIR Revenue Regulations No. 2-98 as amended; RMC 1-2023; BIR.gov.ph"
 source_tier: primary
-last_verified: 2026-06-24
+last_verified: 2026-06-29
 verified_from: "Procedural guide compiled from BIR withholding regulations (RR 2-98 as amended) and the form/deadline framework (1601-C, 1604-C, 2316). A process summary, not a single-document transcription. The tax tables it applies are verified in income_tax_table_2025.md (vs RR 8-2018). The standing forms and the 10th-of-month / Jan-31 deadlines below are reliable for ordinary use — use them directly. Only when a BIR issuance has moved a specific period's deadline (e.g. a filing-extension RMC) consult the in-repo BIR issuances archive at issuances/ — that catalog carries any such circular with its official PDF, so the open web is not needed."
 tags: [withholding, bir, 1601-c, 1604-c, 2316, annualization, remittance, deadline, 2025]
 ---
@@ -63,7 +63,7 @@ This is called the **annualization method**. It corrects for months where bonuse
 | Employer type | Form | Filing deadline |
 |--------------|------|-----------------|
 | Large taxpayer | BIR Form 1601-C | Within 10 days after month end |
-| Non-large taxpayer (eFPS) | BIR Form 1601-C | Varies by industry group (Group A–E); approx 11th–25th of following month |
+| Non-large taxpayer (eFPS) | BIR Form 1601-C | Staggered e-filing by industry group (Group A 15th, B 14th, C 13th, D 12th, E 11th of following month); e-payment on or before the 15th |
 | Non-eFPS | BIR Form 1601-C | On or before 10th day of following month |
 
 Payment is made at Authorized Agent Banks (AABs) or via eBIRForms / eFPS online.
@@ -78,7 +78,7 @@ Payment is made at Authorized Agent Banks (AABs) or via eBIRForms / eFPS online.
 | BIR Form 2316 | Certificate of Compensation — given to each employee | January 31 of following year |
 | Alphalist | Annex to 1604-C listing each employee's income and tax | Filed with 1604-C |
 
-Employees who are **purely compensation earners** with one employer and whose tax was correctly withheld are **not required to file an ITR** — their 2316 serves as the substitute return (except if annual income > ₱60,000 in some older rules; under TRAIN, all MWEs and those under one employer are covered by substituted filing).
+Employees who are **purely compensation earners** with one employer and whose tax was correctly withheld are **not required to file an ITR** — their 2316 serves as the substitute return. (Under TRAIN, the test is purely-compensation / one-employer / correctly-withheld / no other income; there is no income-amount threshold.)
 
 ---
 
@@ -94,7 +94,7 @@ Employees who qualify for **substituted filing** (purely compensation income, on
 
 1. Forgetting to add excess de minimis into taxable income (only the first ₱X is exempt, excess IS taxable)
 2. Annualization only done at year-end — should also be done when employee resigns mid-year
-3. Not issuing 2316 to resigned employees within 30 days of separation
+3. Not issuing 2316 to resigned employees on the day their final compensation is paid (BIR requires the 2316 upon last payment of wages — this is separate from, and earlier than, the DOLE 30-day final-pay release window)
 4. Using old 2018–2022 tax tables after 2022 (the 2023 table has lower rates — underwithheld)
 
 ---

@@ -7,13 +7,13 @@ effective_date_start: 2026-01-06
 effective_date_end:
 source: "BIR Revenue Regulations No. 29-2025 — further amends the 'de minimis' benefits provisions of RR 2-98 (as amended by RR 11-2018), raising the non-taxable ceilings; issued 22 Dec 2025, effective 6 January 2026 — https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2029-2025.pdf"
 source_tier: primary
-last_verified: 2026-06-25
+last_verified: 2026-06-29
 verified_from: "Updated to BIR RR 29-2025 (effective 6 Jan 2026), which raised the de minimis ceilings. The BIR primary PDF is a scanned image (cataloged in our archive at ph/bir/issuances/rr/2025.md with the official bir-cdn link); the new per-item amounts were cross-verified against two independent authoritative tax-firm reproductions (Grant Thornton PH and a payroll-compliance guide) that agree exactly. The prior values cited RR 11-2018 and are now superseded."
 tags: [de-minimis, non-taxable, benefits, bir, tax-exempt, ceiling, 2026, rr-29-2025, rr-11-2018]
 ---
 
 ## Summary
-De minimis benefits are small amounts given to employees that the BIR treats as non-taxable, up to specified ceilings. They are **exempt from income tax AND fringe benefit tax**. Amounts that **exceed** the ceilings are taxable compensation income and must be added back to the employee's taxable pay. **BIR RR 29-2025 raised these ceilings effective 6 January 2026** (e.g. rice ₱2,000 → ₱2,500/month; uniform ₱6,000 → ₱8,000/year); the amounts below are the current RR 29-2025 figures.
+De minimis benefits are small amounts given to employees that the BIR treats as non-taxable, up to specified ceilings. They are **exempt from income tax AND fringe benefit tax**. Amounts that **exceed** the ceilings are taxable compensation income and must be added back to the employee's taxable pay. **BIR RR 29-2025 raised these ceilings effective 6 January 2026** (e.g. rice ₱2,000 → ₱2,500/month; uniform ₱7,000 → ₱8,000/year); the amounts below are the current RR 29-2025 figures.
 
 ## ✅ Provenance
 - **Source tier:** primary — the current ceilings are from **BIR Revenue Regulations No. 29-2025** (effective 6 Jan 2026), which further amends the de minimis provisions of RR 2-98 / RR 11-2018.
@@ -32,7 +32,7 @@ De minimis benefits are small amounts given to employees that the BIR treats as 
 | 2 | Monetized unused sick leave credits | Government employees: exempt (with VL). Private sector: **not** a separate de minimis item | Only vacation leave (row 1) qualifies for private-sector employees |
 | 3 | Medical cash allowance to dependents | **₱2,000/employee/semester** | For the employee's dependents; medical purposes (raised from ₱1,500) |
 | 4 | Rice subsidy | **₱2,500/month** OR one 50kg sack of rice/month | Cash max ₱2,500; or one sack ≤ ₱2,500 (raised from ₱2,000) |
-| 5 | Uniform and clothing allowance | **₱8,000/year** | For uniforms required by the employer (raised from ₱6,000) |
+| 5 | Uniform and clothing allowance | **₱8,000/year** | For uniforms required by the employer (RR 29-2025 raised it from ₱7,000; lineage: ₱6,000 under RR 11-2018 → ₱7,000 under RR 4-2025 eff 14 Feb 2025 → ₱8,000) |
 | 6 | Actual medical assistance | **₱12,000/year** | Cash assistance for the employee's own medical needs (raised from ₱10,000) |
 | 7 | Laundry allowance | **₱400/month** | Must be related to work-uniform laundering (raised from ₱300) |
 | 8 | Employee achievement awards (tangible, non-cash) | **₱12,000/year** | Length-of-service or safety achievement; non-cash only (raised from ₱10,000) |

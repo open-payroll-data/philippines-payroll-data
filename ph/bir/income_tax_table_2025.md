@@ -7,7 +7,7 @@ effective_date_start: 2023-01-01
 effective_date_end:
 source: "BIR Revenue Regulations No. 8-2018 (issued 20 Feb 2018), implementing RA 10963 (TRAIN Law) — graduated income-tax schedules for 2018–2022 and 2023-onward — https://bir-cdn.bir.gov.ph/local/pdf/Digest%20RR%208-2018_copy.pdf"
 source_tier: primary
-last_verified: 2026-06-24
+last_verified: 2026-06-29
 verified_from: "Read BIR RR 8-2018 PDF directly (rendered from scan, bir-cdn.bir.gov.ph). Both graduated schedules in this file match the regulation verbatim — 2023+ schedule: 0% / 15% / ₱22,500+20% / ₱102,500+25% / ₱402,500+30% / ₱2,202,500+35%."
 tags: [income-tax, graduated-tax, train-law, bir, withholding, annualization, 2025, 2026, 2023, ra-10963]
 ---
@@ -90,7 +90,7 @@ Taxable compensation income = gross compensation MINUS:
 - SSS, PhilHealth, Pag-IBIG employee contributions (these are deductible)
 - Personal exemption: NONE (TRAIN removed personal and additional exemptions)
 
-**Minimum wage earners are fully exempt** from income tax (including holiday pay, OT, NSD).
+**Minimum wage earners are fully exempt** from income tax (including their holiday pay, overtime pay, night-shift differential, and hazard pay — per RR 8-2018).
 
 ---
 

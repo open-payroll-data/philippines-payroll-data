@@ -135,7 +135,7 @@
       "topic": "De minimis benefits — BIR list and peso ceilings, non-taxable if within limit",
       "source_tier": "primary",
       "volatility": "stable",
-      "last_verified": "2026-06-25",
+      "last_verified": "2026-06-29",
       "tags": [
         "de-minimis",
         "non-taxable",
@@ -177,7 +177,7 @@
       "topic": "Graduated income tax table for individual employees, TRAIN Law 2023+ rates",
       "source_tier": "primary",
       "volatility": "stable",
-      "last_verified": "2026-06-24",
+      "last_verified": "2026-06-29",
       "tags": [
         "income-tax",
         "graduated-tax",
@@ -524,7 +524,7 @@
       "topic": "How to compute, withhold, remit, and file monthly/annual withholding tax on compensation",
       "source_tier": "primary",
       "volatility": "stable",
-      "last_verified": "2026-06-24",
+      "last_verified": "2026-06-29",
       "tags": [
         "withholding",
         "bir",
@@ -591,7 +591,7 @@
       "topic": "Premium pay multipliers — overtime, night-shift differential, rest day, special day, and holiday pay",
       "source_tier": "primary",
       "volatility": "stable",
-      "last_verified": "2026-06-25",
+      "last_verified": "2026-06-29",
       "tags": [
         "labor-standards",
         "overtime",
@@ -635,7 +635,7 @@
       "topic": "Pag-IBIG (HDMF) mandatory contribution rates and remittance (MFS ₱10,000 since Feb 2024)",
       "source_tier": "primary",
       "volatility": "stable",
-      "last_verified": "2026-06-24",
+      "last_verified": "2026-06-29",
       "tags": [
         "pagibig",
         "hdmf",
