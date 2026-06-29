@@ -545,7 +545,7 @@
       "topic": "Final pay (last pay / back pay), Certificate of Employment, and separation pay",
       "source_tier": "primary",
       "volatility": "stable",
-      "last_verified": "2026-06-25",
+      "last_verified": "2026-06-29",
       "tags": [
         "labor-standards",
         "final-pay",
@@ -567,7 +567,7 @@
       "topic": "Statutory leave benefits — SIL, maternity, paternity, solo-parent, special leave for women, VAWC",
       "source_tier": "primary",
       "volatility": "stable",
-      "last_verified": "2026-06-25",
+      "last_verified": "2026-06-29",
       "tags": [
         "labor-standards",
         "leave",
@@ -614,7 +614,7 @@
       "topic": "Daily minimum wage rates by region (latest Wage Orders) + Kasambahay rates",
       "source_tier": "primary",
       "volatility": "continuously-changing",
-      "last_verified": "2026-06-25",
+      "last_verified": "2026-06-29",
       "tags": [
         "minimum-wage",
         "dole",
@@ -656,7 +656,7 @@
       "topic": "PhilHealth premium contribution rate and computation for 2025",
       "source_tier": "primary",
       "volatility": "stable",
-      "last_verified": "2026-06-24",
+      "last_verified": "2026-06-29",
       "tags": [
         "philhealth",
         "premium",
@@ -698,7 +698,7 @@
       "topic": "Monthly SSS contribution table by salary bracket — 2025 rates (15% total)",
       "source_tier": "primary",
       "volatility": "stable",
-      "last_verified": "2026-06-24",
+      "last_verified": "2026-06-29",
       "tags": [
         "sss",
         "contribution-table",

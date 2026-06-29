@@ -7,7 +7,7 @@ effective_date_start: 2020-02-03
 effective_date_end:
 source: "DOLE Labor Advisory No. 06, Series of 2020 (Guidelines on the Payment of Final Pay and the Issuance of Certificate of Employment); Labor Code (PD 442) Arts. 298–299 (separation pay) — https://www.dole.gov.ph/wp-content/uploads/2020/02/Labor-Advisory-No.-06-20-Guidelines-on-the-Payment-of-Final-Pay-and-Issuance-of-Certificate-of-Emplo.pdf"
 source_tier: primary
-last_verified: 2026-06-25
+last_verified: 2026-06-29
 verified_from: "Final-pay (30 days) and COE (3 days) rules from DOLE Labor Advisory No. 06, s. 2020 — confirmed on the official dole.gov.ph domain (the advisory PDF returns 403 outside the Philippines; verified via the DOLE news page on the same government domain). Separation-pay causes and rates from Labor Code Arts. 298–299 (renumbered from 283–284 by RA 10151). No superseding advisory or amendment found 2024–2026."
 tags: [labor-standards, final-pay, back-pay, last-pay, certificate-of-employment, separation-pay, dole, labor-advisory-06-2020, labor-code, 2026]
 ---

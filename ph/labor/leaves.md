@@ -7,7 +7,7 @@ effective_date_start:
 effective_date_end:
 source: "Labor Code (PD 442) Art. 95 (SIL); RA 11210 (105-Day Expanded Maternity Leave Law) + IRR; RA 8187 (Paternity Leave Act of 1996); RA 8972 as amended by RA 11861 (Expanded Solo Parents Welfare Act, 2022); RA 9710 (Magna Carta of Women) §18; RA 9262 (Anti-VAWC) §43 — statute texts via lawphil.net; maternity tax treatment per BIR RMC No. 105-2019"
 source_tier: primary
-last_verified: 2026-06-25
+last_verified: 2026-06-29
 verified_from: "Durations and conditions read verbatim from the full statute texts on lawphil.net (RA 11210 + its IRR, RA 8187, RA 11861, RA 9710 §18, RA 9262 §43) and Labor Code Art. 95. Maternity payment mechanics from the RA 11210 IRR + SSS Maternity Benefit page; the income-tax exemption of BOTH the SSS maternity benefit and the employer salary differential is per BIR RMC No. 105-2019 (cited but the RMC PDF itself was not separately rendered this pass — confirm for high-stakes). No new national leave law was enacted 2024–2026 (a 30-day paternity leave and a national menstrual leave remain pending bills, NOT law)."
 tags: [labor-standards, leave, service-incentive-leave, maternity, paternity, solo-parent, magna-carta-women, vawc, ra-11210, ra-8187, ra-11861, 2026]
 ---

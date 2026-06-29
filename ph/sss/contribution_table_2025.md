@@ -7,7 +7,7 @@ effective_date_start: 2025-01-01
 effective_date_end:
 source: "SSS Circular No. 2024-006 (Schedule of SSS Contributions for All Business Employers and Employees Effective January 2025), signed 19 Dec 2024 per SSC Resolution No. 560-s.2024 (15 Nov 2024) — https://www.sss.gov.ph/wp-content/uploads/2024/12/CI-2024-006-Publication.pdf"
 source_tier: primary
-last_verified: 2026-06-24
+last_verified: 2026-06-29
 verified_from: "Primary document — read directly from the scanned SSS Circular 2024-006 PDF (not a third-party summary)"
 tags: [sss, contribution-table, employee-share, employer-share, ec, mpf, wisp, salary-credit, 2025, remittance, circular-2024-006]
 ---

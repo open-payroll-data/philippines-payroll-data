@@ -7,7 +7,7 @@ effective_date_start:
 effective_date_end:
 source: "NWPC — 'Latest Wage Orders Issued by the Regional Boards (2025–2026 Issuances), As of 04 May 2026' — https://nwpc.dole.gov.ph/wp-content/uploads/2026/05/Latest-Wage-Orders-Matrix-2025-2026-As-of-04-May-2026.pdf"
 source_tier: primary
-last_verified: 2026-06-25
+last_verified: 2026-06-29
 verified_from: "Read the NWPC consolidated wage-order matrix PDF directly. Digital PDF: each of the 4 pages rendered to image AND cross-checked against the embedded text layer. Re-pulled the 04 May 2026 matrix on 2026-06-25."
 matrix_as_of: 2026-05-04
 volatility: continuously-changing

@@ -7,7 +7,7 @@ effective_date_start: 2025-01-01
 effective_date_end:
 source: "PhilHealth Advisory No. 2025-0002 (Premium Contribution for All Direct Contributors for CY 2025), implementing PhilHealth Circular No. 2020-0005 under RA 11223 §10 — https://www.philhealth.gov.ph/advisories/2025/PA2025-0002.pdf"
 source_tier: primary
-last_verified: 2026-06-24
+last_verified: 2026-06-29
 verified_from: "Read PhilHealth Advisory PA2025-0002 PDF directly (rendered from scan)"
 tags: [philhealth, premium, contribution, employee-share, employer-share, 2025, 2026, remittance, health-insurance, uhc, advisory-2025-0002]
 ---
