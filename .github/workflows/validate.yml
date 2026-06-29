@@ -1,0 +1,22 @@
+name: validate
+
+# Proves the machine-readable data/ layer still matches the verified markdown
+# (the same drift guard maintainers run locally). No dependencies to install —
+# the tools use only Node built-ins.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  data-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate data/ matches the source markdown + schema (no drift)
+        run: node tools/build-data.mjs --check
+      - name: Check the npm entry point loads
+        run: node -e "import('./index.mjs').then(() => console.log('index.mjs OK'))"

@@ -110,6 +110,8 @@ The BIR catalog is maintained by an automated job — **[`tools/bir-capture`](to
 - 🇺🇸 United States — planned (federal payroll taxes, FICA).
 - Extensions: pre-2022 BIR archive, deep full-text ingestion of payroll-relevant digests.
 
+> **Adding a country?** Follow [`PLAYBOOK.md`](PLAYBOOK.md) — the country-agnostic 7-step process distilled from the PH build (golden-source index → verified curated files → issuance archives → answer router → machine-readable data layer → verify → monitor), with reusable tactics, a per-country checklist, and the pitfalls already learned.
+
 ---
 
 ## License

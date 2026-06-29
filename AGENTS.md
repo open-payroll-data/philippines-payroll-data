@@ -60,6 +60,8 @@ For repo / issuance indexing:
 
 [`SCHEMA.md`](SCHEMA.md) is the contract: the file template, the **golden-source rule** (cite the issuing agency's own document, never a summary site), the per-agency golden sources to monitor, the category/tag vocabulary, and the trust-signals convention. The capture tools that keep the BIR and SSS archives current live in [`tools/`](tools/).
 
+**Adding a new country** (SG, US, …)? Follow **[`PLAYBOOK.md`](PLAYBOOK.md)** — the country-agnostic 7-step process distilled from the Philippines build (decompose payroll → golden-source index → verified curated files → issuance archives → answer router → validated `data/` layer → verify → monitor), with reusable tactics, a per-country checklist, and the pitfalls already learned. Copy the `ph/` folder's shape.
+
 ---
 
 *This repository reorganizes public Philippine government information for accuracy and machine-readability. For high-stakes decisions, confirm against the cited primary source. Not legal or tax advice.*

@@ -27,8 +27,10 @@ Match the question to a row, open that one file. Don't scan the repo.
 | A specific **BIR issuance** (RR/RMO/RMC, 2022–2026) by number/topic — with links to the official PDF | [bir/issuances/INDEX.md](bir/issuances/INDEX.md) |
 | A specific **SSS circular** (2020–2026) — contribution schedules, benefits, loans — with links to the official PDF | [sss/circulars.md](sss/circulars.md) |
 | **When/where** gov't rates change (monitoring sources) | [../SCHEMA.md](../SCHEMA.md) → Golden sources |
+| **Exact numbers for software / a payroll calculation** (typed JSON, generated from + validated against these files) | [`../data/index.json`](../data/index.json) |
 
 > Every target file opens with frontmatter (rates, effective dates, source, `last_verified`) and a `## Summary`. Read those two first — they answer most questions without reading the whole file.
+> For **computation**, use the typed `data/*.json` rate tables (don't parse the markdown tables for numbers). Markdown = source of truth + reasoning; `data/` = parse layer.
 
 ---
 

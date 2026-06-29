@@ -1,7 +1,7 @@
 {
   "name": "Philippine Payroll Knowledge Base",
   "description": "AI-ready, primary-sourced Philippine payroll reference (BIR, SSS, PhilHealth, Pag-IBIG, benefits, minimum wage) + linked catalogs of 894 BIR issuances and 142 SSS circulars.",
-  "generated": "2026-06-25",
+  "generated": "2026-06-29",
   "entry_points": {
     "ai_navigation": "AGENTS.md",
     "ai_navigation_claude": "CLAUDE.md",
@@ -15,7 +15,7 @@
     "ph/bir/issuances/issuances.json": "Every BIR RR/RMO/RMC issuance (2022-2026), one record each (number, type, year, date, subject, payroll tag, source PDF links).",
     "ph/sss/circulars.json": "Every SSS circular (2020-2026), one record each (number, year, title, payroll tag, PDF link)."
   },
-  "file_count": 39,
+  "file_count": 40,
   "files": [
     {
       "path": "AGENTS.md",
@@ -52,6 +52,17 @@
     },
     {
       "path": "INDEX.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "PLAYBOOK.md",
       "country": null,
       "category": null,
       "record_type": "navigation",

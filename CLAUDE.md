@@ -79,3 +79,7 @@ Otherwise the curated file is faster **and** more accurate. Don't re-derive what
 ## How to add new files
 
 See `SCHEMA.md` for the template and contribution rules.
+
+## Adding a new country
+
+To extend this KB to another country (SG, US, …), follow **[`PLAYBOOK.md`](PLAYBOOK.md)** — the country-agnostic 7-step process distilled from the Philippines build (golden-source index → verified curated files → issuance archives → answer router → validated `data/` layer → verify → monitor), with reusable tactics, a per-country checklist, and the pitfalls already learned. Copy the `ph/` folder's shape.
