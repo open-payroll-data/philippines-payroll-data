@@ -35,7 +35,7 @@ Match the question to a row, open that one file. Don't scan the repo.
 | Annual leave | ≥ 6 days/year after 1 year | [labour/leave.md](labour/leave.md) |
 | Maternity leave | **120 days** (from 7 Dec 2025); employer pays up to 60 | [labour/leave.md](labour/leave.md) |
 | Severance | 30 → 400 days' wages by tenure | [labour/severance.md](labour/severance.md) |
-| Minimum wage | ฿337–฿400/day by province (from 1 Jan 2025) | [wages/minimum_wage.md](wages/minimum_wage.md) |
+| Minimum wage | ฿337–฿400/day by province (Bangkok ฿400; from 1 Jul 2025) | [wages/minimum_wage.md](wages/minimum_wage.md) |
 
 ---
 
@@ -53,7 +53,7 @@ Match the question to a row, open that one file. Don't scan the repo.
 - [`labour/severance.md`](labour/severance.md) — Severance pay 30→400 days by tenure
 
 ### Wages (`wages/`)
-- [`wages/minimum_wage.md`](wages/minimum_wage.md) — Provincial daily minimum wage ฿337–฿400 (Notification No. 13)
+- [`wages/minimum_wage.md`](wages/minimum_wage.md) — Provincial daily minimum wage ฿337–฿400 (Notification No. 14, from 1 Jul 2025; Bangkok ฿400)
 
 ---
 

@@ -1161,7 +1161,7 @@
       "country": "th",
       "category": "wages",
       "record_type": "topic",
-      "topic": "Thailand provincial daily minimum wage (Wage Committee Notification No. 13, effective 1 Jan 2025)",
+      "topic": "Thailand provincial daily minimum wage (Wage Committee Notification No. 14, effective 1 July 2025)",
       "source_tier": "primary",
       "volatility": "continuously-changing",
       "last_verified": "2026-06-29",
@@ -1171,6 +1171,7 @@
         "daily-wage",
         "wage-committee",
         "provincial",
+        "notification-14",
         "thailand",
         "2025"
       ]

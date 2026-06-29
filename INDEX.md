@@ -119,7 +119,7 @@ Full index: [`th/INDEX.md`](th/INDEX.md)
 | [`th/labour/working_hours_overtime.md`](th/labour/working_hours_overtime.md) | Hours (8/48), overtime & holiday multipliers (1.5× / 2× / 3×) |
 | [`th/labour/leave.md`](th/labour/leave.md) | Annual, sick, public holidays, maternity (120 days from Dec 2025), paternity, childcare |
 | [`th/labour/severance.md`](th/labour/severance.md) | Severance pay 30→400 days' wages by tenure |
-| [`th/wages/minimum_wage.md`](th/wages/minimum_wage.md) | Provincial daily minimum wage ฿337–฿400 (Notification No. 13) |
+| [`th/wages/minimum_wage.md`](th/wages/minimum_wage.md) | Provincial daily minimum wage ฿337–฿400 (Notification No. 14, from 1 Jul 2025; Bangkok ฿400) |
 
 ---
 

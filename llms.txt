@@ -60,7 +60,7 @@ Start at the Thailand answer router (`th/INDEX.md`). Currency THB (฿); authori
 - [Hours & overtime](th/labour/working_hours_overtime.md): ≤8h/day, ≤48h/week; overtime 1.5× normal day, holiday work 2×, holiday overtime 3× — Labour Protection Act B.E. 2541 §§23–63
 - [Leave](th/labour/leave.md): annual ≥6 days (after 1 yr); sick up to 30 days; ≥13 public holidays; **maternity 120 days from 7 Dec 2025** (employer pays up to 60), + new 15-day paternity & 15-day childcare leave — LPA No. 9 B.E. 2568
 - [Severance](th/labour/severance.md): 30 / 90 / 180 / 240 / 300 / 400 days' wages by tenure (≥20 yrs = 400, added by the 2019 amendment) — LPA §118
-- [Minimum wage](th/wages/minimum_wage.md): provincial daily ฿337–฿400 (฿400 in Chon Buri/Phuket/Rayong/Chachoengsao/Koh Samui; Bangkok ฿372), effective 1 Jan 2025 — Wage Committee Notification No. 13
+- [Minimum wage](th/wages/minimum_wage.md): provincial daily ฿337–฿400 (฿400 in Bangkok, Chon Buri, Phuket, Rayong, Chachoengsao, Koh Samui + nationwide for hotels types 2-4 / entertainment venues), effective 1 Jul 2025 — Wage Committee Notification No. 14 (Bangkok rose ฿372→฿400)
 
 ## BIR & SSS issuance catalogs (direct official PDF links)
 
