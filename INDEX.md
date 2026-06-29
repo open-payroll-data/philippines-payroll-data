@@ -108,9 +108,24 @@ Full index: [`my/INDEX.md`](my/INDEX.md)
 
 ---
 
+## Thailand (`th/`)
+
+Full index: [`th/INDEX.md`](th/INDEX.md)
+
+| File | Summary |
+|------|---------|
+| [`th/revenue/income_tax_2025.md`](th/revenue/income_tax_2025.md) | PIT 0%–35%, allowances, monthly withholding (PND.1), Form 50 Bis, residency |
+| [`th/sso/social_security.md`](th/sso/social_security.md) | SSF 5%/5% (ceiling ฿17,500 → max ฿875 from 2026) + Workmen's Compensation Fund |
+| [`th/labour/working_hours_overtime.md`](th/labour/working_hours_overtime.md) | Hours (8/48), overtime & holiday multipliers (1.5× / 2× / 3×) |
+| [`th/labour/leave.md`](th/labour/leave.md) | Annual, sick, public holidays, maternity (120 days from Dec 2025), paternity, childcare |
+| [`th/labour/severance.md`](th/labour/severance.md) | Severance pay 30→400 days' wages by tenure |
+| [`th/wages/minimum_wage.md`](th/wages/minimum_wage.md) | Provincial daily minimum wage ฿337–฿400 (Notification No. 13) |
+
+---
+
 ## Coming soon
 
-- `th/` — Thailand · `id/` — Indonesia · `vn/` — Vietnam (Southeast Asia rollout)
+- `id/` — Indonesia · `vn/` — Vietnam (Southeast Asia rollout continues)
 - `us/` — Federal payroll taxes, FICA, state examples
 
 ---

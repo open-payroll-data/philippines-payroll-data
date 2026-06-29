@@ -77,6 +77,17 @@ Always verify and cite from these official agency channels — never a summary s
 
 > MY sources mix clean HTML (LHDN), browser-only pages (KWSP), and band-table PDFs (PERKESO). Store SOCSO/EIS and the EPF Third Schedule as **RM band tables** (they are published as bands, not percentages).
 
+**Thailand golden sources (monitor + cite):**
+
+| Agency | Golden source | Change cadence |
+|--------|---------------|----------------|
+| Revenue Department (income tax, PND.1) | [rd.go.th — annual PND.91 return guide + Revenue Code](https://www.rd.go.th/english/) (the English summary page 6045.html is STALE — use the dated return guide) | Yearly allowances; brackets stable |
+| Social Security Office (SSF + WCF) | [sso.go.th — contributions + Ministerial Regulations](https://www.sso.go.th/) (Royal Gazette PDFs) | **Ceiling rising: ฿17,500 (2026) → ฿20,000 (2029) → ฿23,000 (2032)** — enacted |
+| Ministry of Labour (Labour Protection Act) | [mol.go.th / labour.go.th](https://www.mol.go.th/en/) + Royal Gazette | Maternity raised to 120 days (Dec 2025); watch amendments |
+| Wage Committee (minimum wage) | MOL Wage Committee Notifications (Royal Gazette) | Provincial daily rates revised ~yearly |
+
+> TH primary sources are often **Thai-language** (English versions lag — the RD English summary page is stale; the Royal Gazette is Thai). Read the Thai Royal Gazette PDF for enacted changes (SSF ceiling, maternity) and cross-check English where available.
+
 **Note on scanned PDFs:** Some issuances (e.g. SSS circulars) are image-only scans with no text layer — a plain text fetch returns nothing. They must be rendered to images and read visually (or OCR'd). This is exactly the friction this KB removes for every downstream AI.
 
 ## Trust signals — make every derived file self-verifying
@@ -121,6 +132,15 @@ Why it matters: the sources are scanned image PDFs that an AI's own OCR reads *w
 | `epf` | EPF / KWSP — Employees Provident Fund contributions |
 | `socso` | PERKESO — SOCSO (Act 4) + EIS (Act 800) |
 | `levies` | Employer levies — HRD Corp / HRDF training levy |
+
+**Thailand (`th/`) categories:**
+
+| Code | Covers |
+|------|--------|
+| `revenue` | Revenue Department — personal income tax, monthly withholding (PND.1), Form 50 Bis |
+| `sso` | Social Security Office — Social Security Fund (SSF) + Workmen's Compensation Fund (WCF) |
+| `labour` | Labour Protection Act — hours, overtime, leave, severance |
+| `wages` | Provincial minimum wage (Wage Committee notifications) — shared `wages` category |
 
 ## Tag vocabulary (reuse these for consistency)
 

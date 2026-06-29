@@ -15,7 +15,7 @@
     "ph/bir/issuances/issuances.json": "Every BIR RR/RMO/RMC issuance (2022-2026), one record each (number, type, year, date, subject, payroll tag, source PDF links).",
     "ph/sss/circulars.json": "Every SSS circular (2020-2026), one record each (number, year, title, payroll tag, PDF link)."
   },
-  "file_count": 56,
+  "file_count": 63,
   "files": [
     {
       "path": "AGENTS.md",
@@ -1037,6 +1037,142 @@
         "mom",
         "2025",
         "2026"
+      ]
+    },
+    {
+      "path": "th/INDEX.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "th/labour/leave.md",
+      "country": "th",
+      "category": "labour",
+      "record_type": "topic",
+      "topic": "Thailand statutory leave — annual, sick, public holidays, and the 2025 increase to 120-day maternity leave",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "labour",
+        "leave",
+        "annual-leave",
+        "sick-leave",
+        "public-holidays",
+        "maternity",
+        "120-days",
+        "paternity",
+        "thailand",
+        "2025"
+      ]
+    },
+    {
+      "path": "th/labour/severance.md",
+      "country": "th",
+      "category": "labour",
+      "record_type": "topic",
+      "topic": "Thailand statutory severance pay by length of service (Labour Protection Act, as amended 2019)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "labour",
+        "severance",
+        "termination",
+        "redundancy",
+        "labour-protection-act",
+        "400-days",
+        "thailand",
+        "2019"
+      ]
+    },
+    {
+      "path": "th/labour/working_hours_overtime.md",
+      "country": "th",
+      "category": "labour",
+      "record_type": "topic",
+      "topic": "Thailand working hours, rest days, and overtime/holiday pay multipliers (Labour Protection Act)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "labour",
+        "labour-protection-act",
+        "working-hours",
+        "overtime",
+        "holiday-pay",
+        "rest-day",
+        "multipliers",
+        "thailand"
+      ]
+    },
+    {
+      "path": "th/revenue/income_tax_2025.md",
+      "country": "th",
+      "category": "revenue",
+      "record_type": "topic",
+      "topic": "Thailand personal income tax (PIT) on employment income, allowances, and monthly employer withholding (PND.1)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "income-tax",
+        "pit",
+        "revenue-department",
+        "withholding",
+        "pnd1",
+        "50-bis",
+        "allowances",
+        "tax-residency",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "path": "th/sso/social_security.md",
+      "country": "th",
+      "category": "sso",
+      "record_type": "topic",
+      "topic": "Thailand Social Security Fund (SSF) contributions + Workmen's Compensation Fund (WCF) — with the 2026 wage-ceiling increase",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "social-security",
+        "ssf",
+        "sso",
+        "wcf",
+        "workmens-compensation",
+        "employer-share",
+        "employee-share",
+        "wage-ceiling",
+        "2026",
+        "sso-1-10"
+      ]
+    },
+    {
+      "path": "th/wages/minimum_wage.md",
+      "country": "th",
+      "category": "wages",
+      "record_type": "topic",
+      "topic": "Thailand provincial daily minimum wage (Wage Committee Notification No. 13, effective 1 Jan 2025)",
+      "source_tier": "primary",
+      "volatility": "continuously-changing",
+      "last_verified": "2026-06-29",
+      "tags": [
+        "minimum-wage",
+        "wage-floor",
+        "daily-wage",
+        "wage-committee",
+        "provincial",
+        "thailand",
+        "2025"
       ]
     },
     {

@@ -51,6 +51,17 @@ Start at the Malaysia answer router (`my/INDEX.md`). Currency RM; authorities LH
 - [Termination & retrenchment](my/employment-act/termination_and_retrenchment.md): lay-off/termination benefit 10/15/20 days' wages per year of service — 1980 Regulations
 - [Minimum wage](my/wages/minimum_wage.md): RM1,700/month (RM8.72/hr), eff 1 Feb 2025 (employers <5 staff deferred to 1 Aug 2025) — Minimum Wages Order 2024, P.U.(A) 376
 
+## Thailand — rule & rate files (verified, source_tier: primary)
+
+Start at the Thailand answer router (`th/INDEX.md`). Currency THB (฿); authorities Revenue Department (tax), Social Security Office (SSF + WCF), Ministry of Labour (Labour Protection Act). Many TH primary sources are Thai-language (the RD English summary page 6045.html is STALE — use the dated PND.91 return guide; read the Royal Gazette for enacted changes).
+
+- [Income tax 2025](th/revenue/income_tax_2025.md): resident PIT 0%–35% (top 35% above ฿5,000,000); 50%/฿100,000 expense deduction + personal/spouse ฿60,000, child ฿30,000/฿60,000; mandatory monthly employer withholding on Form PND.1 (within 7 days of month-end); Form 50 Bis certificate by 15 Feb; residency ≥180 days — Revenue Department
+- [Social Security + Workmen's Comp](th/sso/social_security.md): SSF 5% employee + 5% employer; wage floor ฿1,650, **ceiling raised to ฿17,500 from 1 Jan 2026 → max ฿875/side** (was ฿15,000/฿750), phasing to ฿20,000 (2029) and ฿23,000 (2032); WCF employer-only 0.2–1.0%, cap ฿240,000/yr; remit by 15th on Form SSO 1-10 — SSO
+- [Hours & overtime](th/labour/working_hours_overtime.md): ≤8h/day, ≤48h/week; overtime 1.5× normal day, holiday work 2×, holiday overtime 3× — Labour Protection Act B.E. 2541 §§23–63
+- [Leave](th/labour/leave.md): annual ≥6 days (after 1 yr); sick up to 30 days; ≥13 public holidays; **maternity 120 days from 7 Dec 2025** (employer pays up to 60), + new 15-day paternity & 15-day childcare leave — LPA No. 9 B.E. 2568
+- [Severance](th/labour/severance.md): 30 / 90 / 180 / 240 / 300 / 400 days' wages by tenure (≥20 yrs = 400, added by the 2019 amendment) — LPA §118
+- [Minimum wage](th/wages/minimum_wage.md): provincial daily ฿337–฿400 (฿400 in Chon Buri/Phuket/Rayong/Chachoengsao/Koh Samui; Bangkok ฿372), effective 1 Jan 2025 — Wage Committee Notification No. 13
+
 ## BIR & SSS issuance catalogs (direct official PDF links)
 
 - [BIR issuance catalog (ph/bir/issuances/INDEX.md)](ph/bir/issuances/INDEX.md): every Revenue Regulation / Memorandum Order / Memorandum Circular, 2022–2026 (894 total), payroll-tagged, each with a direct bir-cdn PDF link
