@@ -106,7 +106,7 @@ The BIR catalog is maintained by an automated job — **[`tools/bir-capture`](to
 ## 🗺️ Coverage & roadmap
 
 - 🇵🇭 **Philippines** — complete (BIR, SSS, PhilHealth, Pag-IBIG, benefits, minimum wage, labor standards + 894 issuances 2022–2026).
-- 🇸🇬 **Singapore** — core complete ([`sg/`](sg/INDEX.md): IRAS income tax, CPF + Skills Development Levy, Employment Act leave/hours/overtime/termination, wage floors). Issuance archive + `data/` JSON layer pending.
+- 🇸🇬 **Singapore** — core complete ([`sg/`](sg/INDEX.md): IRAS income tax, CPF + Skills Development Levy, Employment Act leave/hours/overtime/termination, wage floors) + machine-readable `data/sg_*.json`. Issuance archive pending.
 - 🇺🇸 United States — planned (federal payroll taxes, FICA).
 - Extensions: pre-2022 BIR archive, deep full-text ingestion of payroll-relevant digests.
 

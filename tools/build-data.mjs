@@ -304,6 +304,114 @@ function buildLeaves() {
   };
 }
 
+// ───────────────────────────── SINGAPORE ─────────────────────────────
+// Verified in sg/iras/income_tax_2025.md (IRAS resident schedule, "From YA2024
+// onwards") and sg/cpf/contribution_rates_2025.md (CPF Board rate tables + SDL).
+// Every figure triangulated against the primary source in the 2026-06-29 QA pass.
+const sgTaxBands = [
+  { over: 0, not_over: 20000, base_tax: 0, rate: 0.00, of_excess_over: 0 },
+  { over: 20000, not_over: 30000, base_tax: 0, rate: 0.02, of_excess_over: 20000 },
+  { over: 30000, not_over: 40000, base_tax: 200, rate: 0.035, of_excess_over: 30000 },
+  { over: 40000, not_over: 80000, base_tax: 550, rate: 0.07, of_excess_over: 40000 },
+  { over: 80000, not_over: 120000, base_tax: 3350, rate: 0.115, of_excess_over: 80000 },
+  { over: 120000, not_over: 160000, base_tax: 7950, rate: 0.15, of_excess_over: 120000 },
+  { over: 160000, not_over: 200000, base_tax: 13950, rate: 0.18, of_excess_over: 160000 },
+  { over: 200000, not_over: 240000, base_tax: 21150, rate: 0.19, of_excess_over: 200000 },
+  { over: 240000, not_over: 280000, base_tax: 28750, rate: 0.195, of_excess_over: 240000 },
+  { over: 280000, not_over: 320000, base_tax: 36550, rate: 0.20, of_excess_over: 280000 },
+  { over: 320000, not_over: 500000, base_tax: 44550, rate: 0.22, of_excess_over: 320000 },
+  { over: 500000, not_over: 1000000, base_tax: 84150, rate: 0.23, of_excess_over: 500000 },
+  { over: 1000000, not_over: null, base_tax: 199150, rate: 0.24, of_excess_over: 1000000 },
+];
+const sgTaxOn = (income) => {
+  const b = [...sgTaxBands].reverse().find((x) => income > x.over);
+  return r2(b.base_tax + b.rate * (income - b.of_excess_over));
+};
+function buildSGIncomeTax() {
+  return {
+    topic: 'Singapore resident income tax on chargeable income (From YA2024 onwards)',
+    country: 'SG', effective_date: '2024-01-01', currency: 'SGD', volatility: 'stable',
+    source: {
+      issuance: 'IRAS — Individual Income Tax rates (resident), From YA2024 onwards', source_tier: 'primary',
+      last_verified: '2026-06-29',
+      url: 'https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates',
+      markdown: 'sg/iras/income_tax_2025.md',
+    },
+    notes: 'Resident progressive scale, identical for YA2024/2025/2026. tax = base_tax + rate * (chargeable_income - of_excess_over); base_tax is the cumulative "gross tax payable" at the band floor. Non-resident employment income = higher of 15% flat or the resident scale; non-resident director\'s fees / other income = 24%. Singapore has NO monthly PAYE for residents — the employer reports via IR8A / Auto-Inclusion Scheme by 1 Mar and the individual is assessed and pays directly.',
+    non_resident: { employment_income: 'higher of 15% flat or resident scale', director_fees_other_rate: 0.24 },
+    annual: sgTaxBands,
+    formula: 'tax = base_tax + rate * (chargeable_income - of_excess_over)',
+  };
+}
+
+// CPF rates by age band: [age_band, total %, employer %, employee %]. % of wages
+// for SC/PR (3rd year+), monthly wages > $750. 2027 already published (Budget 2025).
+const sgCpfRates = {
+  '2025': [['55 & below', 37, 17, 20], ['above 55 to 60', 32.5, 15.5, 17], ['above 60 to 65', 23.5, 12, 11.5], ['above 65 to 70', 16.5, 9, 7.5], ['above 70', 12.5, 7.5, 5]],
+  '2026': [['55 & below', 37, 17, 20], ['above 55 to 60', 34, 16, 18], ['above 60 to 65', 25, 12.5, 12.5], ['above 65 to 70', 16.5, 9, 7.5], ['above 70', 12.5, 7.5, 5]],
+  '2027': [['55 & below', 37, 17, 20], ['above 55 to 60', 35.5, 16.5, 19], ['above 60 to 65', 26, 13, 13], ['above 65 to 70', 16.5, 9, 7.5], ['above 70', 12.5, 7.5, 5]],
+};
+const sgOwCeiling = { '2025': 7400, '2026': 8000, '2027': 8000 };
+const sgRateRows = (year) => sgCpfRates[year].map(([age_band, total_pct, employer_pct, employee_pct]) => ({
+  age_band, total_pct, employer_pct, employee_pct,
+  max_total_on_ow: r2(total_pct / 100 * sgOwCeiling[year]),
+  max_employee_on_ow: r2(employee_pct / 100 * sgOwCeiling[year]),
+}));
+function buildSGCpf() {
+  return {
+    topic: 'Singapore CPF contribution rates by age band + Skills Development Levy (SDL)',
+    country: 'SG', effective_date: '2025-01-01', currency: 'SGD', volatility: 'stable',
+    source: {
+      issuance: 'CPF Board — contribution rate tables (1 Jan 2025 / 2026 / 2027)', source_tier: 'primary',
+      last_verified: '2026-06-29',
+      url: 'https://www.cpf.gov.sg/employer/employer-obligations/cpf-contribution-and-allocation-rates',
+      markdown: 'sg/cpf/contribution_rates_2025.md',
+    },
+    notes: 'Rates are % of wages for Singapore Citizens & PRs (full rates from 3rd year of PR), monthly wages > $750. employer_pct + employee_pct = total_pct. CPF is charged on Ordinary Wages up to ow_ceiling, and on Additional Wages up to the AW ceiling = annual_salary_ceiling - total OW subject to CPF. Foreigners/work-pass holders are NOT covered by CPF, but SDL applies to everyone. The 2027 rates are already published — use 2025/2026 for current payroll.',
+    ow_ceiling: sgOwCeiling,
+    annual_salary_ceiling: 102000,
+    coverage: 'Singapore Citizens and Permanent Residents (full rates from 3rd year of PR); foreigners / work-pass holders excluded',
+    rates: { '2025': sgRateRows('2025'), '2026': sgRateRows('2026'), '2027': sgRateRows('2027') },
+    sdl: { rate_pct: 0.25, min: 2, max: 11.25, wage_cap: 4500, applies_to: 'all employees including foreigners', paid_by: 'employer' },
+    formula: 'CPF (wages > $750/mo): total = total_pct% × min(OW, ow_ceiling[year]); employee = employee_pct% × min(OW, ow_ceiling[year]). SDL = clamp(0.25% × min(wage, 4500), $2, $11.25) per employee, employer-paid.',
+  };
+}
+
+// SG validation: arithmetic self-consistency + markdown anchor cross-check + schema.
+async function validateSG(sgTax, sgCpf) {
+  // income-tax cumulative chain (each base = prev base + prev rate × band width)
+  for (let i = 1; i < sgTaxBands.length; i++) {
+    const p = sgTaxBands[i - 1], c = sgTaxBands[i];
+    assert(r2(p.base_tax + p.rate * (c.over - p.of_excess_over)) === c.base_tax, `SG income-tax base chain breaks at bracket ${i}`);
+  }
+  assert(sgTaxOn(120000) === 7950, 'SG income-tax anchor 120k → 7,950');
+  assert(sgTaxOn(320000) === 44550, 'SG income-tax anchor 320k → 44,550');
+  assert(sgTaxOn(1000000) === 199150, 'SG income-tax anchor 1M → 199,150');
+  // CPF: each row employer+employee=total; max-contribution arithmetic
+  for (const [year, rows] of Object.entries(sgCpf.rates)) {
+    for (const row of rows) {
+      assert(r3(row.employer_pct + row.employee_pct) === row.total_pct, `SG CPF ${year} ${row.age_band}: employer+employee≠total`);
+      assert(row.max_total_on_ow === r2(row.total_pct / 100 * sgCpf.ow_ceiling[year]), `SG CPF ${year} ${row.age_band}: max_total arithmetic`);
+    }
+  }
+  const c25 = sgCpf.rates['2025'][0], c26 = sgCpf.rates['2026'][0];
+  assert(c25.max_total_on_ow === 2738 && c25.max_employee_on_ow === 1480, 'SG CPF 2025 ≤55 max (2,738 / 1,480)');
+  assert(c26.max_total_on_ow === 2960 && c26.max_employee_on_ow === 1600, 'SG CPF 2026 ≤55 max (2,960 / 1,600)');
+  assert(r2(sgCpf.sdl.rate_pct / 100 * sgCpf.sdl.wage_cap) === sgCpf.sdl.max, 'SG SDL max = 0.25% × 4,500 = 11.25');
+  // anchor cross-check against the source markdown
+  const taxMd = await readMd('sg/iras/income_tax_2025.md');
+  assert(/199,150/.test(taxMd), 'SG income-tax 199,150 anchor drift vs markdown');
+  assert(/44,550/.test(taxMd), 'SG income-tax 44,550 anchor drift vs markdown');
+  assert(/24%/.test(taxMd), 'SG income-tax 24% top-rate anchor drift vs markdown');
+  const cpfMd = await readMd('sg/cpf/contribution_rates_2025.md');
+  assert(/\$7,400/.test(cpfMd) && sgCpf.ow_ceiling['2025'] === 7400, 'SG CPF OW $7,400 drift vs markdown');
+  assert(/\$8,000/.test(cpfMd) && sgCpf.ow_ceiling['2026'] === 8000, 'SG CPF OW $8,000 drift vs markdown');
+  assert(/35\.5/.test(cpfMd), 'SG CPF 2027 senior band 35.5 drift vs markdown');
+  assert(/11\.25/.test(cpfMd) && sgCpf.sdl.max === 11.25, 'SG SDL $11.25 drift vs markdown');
+  checkSchema(sgTax, 'sg_income_tax');
+  checkSchema(sgCpf, 'sg_cpf');
+}
+
 // Dependency-free conformance check against schemas/payroll-data.schema.json:
 // the envelope every rate file must satisfy (topic, country, and a provenance source block).
 function checkSchema(obj, name) {
@@ -403,8 +511,11 @@ const pagibig = buildPagibig(), m13 = buildThirteenth(), minw = buildMinWage();
 const examples = buildExamples();
 const premium = buildPremiumPay();
 const leaves = buildLeaves();
+const sgTax = buildSGIncomeTax();
+const sgCpf = buildSGCpf();
 
 await validate(sss, tax, ph, pagibig, m13, minw, examples, premium, leaves);
+await validateSG(sgTax, sgCpf);
 
 if (fails.length) {
   console.error(`\n❌ build-data: ${fails.length} validation failure(s) — JSON would drift from the markdown:`);
@@ -422,10 +533,12 @@ const files = {
   'premium_pay.json': premium,
   'leaves.json': leaves,
   'examples.json': examples,
+  'sg_income_tax_2025.json': sgTax,
+  'sg_cpf_2025.json': sgCpf,
 };
 const index = {
-  name: 'Philippine Payroll Knowledge Base — machine-readable data layer',
-  description: 'JSON parse-layer generated from (and validated against) the verified markdown in ph/**. The markdown is the human/AI reading layer and the source of truth; these files are for programmatic use. Regenerate with `node tools/build-data.mjs`.',
+  name: 'Payroll Knowledge Base — machine-readable data layer',
+  description: 'JSON parse-layer generated from (and validated against) the verified markdown in ph/** and sg/**. The markdown is the human/AI reading layer and the source of truth; these files are for programmatic use. Regenerate with `node tools/build-data.mjs`.',
   generated_by: 'tools/build-data.mjs',
   files: Object.entries(files).map(([f, d]) => ({
     file: `data/${f}`, topic: d.topic, effective_date: d.effective_date || d.matrix_as_of || null,

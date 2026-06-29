@@ -53,7 +53,7 @@ For repo / issuance indexing:
 | Code | Country | Status |
 |------|---------|--------|
 | `ph` | Philippines | **Complete** — BIR, SSS, PhilHealth, Pag-IBIG, benefits, minimum wage + 894 issuances + 142 SSS circulars |
-| `sg` | Singapore | **Core complete** — IRAS income tax, CPF + SDL, Employment Act (leave, hours/OT, termination), wage floors. See [`sg/INDEX.md`](sg/INDEX.md). Issuance archive + `data/` JSON pending |
+| `sg` | Singapore | **Core complete** — IRAS income tax, CPF + SDL, Employment Act (leave, hours/OT, termination), wage floors + `data/sg_*.json`. See [`sg/INDEX.md`](sg/INDEX.md). Issuance archive pending |
 | `us` | United States | Planned — federal payroll taxes, FICA |
 
 ## Contributing / maintenance

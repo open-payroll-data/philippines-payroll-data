@@ -8,7 +8,7 @@ effective_date_end:
 source: "BIR Revenue Regulations No. 29-2025 — further amends the 'de minimis' benefits provisions of RR 2-98 (as amended by RR 11-2018), raising the non-taxable ceilings; issued 22 Dec 2025, effective 6 January 2026 — https://bir-cdn.bir.gov.ph/BIR/pdf/RR%20No.%2029-2025.pdf"
 source_tier: primary
 last_verified: 2026-06-29
-verified_from: "Updated to BIR RR 29-2025 (effective 6 Jan 2026), which raised the de minimis ceilings. The BIR primary PDF is a scanned image (cataloged in our archive at ph/bir/issuances/rr/2025.md with the official bir-cdn link); the new per-item amounts were cross-verified against two independent authoritative tax-firm reproductions (Grant Thornton PH and a payroll-compliance guide) that agree exactly. The prior values cited RR 11-2018 and are now superseded."
+verified_from: "Updated to BIR RR 29-2025 (effective 6 Jan 2026), which raised the de minimis ceilings. RR 29-2025 AND the intermediate RR 4-2025 were read DIRECTLY from the scanned BIR PDFs (rendered to images at high zoom on 2026-06-29) — confirmed verbatim: RR 4-2025 (issued 30 Jan 2025, eff 14 Feb 2025) raised ONLY uniform/clothing (₱6,000→₱7,000) and reworded achievement-awards (h) to allow cash/gift-cert form; RR 29-2025 then set the broader new ceilings incl. uniform ₱7,000→₱8,000. Per-item amounts also corroborated against independent tax-firm reproductions. Uniform lineage: ₱6,000 (RR 11-2018) → ₱7,000 (RR 4-2025) → ₱8,000 (RR 29-2025)."
 tags: [de-minimis, non-taxable, benefits, bir, tax-exempt, ceiling, 2026, rr-29-2025, rr-11-2018]
 ---
 
@@ -35,7 +35,7 @@ De minimis benefits are small amounts given to employees that the BIR treats as 
 | 5 | Uniform and clothing allowance | **₱8,000/year** | For uniforms required by the employer (RR 29-2025 raised it from ₱7,000; lineage: ₱6,000 under RR 11-2018 → ₱7,000 under RR 4-2025 eff 14 Feb 2025 → ₱8,000) |
 | 6 | Actual medical assistance | **₱12,000/year** | Cash assistance for the employee's own medical needs (raised from ₱10,000) |
 | 7 | Laundry allowance | **₱400/month** | Must be related to work-uniform laundering (raised from ₱300) |
-| 8 | Employee achievement awards (tangible, non-cash) | **₱12,000/year** | Length-of-service or safety achievement; non-cash only (raised from ₱10,000) |
+| 8 | Employee achievement awards | **₱12,000/year** | Length-of-service or safety achievement under an established written plan. RR 4-2025 reworded the allowable form to **cash, gift certificate, or tangible personal property** (previously tangible/non-cash only); RR 29-2025 then raised the ceiling from ₱10,000 to ₱12,000 |
 | 9 | Gifts given in celebration of Christmas, major anniversary | **₱6,000/year** | Cash or gift checks; for the specific occasion (raised from ₱5,000) |
 | 10 | Daily meal allowance for overtime and night/graveyard shift | **30% of applicable minimum wage** per region | Per day of actual OT/night-shift work (raised from 25%) |
 | 11 | CBA benefits + productivity incentive schemes (combined) | **₱12,000/year** | Combined annual ceiling (raised from ₱10,000) |

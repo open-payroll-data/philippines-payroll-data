@@ -1,0 +1,159 @@
+{
+  "topic": "Singapore CPF contribution rates by age band + Skills Development Levy (SDL)",
+  "country": "SG",
+  "effective_date": "2025-01-01",
+  "currency": "SGD",
+  "volatility": "stable",
+  "source": {
+    "issuance": "CPF Board — contribution rate tables (1 Jan 2025 / 2026 / 2027)",
+    "source_tier": "primary",
+    "last_verified": "2026-06-29",
+    "url": "https://www.cpf.gov.sg/employer/employer-obligations/cpf-contribution-and-allocation-rates",
+    "markdown": "sg/cpf/contribution_rates_2025.md"
+  },
+  "notes": "Rates are % of wages for Singapore Citizens & PRs (full rates from 3rd year of PR), monthly wages > $750. employer_pct + employee_pct = total_pct. CPF is charged on Ordinary Wages up to ow_ceiling, and on Additional Wages up to the AW ceiling = annual_salary_ceiling - total OW subject to CPF. Foreigners/work-pass holders are NOT covered by CPF, but SDL applies to everyone. The 2027 rates are already published — use 2025/2026 for current payroll.",
+  "ow_ceiling": {
+    "2025": 7400,
+    "2026": 8000,
+    "2027": 8000
+  },
+  "annual_salary_ceiling": 102000,
+  "coverage": "Singapore Citizens and Permanent Residents (full rates from 3rd year of PR); foreigners / work-pass holders excluded",
+  "rates": {
+    "2025": [
+      {
+        "age_band": "55 & below",
+        "total_pct": 37,
+        "employer_pct": 17,
+        "employee_pct": 20,
+        "max_total_on_ow": 2738,
+        "max_employee_on_ow": 1480
+      },
+      {
+        "age_band": "above 55 to 60",
+        "total_pct": 32.5,
+        "employer_pct": 15.5,
+        "employee_pct": 17,
+        "max_total_on_ow": 2405,
+        "max_employee_on_ow": 1258
+      },
+      {
+        "age_band": "above 60 to 65",
+        "total_pct": 23.5,
+        "employer_pct": 12,
+        "employee_pct": 11.5,
+        "max_total_on_ow": 1739,
+        "max_employee_on_ow": 851
+      },
+      {
+        "age_band": "above 65 to 70",
+        "total_pct": 16.5,
+        "employer_pct": 9,
+        "employee_pct": 7.5,
+        "max_total_on_ow": 1221,
+        "max_employee_on_ow": 555
+      },
+      {
+        "age_band": "above 70",
+        "total_pct": 12.5,
+        "employer_pct": 7.5,
+        "employee_pct": 5,
+        "max_total_on_ow": 925,
+        "max_employee_on_ow": 370
+      }
+    ],
+    "2026": [
+      {
+        "age_band": "55 & below",
+        "total_pct": 37,
+        "employer_pct": 17,
+        "employee_pct": 20,
+        "max_total_on_ow": 2960,
+        "max_employee_on_ow": 1600
+      },
+      {
+        "age_band": "above 55 to 60",
+        "total_pct": 34,
+        "employer_pct": 16,
+        "employee_pct": 18,
+        "max_total_on_ow": 2720,
+        "max_employee_on_ow": 1440
+      },
+      {
+        "age_band": "above 60 to 65",
+        "total_pct": 25,
+        "employer_pct": 12.5,
+        "employee_pct": 12.5,
+        "max_total_on_ow": 2000,
+        "max_employee_on_ow": 1000
+      },
+      {
+        "age_band": "above 65 to 70",
+        "total_pct": 16.5,
+        "employer_pct": 9,
+        "employee_pct": 7.5,
+        "max_total_on_ow": 1320,
+        "max_employee_on_ow": 600
+      },
+      {
+        "age_band": "above 70",
+        "total_pct": 12.5,
+        "employer_pct": 7.5,
+        "employee_pct": 5,
+        "max_total_on_ow": 1000,
+        "max_employee_on_ow": 400
+      }
+    ],
+    "2027": [
+      {
+        "age_band": "55 & below",
+        "total_pct": 37,
+        "employer_pct": 17,
+        "employee_pct": 20,
+        "max_total_on_ow": 2960,
+        "max_employee_on_ow": 1600
+      },
+      {
+        "age_band": "above 55 to 60",
+        "total_pct": 35.5,
+        "employer_pct": 16.5,
+        "employee_pct": 19,
+        "max_total_on_ow": 2840,
+        "max_employee_on_ow": 1520
+      },
+      {
+        "age_band": "above 60 to 65",
+        "total_pct": 26,
+        "employer_pct": 13,
+        "employee_pct": 13,
+        "max_total_on_ow": 2080,
+        "max_employee_on_ow": 1040
+      },
+      {
+        "age_band": "above 65 to 70",
+        "total_pct": 16.5,
+        "employer_pct": 9,
+        "employee_pct": 7.5,
+        "max_total_on_ow": 1320,
+        "max_employee_on_ow": 600
+      },
+      {
+        "age_band": "above 70",
+        "total_pct": 12.5,
+        "employer_pct": 7.5,
+        "employee_pct": 5,
+        "max_total_on_ow": 1000,
+        "max_employee_on_ow": 400
+      }
+    ]
+  },
+  "sdl": {
+    "rate_pct": 0.25,
+    "min": 2,
+    "max": 11.25,
+    "wage_cap": 4500,
+    "applies_to": "all employees including foreigners",
+    "paid_by": "employer"
+  },
+  "formula": "CPF (wages > $750/mo): total = total_pct% × min(OW, ow_ceiling[year]); employee = employee_pct% × min(OW, ow_ceiling[year]). SDL = clamp(0.25% × min(wage, 4500), $2, $11.25) per employee, employer-paid."
+}

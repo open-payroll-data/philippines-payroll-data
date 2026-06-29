@@ -1,0 +1,113 @@
+{
+  "topic": "Singapore resident income tax on chargeable income (From YA2024 onwards)",
+  "country": "SG",
+  "effective_date": "2024-01-01",
+  "currency": "SGD",
+  "volatility": "stable",
+  "source": {
+    "issuance": "IRAS — Individual Income Tax rates (resident), From YA2024 onwards",
+    "source_tier": "primary",
+    "last_verified": "2026-06-29",
+    "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+    "markdown": "sg/iras/income_tax_2025.md"
+  },
+  "notes": "Resident progressive scale, identical for YA2024/2025/2026. tax = base_tax + rate * (chargeable_income - of_excess_over); base_tax is the cumulative \"gross tax payable\" at the band floor. Non-resident employment income = higher of 15% flat or the resident scale; non-resident director's fees / other income = 24%. Singapore has NO monthly PAYE for residents — the employer reports via IR8A / Auto-Inclusion Scheme by 1 Mar and the individual is assessed and pays directly.",
+  "non_resident": {
+    "employment_income": "higher of 15% flat or resident scale",
+    "director_fees_other_rate": 0.24
+  },
+  "annual": [
+    {
+      "over": 0,
+      "not_over": 20000,
+      "base_tax": 0,
+      "rate": 0,
+      "of_excess_over": 0
+    },
+    {
+      "over": 20000,
+      "not_over": 30000,
+      "base_tax": 0,
+      "rate": 0.02,
+      "of_excess_over": 20000
+    },
+    {
+      "over": 30000,
+      "not_over": 40000,
+      "base_tax": 200,
+      "rate": 0.035,
+      "of_excess_over": 30000
+    },
+    {
+      "over": 40000,
+      "not_over": 80000,
+      "base_tax": 550,
+      "rate": 0.07,
+      "of_excess_over": 40000
+    },
+    {
+      "over": 80000,
+      "not_over": 120000,
+      "base_tax": 3350,
+      "rate": 0.115,
+      "of_excess_over": 80000
+    },
+    {
+      "over": 120000,
+      "not_over": 160000,
+      "base_tax": 7950,
+      "rate": 0.15,
+      "of_excess_over": 120000
+    },
+    {
+      "over": 160000,
+      "not_over": 200000,
+      "base_tax": 13950,
+      "rate": 0.18,
+      "of_excess_over": 160000
+    },
+    {
+      "over": 200000,
+      "not_over": 240000,
+      "base_tax": 21150,
+      "rate": 0.19,
+      "of_excess_over": 200000
+    },
+    {
+      "over": 240000,
+      "not_over": 280000,
+      "base_tax": 28750,
+      "rate": 0.195,
+      "of_excess_over": 240000
+    },
+    {
+      "over": 280000,
+      "not_over": 320000,
+      "base_tax": 36550,
+      "rate": 0.2,
+      "of_excess_over": 280000
+    },
+    {
+      "over": 320000,
+      "not_over": 500000,
+      "base_tax": 44550,
+      "rate": 0.22,
+      "of_excess_over": 320000
+    },
+    {
+      "over": 500000,
+      "not_over": 1000000,
+      "base_tax": 84150,
+      "rate": 0.23,
+      "of_excess_over": 500000
+    },
+    {
+      "over": 1000000,
+      "not_over": null,
+      "base_tax": 199150,
+      "rate": 0.24,
+      "of_excess_over": 1000000
+    }
+  ],
+  "formula": "tax = base_tax + rate * (chargeable_income - of_excess_over)"
+}

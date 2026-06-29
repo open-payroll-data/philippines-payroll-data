@@ -20,6 +20,9 @@ export const minWage2025 = require('./data/min_wage_2025.json');
 export const premiumPay = require('./data/premium_pay.json');
 export const leaves = require('./data/leaves.json');
 export const examples = require('./data/examples.json');
+// Singapore (sg/) tables
+export const sgIncomeTax2025 = require('./data/sg_income_tax_2025.json');
+export const sgCpf2025 = require('./data/sg_cpf_2025.json');
 export const index = require('./data/index.json');
 
 export default {
@@ -32,5 +35,7 @@ export default {
   premiumPay,
   leaves,
   examples,
+  sgIncomeTax2025,
+  sgCpf2025,
   index,
 };

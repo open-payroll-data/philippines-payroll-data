@@ -20,8 +20,10 @@ Match the question to a row, open that one file. Don't scan the repo.
 | **Termination notice, retrenchment** benefit & MOM notification, AWS / "13th month" | [employment-act/termination_and_retrenchment.md](employment-act/termination_and_retrenchment.md) |
 | **Minimum wage** / wage floor — LQS, Progressive Wage Model | [wages/wage_floors.md](wages/wage_floors.md) |
 | **When/where** gov't rates change (monitoring sources) | [../SCHEMA.md](../SCHEMA.md) → Golden sources |
+| **Exact numbers for software / a payroll calculation** (typed JSON: SG income-tax bands + CPF rates/SDL, generated from + validated against these files) | [`../data/sg_income_tax_2025.json`](../data/sg_income_tax_2025.json) · [`../data/sg_cpf_2025.json`](../data/sg_cpf_2025.json) |
 
 > Every target file opens with frontmatter (rates, effective dates, source, `last_verified`) and a `## Summary`. Read those two first — they answer most questions without reading the whole file.
+> For **computation**, use the typed `data/sg_*.json` tables (don't parse the markdown tables for numbers). Markdown = source of truth + reasoning; `data/` = parse layer.
 
 ---
 

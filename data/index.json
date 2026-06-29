@@ -1,6 +1,6 @@
 {
-  "name": "Philippine Payroll Knowledge Base — machine-readable data layer",
-  "description": "JSON parse-layer generated from (and validated against) the verified markdown in ph/**. The markdown is the human/AI reading layer and the source of truth; these files are for programmatic use. Regenerate with `node tools/build-data.mjs`.",
+  "name": "Payroll Knowledge Base — machine-readable data layer",
+  "description": "JSON parse-layer generated from (and validated against) the verified markdown in ph/** and sg/**. The markdown is the human/AI reading layer and the source of truth; these files are for programmatic use. Regenerate with `node tools/build-data.mjs`.",
   "generated_by": "tools/build-data.mjs",
   "files": [
     {
@@ -74,6 +74,22 @@
       "volatility": "stable",
       "source_markdown": "ph/bir/income_tax_table_2025.md",
       "source_issuance": "Derived from the data/ rate files (SSS Circular 2024-006, BIR RR 8-2018, PhilHealth PA2025-0002, HDMF Circular 460)"
+    },
+    {
+      "file": "data/sg_income_tax_2025.json",
+      "topic": "Singapore resident income tax on chargeable income (From YA2024 onwards)",
+      "effective_date": "2024-01-01",
+      "volatility": "stable",
+      "source_markdown": "sg/iras/income_tax_2025.md",
+      "source_issuance": "IRAS — Individual Income Tax rates (resident), From YA2024 onwards"
+    },
+    {
+      "file": "data/sg_cpf_2025.json",
+      "topic": "Singapore CPF contribution rates by age band + Skills Development Levy (SDL)",
+      "effective_date": "2025-01-01",
+      "volatility": "stable",
+      "source_markdown": "sg/cpf/contribution_rates_2025.md",
+      "source_issuance": "CPF Board — contribution rate tables (1 Jan 2025 / 2026 / 2027)"
     }
   ]
 }
