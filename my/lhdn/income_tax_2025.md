@@ -46,6 +46,7 @@ LHDN publishes one table for YA2023–YA2025; the employment-income scale is **i
 **Top marginal rate: 30%**, on chargeable income above RM2,000,000.
 
 > **Budget 2025 note:** the employment-income scale did **not** change. The widely reported Budget 2025 measure is a **separate 2% tax on individual dividend income above RM100,000** (YA2025) — it does **not** affect salary or MTD/PCB.
+> **YA2026:** the resident scale above is **unchanged** for YA2026 (Budget 2026 widened the dividend regime to LLP distributions and broadened a few reliefs, none of which alter the salary brackets); re-confirm the **relief amounts** for a YA2026 computation.
 
 ---
 
