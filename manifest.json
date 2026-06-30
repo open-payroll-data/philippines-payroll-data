@@ -15,7 +15,7 @@
     "ph/bir/issuances/issuances.json": "Every BIR RR/RMO/RMC issuance (2022-2026), one record each (number, type, year, date, subject, payroll tag, source PDF links).",
     "ph/sss/circulars.json": "Every SSS circular (2020-2026), one record each (number, year, title, payroll tag, PDF link)."
   },
-  "file_count": 70,
+  "file_count": 77,
   "files": [
     {
       "path": "AGENTS.md",
@@ -1338,6 +1338,138 @@
       "volatility": "stable",
       "last_verified": null,
       "tags": []
+    },
+    {
+      "path": "vn/INDEX.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "vn/insurance/contributions.md",
+      "country": "vn",
+      "category": "insurance",
+      "record_type": "topic",
+      "topic": "Vietnam compulsory insurances — Social (BHXH), Health (BHYT), Unemployment (BHTN); rates, wage caps, foreign workers",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "social-insurance",
+        "bhxh",
+        "health-insurance",
+        "bhyt",
+        "unemployment",
+        "bhtn",
+        "wage-cap",
+        "reference-level",
+        "foreign-workers",
+        "vss",
+        "2025",
+        "2026"
+      ]
+    },
+    {
+      "path": "vn/labour/leave.md",
+      "country": "vn",
+      "category": "labour",
+      "record_type": "topic",
+      "topic": "Vietnam annual leave, public holidays, and maternity/paternity leave",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "labour",
+        "annual-leave",
+        "public-holidays",
+        "maternity",
+        "paternity",
+        "labour-code-2019",
+        "vietnam"
+      ]
+    },
+    {
+      "path": "vn/labour/severance.md",
+      "country": "vn",
+      "category": "labour",
+      "record_type": "topic",
+      "topic": "Vietnam severance allowance and job-loss (redundancy) allowance (Labour Code 2019)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "labour",
+        "severance",
+        "redundancy",
+        "job-loss-allowance",
+        "unemployment-insurance",
+        "labour-code-2019",
+        "vietnam"
+      ]
+    },
+    {
+      "path": "vn/labour/working_hours_overtime.md",
+      "country": "vn",
+      "category": "labour",
+      "record_type": "topic",
+      "topic": "Vietnam working hours and overtime pay (Labour Code 2019)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "labour",
+        "labour-code-2019",
+        "working-hours",
+        "overtime",
+        "night-work",
+        "vietnam",
+        "45-2019"
+      ]
+    },
+    {
+      "path": "vn/tax/income_tax_2025.md",
+      "country": "vn",
+      "category": "tax",
+      "record_type": "topic",
+      "topic": "Vietnam personal income tax (PIT/TNCN) on employment income — resident 7-bracket scale, personal deductions (raised for 2026), non-resident 20%, monthly withholding",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "income-tax",
+        "pit",
+        "tncn",
+        "personal-deduction",
+        "resolution-110-2025",
+        "non-resident",
+        "withholding",
+        "gdt",
+        "2026"
+      ]
+    },
+    {
+      "path": "vn/wages/minimum_wage.md",
+      "country": "vn",
+      "category": "wages",
+      "record_type": "topic",
+      "topic": "Vietnam regional minimum wage — 4 regions (Decree 293/2025/ND-CP, effective 1 Jan 2026)",
+      "source_tier": "primary",
+      "volatility": "continuously-changing",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "minimum-wage",
+        "wage-floor",
+        "regional",
+        "decree-293-2025",
+        "four-regions",
+        "vietnam",
+        "2026"
+      ]
     }
   ]
 }

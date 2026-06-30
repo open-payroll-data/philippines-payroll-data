@@ -138,11 +138,25 @@ Full index: [`id/INDEX.md`](id/INDEX.md)
 
 ---
 
+## Vietnam (`vn/`)
+
+Full index: [`vn/INDEX.md`](vn/INDEX.md)
+
+| File | Summary |
+|------|---------|
+| [`vn/tax/income_tax_2025.md`](vn/tax/income_tax_2025.md) | PIT 5–35% (7 brackets), personal deductions raised for 2026 (15.5M/6.2M), non-resident 20%, withholding |
+| [`vn/insurance/contributions.md`](vn/insurance/contributions.md) | Social + Health + Unemployment insurance (employee 10.5% / employer 21.5%), 46.8M cap, foreign-worker rule |
+| [`vn/labour/working_hours_overtime.md`](vn/labour/working_hours_overtime.md) | 8h/48h week, overtime 150/200/300% + caps — Labour Code 2019 |
+| [`vn/labour/leave.md`](vn/labour/leave.md) | Annual leave (12 + 1/5yr), 11 public holidays, maternity (6 months), paternity |
+| [`vn/labour/severance.md`](vn/labour/severance.md) | Severance (½ month/yr) + redundancy (1 month/yr) allowances |
+| [`vn/wages/minimum_wage.md`](vn/wages/minimum_wage.md) | 4-region minimum wage (Decree 293/2025, from 1 Jan 2026; Region I 5,310,000) |
+
+---
+
 ## Coming soon
 
-- `vn/` — Vietnam (Southeast Asia rollout continues)
 - `us/` — Federal payroll taxes, FICA, state examples
 
 ---
 
-_Last updated: 2026-06-29_
+_Last updated: 2026-06-30_

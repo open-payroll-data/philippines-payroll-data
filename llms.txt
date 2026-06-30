@@ -73,6 +73,17 @@ Start at the Indonesia answer router (`id/INDEX.md`). Currency IDR (Rp); authori
 - [Severance](id/labour/severance.md): uang pesangon 1–9× monthly wage by tenure + uang penghargaan masa kerja 2–10×, multiplied by a reason-specific factor — PP 35/2021
 - [Minimum wage](id/wages/minimum_wage.md): provincial UMP + regency/city UMK, set yearly (eff 1 Jan); 2026 = per-region growth formula (PP 49/2025); Jakarta UMP 2026 = Rp5,729,876 — Kemnaker / SK Gubernur
 
+## Vietnam — rule & rate files (verified, source_tier: primary)
+
+Start at the Vietnam answer router (`vn/INDEX.md`). Currency VND; authorities GDT (tax), VSS (Social/Health/Unemployment insurance), MOLISA (Labour Code 2019). Primary sources are Vietnamese-language (chinhphu.vn statute PDFs 403 to bots; confirm via the official policy portal + Official Gazette).
+
+- [Income tax PIT](vn/tax/income_tax_2025.md): resident 7-bracket monthly 5%–35% (top 35% above 80,000,000 VND/mo); personal deduction RAISED from 1 Jan 2026 to 15,500,000/mo self + 6,200,000/mo per dependent (Resolution 110/2025; was 11M/4.4M through 2025); compulsory insurance deductible pre-tax; non-resident flat 20%; monthly PAYE withholding (10% flat for <3-month/no-contract payments ≥2M) — GDT
+- [Compulsory insurances](vn/insurance/contributions.md): Social BHXH 8% employee + 17.5% employer (incl 0.5% occupational accident), Health BHYT 1.5% + 3%, Unemployment BHTN 1% + 1% → employee 10.5% / employer 21.5%; SI+HI capped at 20× reference level (= base salary 2,340,000 → 46,800,000/mo), UI capped at 20× regional minimum wage; foreigners pay SI+HI but not UI (9.5% / 20.5%) — VSS, Law 41/2024/QH15
+- [Hours & overtime](vn/labour/working_hours_overtime.md): 8h/day, 48h/week (40h encouraged); overtime 150% normal day / 200% rest day / 300% public holiday, night +30%, night-OT +20%; caps ≤50%/day, ≤40h/month, ≤200h/year (300 for listed sectors) — Labour Code 2019 Art. 98/105/107
+- [Leave](vn/labour/leave.md): annual 12 days (14/16 arduous) + 1 per 5 years; 11 public holidays; maternity 6 months at 100% via Social Insurance; paternity 5/7/10/14 days — Labour Code 2019 + SI Law
+- [Severance](vn/labour/severance.md): severance allowance ½ month/year of service (Art. 46) + job-loss/redundancy allowance 1 month/year, min 2 (Art. 47), both net of unemployment-insurance-covered years — Labour Code 2019
+- [Minimum wage](vn/wages/minimum_wage.md): 4 regions, Decree 293/2025/ND-CP effective 1 Jan 2026 (replaced Decree 74/2024) — Region I 5,310,000 / II 4,730,000 / III 4,140,000 / IV 3,700,000 VND/month — Government of Vietnam
+
 ## BIR & SSS issuance catalogs (direct official PDF links)
 
 - [BIR issuance catalog (ph/bir/issuances/INDEX.md)](ph/bir/issuances/INDEX.md): every Revenue Regulation / Memorandum Order / Memorandum Circular, 2022–2026 (894 total), payroll-tagged, each with a direct bir-cdn PDF link

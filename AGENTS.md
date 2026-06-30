@@ -57,7 +57,7 @@ For repo / issuance indexing:
 | `my` | Malaysia | **Core complete** — LHDN income tax + MTD/PCB, EPF, SOCSO + EIS, HRD Corp levy, Employment Act, RM1,700 min wage. See [`my/INDEX.md`](my/INDEX.md). `data/` JSON pending |
 | `th` | Thailand | **Core complete** — Revenue Dept PIT + PND.1 withholding, SSF + Workmen's Comp, Labour Protection Act (hours/leave/severance), provincial min wage. See [`th/INDEX.md`](th/INDEX.md). `data/` JSON pending |
 | `id` | Indonesia | **Core complete** — PPh 21 + TER monthly method, BPJS Ketenagakerjaan + Kesehatan, PP 35/2021 (hours/leave/THR/severance), UMP/UMK min wage. See [`id/INDEX.md`](id/INDEX.md). `data/` JSON pending |
-| `vn` | Vietnam | Planned — Southeast Asia rollout |
+| `vn` | Vietnam | **Core complete** — PIT + 2026 personal deductions, Social/Health/Unemployment insurance, Labour Code 2019 (hours/leave/severance), 4-region min wage. See [`vn/INDEX.md`](vn/INDEX.md). `data/` JSON pending |
 | `us` | United States | Planned — federal payroll taxes, FICA |
 
 ## Contributing / maintenance

@@ -100,6 +100,17 @@ Always verify and cite from these official agency channels — never a summary s
 
 > ID primary sources are **Bahasa Indonesia**; many are scanned/JS-gated PDFs on peraturan.bpk.go.id (403 to bots) — read the Kemnaker JDIH text-layer PDFs where possible, and pull volatile figures (JP cap, UMP) from the dated Surat Edaran / SK Gubernur. The full **TER rate grids** are in a scanned PMK 168/2023 PDF (use the DJP TER tables/calculator for the monthly rate).
 
+**Vietnam golden sources (monitor + cite):**
+
+| Agency | Golden source | Change cadence |
+|--------|---------------|----------------|
+| GDT (income tax) | Law 04/2007/QH12 (Art. 22/26); Resolution 110/2025 (deductions); Circular 111/2013 — chinhphu.vn | **Personal deduction raised to 15.5M/6.2M from 2026** (Resolution 110/2025); 7→5-bracket reform is a draft only |
+| VSS (insurances) | Law on Social Insurance **41/2024/QH15** (eff 1 Jul 2025); Decree 73/2024 (base salary) — baohiemxahoi.gov.vn | Rates stable; "base salary"→"reference level" rename (2,340,000); watch the reference level |
+| MOLISA (Labour Code) | Labour Code 2019 (Law 45/2019/QH14) + Decree 145/2020 — molisa.gov.vn | Stable; English text is reference-translation only (binding text Vietnamese) |
+| Government decree (minimum wage) | **Decree 293/2025/ND-CP** (eff 1 Jan 2026; replaced Decree 74/2024) — vanban.chinhphu.vn | Revised ~yearly by decree; re-pull each cycle |
+
+> VN primary sources are **Vietnamese-language**; chinhphu.vn statute PDFs are 403/binary to bots — confirm via the official government policy portal (xaydungchinhsach.chinhphu.vn) + Official Gazette (congbao.chinhphu.vn), and archive the issuance PDFs. No single official English Labour Code exists (use the reference translations, cross-checked).
+
 **Note on scanned PDFs:** Some issuances (e.g. SSS circulars) are image-only scans with no text layer — a plain text fetch returns nothing. They must be rendered to images and read visually (or OCR'd). This is exactly the friction this KB removes for every downstream AI.
 
 ## Trust signals — make every derived file self-verifying
@@ -162,6 +173,15 @@ Why it matters: the sources are scanned image PDFs that an AI's own OCR reads *w
 | `bpjs` | BPJS Ketenagakerjaan (JHT/JKK/JKM/JP) + BPJS Kesehatan (health) |
 | `labour` | Manpower Law / PP 35/2021 — hours, overtime, leave, THR, severance (shared with TH) |
 | `wages` | UMP/UMK provincial minimum wage (shared `wages` category) |
+
+**Vietnam (`vn/`) categories:**
+
+| Code | Covers |
+|------|--------|
+| `tax` | GDT — personal income tax (PIT/TNCN), personal deductions, monthly withholding |
+| `insurance` | VSS — Social (BHXH) + Health (BHYT) + Unemployment (BHTN) insurance |
+| `labour` | Labour Code 2019 — hours, overtime, leave, severance |
+| `wages` | 4-region minimum wage (government decree) — shared `wages` category |
 
 ## Tag vocabulary (reuse these for consistency)
 
