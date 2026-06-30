@@ -1,0 +1,75 @@
+{
+  "topic": "Thailand personal income tax (PIT) on net income",
+  "country": "TH",
+  "effective_date": "2017-01-01",
+  "currency": "THB",
+  "volatility": "stable",
+  "source": {
+    "issuance": "Thai Revenue Department — PIT rates (2024 PND.91 guide)",
+    "source_tier": "primary",
+    "last_verified": "2026-06-29",
+    "markdown": "th/revenue/income_tax_2025.md",
+    "url": "https://www.rd.go.th/fileadmin/download/english_form/2024/GUIDE_91_67_Complete.pdf"
+  },
+  "notes": "tax = base_tax + rate*(net_income - of_excess_over). Net income = gross - 50%/100,000 expense deduction - allowances. Non-resident employment income = flat 20% (withheld). Employer withholds monthly (PND.1, within 7 days of month-end).",
+  "non_resident_rate": 0.2,
+  "annual": [
+    {
+      "over": 0,
+      "not_over": 150000,
+      "base_tax": 0,
+      "rate": 0,
+      "of_excess_over": 0
+    },
+    {
+      "over": 150000,
+      "not_over": 300000,
+      "base_tax": 0,
+      "rate": 0.05,
+      "of_excess_over": 150000
+    },
+    {
+      "over": 300000,
+      "not_over": 500000,
+      "base_tax": 7500,
+      "rate": 0.1,
+      "of_excess_over": 300000
+    },
+    {
+      "over": 500000,
+      "not_over": 750000,
+      "base_tax": 27500,
+      "rate": 0.15,
+      "of_excess_over": 500000
+    },
+    {
+      "over": 750000,
+      "not_over": 1000000,
+      "base_tax": 65000,
+      "rate": 0.2,
+      "of_excess_over": 750000
+    },
+    {
+      "over": 1000000,
+      "not_over": 2000000,
+      "base_tax": 115000,
+      "rate": 0.25,
+      "of_excess_over": 1000000
+    },
+    {
+      "over": 2000000,
+      "not_over": 5000000,
+      "base_tax": 365000,
+      "rate": 0.3,
+      "of_excess_over": 2000000
+    },
+    {
+      "over": 5000000,
+      "not_over": null,
+      "base_tax": 1265000,
+      "rate": 0.35,
+      "of_excess_over": 5000000
+    }
+  ],
+  "formula": "tax = base_tax + rate * (net_income - of_excess_over)"
+}

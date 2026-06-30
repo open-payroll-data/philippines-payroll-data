@@ -1,0 +1,60 @@
+{
+  "topic": "Vietnam resident PIT — 5-bracket monthly scale (Law 109/2025, from 2026 tax period)",
+  "country": "VN",
+  "effective_date": "2026-01-01",
+  "currency": "VND",
+  "volatility": "stable",
+  "source": {
+    "issuance": "Law on Personal Income Tax 109/2025/QH15 (Dieu 9 rates, Dieu 10 deductions); Circular 111/2013 (withholding)",
+    "source_tier": "primary",
+    "last_verified": "2026-06-30",
+    "markdown": "vn/tax/income_tax_2025.md",
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/01/luat109-2025.pdf"
+  },
+  "notes": "New 5-bracket monthly scale applies to resident salary income from the 2026 tax period (Law 109/2025/QH15). tax = base_tax + rate*(assessable_monthly_income - of_excess_over). Assessable = gross - compulsory insurance - personal/dependent deductions. Non-resident = flat 20%. The pre-2026 7-bracket scale is in the markdown (historical).",
+  "non_resident_rate": 0.2,
+  "personal_deduction": {
+    "self_monthly_2026": 15500000,
+    "dependent_monthly_2026": 6200000,
+    "self_monthly_through_2025": 11000000,
+    "dependent_monthly_through_2025": 4400000
+  },
+  "monthly": [
+    {
+      "over": 0,
+      "not_over": 10000000,
+      "base_tax": 0,
+      "rate": 0.05,
+      "of_excess_over": 0
+    },
+    {
+      "over": 10000000,
+      "not_over": 30000000,
+      "base_tax": 500000,
+      "rate": 0.1,
+      "of_excess_over": 10000000
+    },
+    {
+      "over": 30000000,
+      "not_over": 60000000,
+      "base_tax": 2500000,
+      "rate": 0.2,
+      "of_excess_over": 30000000
+    },
+    {
+      "over": 60000000,
+      "not_over": 100000000,
+      "base_tax": 8500000,
+      "rate": 0.3,
+      "of_excess_over": 60000000
+    },
+    {
+      "over": 100000000,
+      "not_over": null,
+      "base_tax": 20500000,
+      "rate": 0.35,
+      "of_excess_over": 100000000
+    }
+  ],
+  "formula": "tax = base_tax + rate * (assessable_monthly_income - of_excess_over)"
+}

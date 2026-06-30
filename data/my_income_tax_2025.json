@@ -1,0 +1,89 @@
+{
+  "topic": "Malaysia resident income tax (YA2024/2025)",
+  "country": "MY",
+  "effective_date": "2024-01-01",
+  "currency": "MYR",
+  "volatility": "stable",
+  "source": {
+    "issuance": "LHDN — Individual income tax rates (YA2024 onwards)",
+    "source_tier": "primary",
+    "last_verified": "2026-06-29",
+    "markdown": "my/lhdn/income_tax_2025.md",
+    "url": "https://www.hasil.gov.my/en/individual/individual-life-cycle/income-declaration/tax-rate/"
+  },
+  "notes": "Resident progressive scale, unchanged YA2023–2025. tax = base_tax + rate*(chargeable_income - of_excess_over). Non-resident employment income = flat 30%. Malaysia has mandatory monthly employer withholding (MTD/PCB), remitted by the 15th.",
+  "non_resident_rate": 0.3,
+  "annual": [
+    {
+      "over": 0,
+      "not_over": 5000,
+      "base_tax": 0,
+      "rate": 0,
+      "of_excess_over": 0
+    },
+    {
+      "over": 5000,
+      "not_over": 20000,
+      "base_tax": 0,
+      "rate": 0.01,
+      "of_excess_over": 5000
+    },
+    {
+      "over": 20000,
+      "not_over": 35000,
+      "base_tax": 150,
+      "rate": 0.03,
+      "of_excess_over": 20000
+    },
+    {
+      "over": 35000,
+      "not_over": 50000,
+      "base_tax": 600,
+      "rate": 0.06,
+      "of_excess_over": 35000
+    },
+    {
+      "over": 50000,
+      "not_over": 70000,
+      "base_tax": 1500,
+      "rate": 0.11,
+      "of_excess_over": 50000
+    },
+    {
+      "over": 70000,
+      "not_over": 100000,
+      "base_tax": 3700,
+      "rate": 0.19,
+      "of_excess_over": 70000
+    },
+    {
+      "over": 100000,
+      "not_over": 400000,
+      "base_tax": 9400,
+      "rate": 0.25,
+      "of_excess_over": 100000
+    },
+    {
+      "over": 400000,
+      "not_over": 600000,
+      "base_tax": 84400,
+      "rate": 0.26,
+      "of_excess_over": 400000
+    },
+    {
+      "over": 600000,
+      "not_over": 2000000,
+      "base_tax": 136400,
+      "rate": 0.28,
+      "of_excess_over": 600000
+    },
+    {
+      "over": 2000000,
+      "not_over": null,
+      "base_tax": 528400,
+      "rate": 0.3,
+      "of_excess_over": 2000000
+    }
+  ],
+  "formula": "tax = base_tax + rate * (chargeable_income - of_excess_over)"
+}

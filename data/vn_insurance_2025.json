@@ -1,0 +1,39 @@
+{
+  "topic": "Vietnam compulsory insurances — Social (BHXH) + Health (BHYT) + Unemployment (BHTN)",
+  "country": "VN",
+  "effective_date": "2025-07-01",
+  "currency": "VND",
+  "volatility": "stable",
+  "source": {
+    "issuance": "Law on Social Insurance 41/2024/QH15; Decree 73/2024 (base salary); Law on Health Insurance; Law on Employment (UI)",
+    "source_tier": "primary",
+    "last_verified": "2026-06-30",
+    "markdown": "vn/insurance/contributions.md"
+  },
+  "notes": "Base = contract salary + fixed allowances. SI employer 17.5% includes 0.5% occupational accident. SI+HI capped at 20× the reference level (= base salary 2,340,000 → 46,800,000); UI capped at 20× the regional minimum wage. Foreigners pay SI+HI but not UI (9.5%/20.5%).",
+  "social_insurance": {
+    "employee_pct": 8,
+    "employer_pct": 17.5,
+    "employer_includes_occupational_accident_pct": 0.5
+  },
+  "health_insurance": {
+    "employee_pct": 1.5,
+    "employer_pct": 3
+  },
+  "unemployment_insurance": {
+    "employee_pct": 1,
+    "employer_pct": 1
+  },
+  "totals": {
+    "employee_pct": 10.5,
+    "employer_pct": 21.5
+  },
+  "foreign_totals": {
+    "employee_pct": 9.5,
+    "employer_pct": 20.5,
+    "note": "SI + HI only (no unemployment insurance)"
+  },
+  "reference_level": 2340000,
+  "si_hi_wage_cap": 46800000,
+  "ui_wage_cap": "20x regional minimum wage"
+}

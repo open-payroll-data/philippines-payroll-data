@@ -90,6 +90,70 @@
       "volatility": "stable",
       "source_markdown": "sg/cpf/contribution_rates_2025.md",
       "source_issuance": "CPF Board — contribution rate tables (1 Jan 2025 / 2026 / 2027)"
+    },
+    {
+      "file": "data/my_income_tax_2025.json",
+      "topic": "Malaysia resident income tax (YA2024/2025)",
+      "effective_date": "2024-01-01",
+      "volatility": "stable",
+      "source_markdown": "my/lhdn/income_tax_2025.md",
+      "source_issuance": "LHDN — Individual income tax rates (YA2024 onwards)"
+    },
+    {
+      "file": "data/my_contributions_2025.json",
+      "topic": "Malaysia statutory contributions — EPF, SOCSO, EIS, HRD Corp levy",
+      "effective_date": "2025-10-01",
+      "volatility": "stable",
+      "source_markdown": "my/epf/contributions.md",
+      "source_issuance": "KWSP (EPF Act 1991 Third Schedule); PERKESO (Act 4 SOCSO + Act 800 EIS); HRD Corp (PSMB Act 2001)"
+    },
+    {
+      "file": "data/th_income_tax_2025.json",
+      "topic": "Thailand personal income tax (PIT) on net income",
+      "effective_date": "2017-01-01",
+      "volatility": "stable",
+      "source_markdown": "th/revenue/income_tax_2025.md",
+      "source_issuance": "Thai Revenue Department — PIT rates (2024 PND.91 guide)"
+    },
+    {
+      "file": "data/th_social_security_2025.json",
+      "topic": "Thailand Social Security Fund (SSF) + Workmen's Compensation Fund (WCF)",
+      "effective_date": "2026-01-01",
+      "volatility": "stable",
+      "source_markdown": "th/sso/social_security.md",
+      "source_issuance": "Social Security Office; Royal Gazette Ministerial Regulation (12 Dec 2025, SSF wage ceiling)"
+    },
+    {
+      "file": "data/id_income_tax_2025.json",
+      "topic": "Indonesia PPh 21 annual income tax + PTKP",
+      "effective_date": "2022-01-01",
+      "volatility": "stable",
+      "source_markdown": "id/pajak/income_tax_2025.md",
+      "source_issuance": "DJP — UU HPP No. 7/2021 (rates); PTKP (PMK 101/2016); TER monthly method (PP 58/2023)"
+    },
+    {
+      "file": "data/id_bpjs_2025.json",
+      "topic": "Indonesia BPJS — Ketenagakerjaan (JHT/JKK/JKM/JP) + Kesehatan",
+      "effective_date": "2026-03-01",
+      "volatility": "stable",
+      "source_markdown": "id/bpjs/contributions.md",
+      "source_issuance": "BPJS Ketenagakerjaan (PP 44/45/46-2015; JP cap Surat Edaran B/1226/022026); BPJS Kesehatan (Perpres 64/2020)"
+    },
+    {
+      "file": "data/vn_income_tax_2025.json",
+      "topic": "Vietnam resident PIT — 5-bracket monthly scale (Law 109/2025, from 2026 tax period)",
+      "effective_date": "2026-01-01",
+      "volatility": "stable",
+      "source_markdown": "vn/tax/income_tax_2025.md",
+      "source_issuance": "Law on Personal Income Tax 109/2025/QH15 (Dieu 9 rates, Dieu 10 deductions); Circular 111/2013 (withholding)"
+    },
+    {
+      "file": "data/vn_insurance_2025.json",
+      "topic": "Vietnam compulsory insurances — Social (BHXH) + Health (BHYT) + Unemployment (BHTN)",
+      "effective_date": "2025-07-01",
+      "volatility": "stable",
+      "source_markdown": "vn/insurance/contributions.md",
+      "source_issuance": "Law on Social Insurance 41/2024/QH15; Decree 73/2024 (base salary); Law on Health Insurance; Law on Employment (UI)"
     }
   ]
 }

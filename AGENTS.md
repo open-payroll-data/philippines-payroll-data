@@ -39,7 +39,8 @@ Otherwise the curated file is faster **and** more accurate. Don't re-derive what
 ## Programmatic / RAG ingestion
 
 For **payroll computation**, use the typed `data/` rate tables — generated from and validated against the verified markdown, each stamped with its primary-source citation. Don't parse the markdown tables for numbers; use these:
-- [`data/index.json`](data/index.json) — index of the data layer. Then: [`data/sss_2025.json`](data/sss_2025.json) (all 61 brackets) · [`data/income_tax_2025.json`](data/income_tax_2025.json) · [`data/philhealth_2025.json`](data/philhealth_2025.json) · [`data/pagibig_2025.json`](data/pagibig_2025.json) · [`data/13th_month_pay.json`](data/13th_month_pay.json) · [`data/min_wage_2025.json`](data/min_wage_2025.json) (⚠ `volatility: continuously-changing`) · [`data/premium_pay.json`](data/premium_pay.json) (OT/holiday multiplier matrix) · [`data/leaves.json`](data/leaves.json) (statutory leave durations) · [`data/examples.json`](data/examples.json) (worked net-pay computations).
+- [`data/index.json`](data/index.json) — index of the whole data layer (19 tables across the 6 countries). **Philippines:** [`data/sss_2025.json`](data/sss_2025.json) (all 61 brackets) · [`data/income_tax_2025.json`](data/income_tax_2025.json) · [`data/philhealth_2025.json`](data/philhealth_2025.json) · [`data/pagibig_2025.json`](data/pagibig_2025.json) · [`data/13th_month_pay.json`](data/13th_month_pay.json) · [`data/min_wage_2025.json`](data/min_wage_2025.json) (⚠ `volatility: continuously-changing`) · [`data/premium_pay.json`](data/premium_pay.json) · [`data/leaves.json`](data/leaves.json) · [`data/examples.json`](data/examples.json) (worked net-pay).
+- **Other countries** (income tax + main contributions each): `data/sg_income_tax_2025.json` + `data/sg_cpf_2025.json` · `data/my_income_tax_2025.json` + `data/my_contributions_2025.json` · `data/th_income_tax_2025.json` + `data/th_social_security_2025.json` · `data/id_income_tax_2025.json` + `data/id_bpjs_2025.json` · `data/vn_income_tax_2025.json` + `data/vn_insurance_2025.json`. All importable from the `index.mjs` npm entry.
 
 For repo / issuance indexing:
 - [`manifest.json`](manifest.json) — index of every file in the repo.
@@ -54,10 +55,10 @@ For repo / issuance indexing:
 |------|---------|--------|
 | `ph` | Philippines | **Complete** — BIR, SSS, PhilHealth, Pag-IBIG, benefits, minimum wage + 894 issuances + 142 SSS circulars |
 | `sg` | Singapore | **Core complete** — IRAS income tax, CPF + SDL, Employment Act (leave, hours/OT, termination), wage floors + `data/sg_*.json`. See [`sg/INDEX.md`](sg/INDEX.md). Issuance archive pending |
-| `my` | Malaysia | **Core complete** — LHDN income tax + MTD/PCB, EPF, SOCSO + EIS, HRD Corp levy, Employment Act, RM1,700 min wage. See [`my/INDEX.md`](my/INDEX.md). `data/` JSON pending |
-| `th` | Thailand | **Core complete** — Revenue Dept PIT + PND.1 withholding, SSF + Workmen's Comp, Labour Protection Act (hours/leave/severance), provincial min wage. See [`th/INDEX.md`](th/INDEX.md). `data/` JSON pending |
-| `id` | Indonesia | **Core complete** — PPh 21 + TER monthly method, BPJS Ketenagakerjaan + Kesehatan, PP 35/2021 (hours/leave/THR/severance), UMP/UMK min wage. See [`id/INDEX.md`](id/INDEX.md). `data/` JSON pending |
-| `vn` | Vietnam | **Core complete** — PIT + 2026 personal deductions, Social/Health/Unemployment insurance, Labour Code 2019 (hours/leave/severance), 4-region min wage. See [`vn/INDEX.md`](vn/INDEX.md). `data/` JSON pending |
+| `my` | Malaysia | **Core complete** — LHDN income tax + MTD/PCB, EPF, SOCSO + EIS, HRD Corp levy, Employment Act, RM1,700 min wage. See [`my/INDEX.md`](my/INDEX.md). `data/` JSON ✅ |
+| `th` | Thailand | **Core complete** — Revenue Dept PIT + PND.1 withholding, SSF + Workmen's Comp, Labour Protection Act (hours/leave/severance), provincial min wage. See [`th/INDEX.md`](th/INDEX.md). `data/` JSON ✅ |
+| `id` | Indonesia | **Core complete** — PPh 21 + TER monthly method, BPJS Ketenagakerjaan + Kesehatan, PP 35/2021 (hours/leave/THR/severance), UMP/UMK min wage. See [`id/INDEX.md`](id/INDEX.md). `data/` JSON ✅ |
+| `vn` | Vietnam | **Core complete** — PIT + 2026 personal deductions, Social/Health/Unemployment insurance, Labour Code 2019 (hours/leave/severance), 4-region min wage. See [`vn/INDEX.md`](vn/INDEX.md). `data/` JSON ✅ |
 | `us` | United States | Planned — federal payroll taxes, FICA |
 
 ## Contributing / maintenance

@@ -23,6 +23,18 @@ export const examples = require('./data/examples.json');
 // Singapore (sg/) tables
 export const sgIncomeTax2025 = require('./data/sg_income_tax_2025.json');
 export const sgCpf2025 = require('./data/sg_cpf_2025.json');
+// Malaysia (my/) tables
+export const myIncomeTax2025 = require('./data/my_income_tax_2025.json');
+export const myContributions2025 = require('./data/my_contributions_2025.json');
+// Thailand (th/) tables
+export const thIncomeTax2025 = require('./data/th_income_tax_2025.json');
+export const thSocialSecurity2025 = require('./data/th_social_security_2025.json');
+// Indonesia (id/) tables
+export const idIncomeTax2025 = require('./data/id_income_tax_2025.json');
+export const idBpjs2025 = require('./data/id_bpjs_2025.json');
+// Vietnam (vn/) tables
+export const vnIncomeTax2025 = require('./data/vn_income_tax_2025.json');
+export const vnInsurance2025 = require('./data/vn_insurance_2025.json');
 export const index = require('./data/index.json');
 
 export default {
@@ -37,5 +49,13 @@ export default {
   examples,
   sgIncomeTax2025,
   sgCpf2025,
+  myIncomeTax2025,
+  myContributions2025,
+  thIncomeTax2025,
+  thSocialSecurity2025,
+  idIncomeTax2025,
+  idBpjs2025,
+  vnIncomeTax2025,
+  vnInsurance2025,
   index,
 };

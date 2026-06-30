@@ -17,6 +17,7 @@ Match the question to a row, open that one file. Don't scan the repo.
 | **Annual leave, THR** (religious-holiday allowance), **maternity** (UU KIA) | [labour/leave_and_thr.md](labour/leave_and_thr.md) |
 | **Severance** (uang pesangon) & long-service pay | [labour/severance.md](labour/severance.md) |
 | **Minimum wage** (UMP / UMK, by province) | [wages/minimum_wage.md](wages/minimum_wage.md) |
+| **Exact numbers for software** (typed JSON, generated from + validated against these files) | [`../data/id_income_tax_2025.json`](../data/id_income_tax_2025.json) · [`../data/id_bpjs_2025.json`](../data/id_bpjs_2025.json) |
 | **When/where** gov't rates change (monitoring sources) | [../SCHEMA.md](../SCHEMA.md) → Golden sources |
 
 > Every target file opens with frontmatter (rates, effective dates, source, `last_verified`) and a `## Summary`. Read those two first.

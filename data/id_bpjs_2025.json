@@ -1,0 +1,48 @@
+{
+  "topic": "Indonesia BPJS — Ketenagakerjaan (JHT/JKK/JKM/JP) + Kesehatan",
+  "country": "ID",
+  "effective_date": "2026-03-01",
+  "currency": "IDR",
+  "volatility": "stable",
+  "source": {
+    "issuance": "BPJS Ketenagakerjaan (PP 44/45/46-2015; JP cap Surat Edaran B/1226/022026); BPJS Kesehatan (Perpres 64/2020)",
+    "source_tier": "primary",
+    "last_verified": "2026-06-30",
+    "markdown": "id/bpjs/contributions.md"
+  },
+  "notes": "Base = monthly wage (basic + fixed allowance). JHT no cap. JKK employer-only by 5 risk classes. JP capped at the wage cap (rises every March; 11,086,300 from 1 Mar 2026). Kesehatan capped at 12,000,000 (lower bound = UMK).",
+  "jht": {
+    "total_pct": 5.7,
+    "employer_pct": 3.7,
+    "employee_pct": 2,
+    "wage_cap": null
+  },
+  "jkk": {
+    "paid_by": "employer",
+    "classes_pct": [
+      0.24,
+      0.54,
+      0.89,
+      1.27,
+      1.74
+    ]
+  },
+  "jkm": {
+    "paid_by": "employer",
+    "employer_pct": 0.3
+  },
+  "jp": {
+    "total_pct": 3,
+    "employer_pct": 2,
+    "employee_pct": 1,
+    "wage_cap": 11086300,
+    "wage_cap_effective": "2026-03-01"
+  },
+  "kesehatan": {
+    "total_pct": 5,
+    "employer_pct": 4,
+    "employee_pct": 1,
+    "wage_cap_upper": 12000000,
+    "wage_floor": "UMK"
+  }
+}

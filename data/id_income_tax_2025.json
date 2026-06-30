@@ -1,0 +1,63 @@
+{
+  "topic": "Indonesia PPh 21 annual income tax + PTKP",
+  "country": "ID",
+  "effective_date": "2022-01-01",
+  "currency": "IDR",
+  "volatility": "stable",
+  "source": {
+    "issuance": "DJP — UU HPP No. 7/2021 (rates); PTKP (PMK 101/2016); TER monthly method (PP 58/2023)",
+    "source_tier": "primary",
+    "last_verified": "2026-06-30",
+    "markdown": "id/pajak/income_tax_2025.md",
+    "url": "https://www.pajak.go.id/en/node/72315"
+  },
+  "notes": "Annual progressive tax on PKP (taxable income = annual net - PTKP). tax = base_tax + rate*(PKP - of_excess_over). MONTHLY withholding (Jan-Nov) uses the TER effective-rate tables by category A/B/C (NOT modeled here — the full TER grids are in a scanned PMK 168/2023; use the DJP TER tables); December reconciles on this annual scale.",
+  "annual": [
+    {
+      "over": 0,
+      "not_over": 60000000,
+      "base_tax": 0,
+      "rate": 0.05,
+      "of_excess_over": 0
+    },
+    {
+      "over": 60000000,
+      "not_over": 250000000,
+      "base_tax": 3000000,
+      "rate": 0.15,
+      "of_excess_over": 60000000
+    },
+    {
+      "over": 250000000,
+      "not_over": 500000000,
+      "base_tax": 31500000,
+      "rate": 0.25,
+      "of_excess_over": 250000000
+    },
+    {
+      "over": 500000000,
+      "not_over": 5000000000,
+      "base_tax": 94000000,
+      "rate": 0.3,
+      "of_excess_over": 500000000
+    },
+    {
+      "over": 5000000000,
+      "not_over": null,
+      "base_tax": 1444000000,
+      "rate": 0.35,
+      "of_excess_over": 5000000000
+    }
+  ],
+  "ptkp": {
+    "TK/0": 54000000,
+    "TK/1": 58500000,
+    "TK/2": 63000000,
+    "TK/3": 67500000,
+    "K/0": 58500000,
+    "K/1": 63000000,
+    "K/2": 67500000,
+    "K/3": 72000000
+  },
+  "formula": "tax = base_tax + rate * (PKP - of_excess_over); PKP = annual net income - PTKP"
+}

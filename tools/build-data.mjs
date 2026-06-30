@@ -412,6 +412,172 @@ async function validateSG(sgTax, sgCpf) {
   checkSchema(sgCpf, 'sg_cpf');
 }
 
+// ───────────── MALAYSIA / THAILAND / INDONESIA / VIETNAM (SE Asia data layer) ─────────────
+// Each income-tax table is a cumulative-chain: bands = [{over, base_tax, rate, of_excess_over}],
+// tax = base_tax + rate*(income - of_excess_over). All figures verified against the country markdown.
+const chainOK = (bands, label) => {
+  for (let i = 1; i < bands.length; i++) {
+    const p = bands[i - 1], c = bands[i];
+    assert(r2(p.base_tax + p.rate * (c.over - p.of_excess_over)) === c.base_tax, `${label} base chain breaks at bracket ${i}`);
+  }
+};
+const taxFrom = (bands) => (income) => {
+  const b = [...bands].reverse().find((x) => income > x.over) || bands[0];
+  return r2(b.base_tax + b.rate * (income - b.of_excess_over));
+};
+const srcBlock = (issuance, markdown, last_verified, extra = {}) => ({ issuance, source_tier: 'primary', last_verified, markdown, ...extra });
+
+// MALAYSIA — resident income tax (YA2024/2025) + EPF/SOCSO/EIS/HRD Corp
+const myTaxBands = [
+  { over: 0, not_over: 5000, base_tax: 0, rate: 0.00, of_excess_over: 0 },
+  { over: 5000, not_over: 20000, base_tax: 0, rate: 0.01, of_excess_over: 5000 },
+  { over: 20000, not_over: 35000, base_tax: 150, rate: 0.03, of_excess_over: 20000 },
+  { over: 35000, not_over: 50000, base_tax: 600, rate: 0.06, of_excess_over: 35000 },
+  { over: 50000, not_over: 70000, base_tax: 1500, rate: 0.11, of_excess_over: 50000 },
+  { over: 70000, not_over: 100000, base_tax: 3700, rate: 0.19, of_excess_over: 70000 },
+  { over: 100000, not_over: 400000, base_tax: 9400, rate: 0.25, of_excess_over: 100000 },
+  { over: 400000, not_over: 600000, base_tax: 84400, rate: 0.26, of_excess_over: 400000 },
+  { over: 600000, not_over: 2000000, base_tax: 136400, rate: 0.28, of_excess_over: 600000 },
+  { over: 2000000, not_over: null, base_tax: 528400, rate: 0.30, of_excess_over: 2000000 },
+];
+const buildMYIncomeTax = () => ({
+  topic: 'Malaysia resident income tax (YA2024/2025)', country: 'MY', effective_date: '2024-01-01', currency: 'MYR', volatility: 'stable',
+  source: srcBlock('LHDN — Individual income tax rates (YA2024 onwards)', 'my/lhdn/income_tax_2025.md', '2026-06-29', { url: 'https://www.hasil.gov.my/en/individual/individual-life-cycle/income-declaration/tax-rate/' }),
+  notes: 'Resident progressive scale, unchanged YA2023–2025. tax = base_tax + rate*(chargeable_income - of_excess_over). Non-resident employment income = flat 30%. Malaysia has mandatory monthly employer withholding (MTD/PCB), remitted by the 15th.',
+  non_resident_rate: 0.30, annual: myTaxBands, formula: 'tax = base_tax + rate * (chargeable_income - of_excess_over)',
+});
+const buildMYContributions = () => ({
+  topic: 'Malaysia statutory contributions — EPF, SOCSO, EIS, HRD Corp levy', country: 'MY', effective_date: '2025-10-01', currency: 'MYR', volatility: 'stable',
+  source: srcBlock('KWSP (EPF Act 1991 Third Schedule); PERKESO (Act 4 SOCSO + Act 800 EIS); HRD Corp (PSMB Act 2001)', 'my/epf/contributions.md', '2026-06-29'),
+  notes: 'EPF below 60: employee 11%, employer 13% (wage <= RM5,000) or 12% (> RM5,000); read the Third Schedule RM bands for wages <= RM20,000 (round up to next ringgit), exact % above; no wage ceiling. Non-citizen EPF 2%+2% from 1 Oct 2025. SOCSO (Act 4) and EIS (Act 800) are published as RM BAND tables capped at a RM6,000 wage ceiling (from 1 Oct 2024) — the percentages are effective rates at the ceiling; use the PERKESO band tables for the exact amount below the ceiling. Figures below are the top-band (at-ceiling) amounts.',
+  epf: { employee_pct: 11, employer_pct_wage_le_5000: 13, employer_pct_wage_gt_5000: 12, employer_wage_split: 5000, age_60_plus_citizen: { employee_pct: 0, employer_pct: 4 }, non_citizen: { employee_pct: 2, employer_pct: 2, effective: '2025-10-01' }, wage_ceiling: null, band_method_up_to: 20000 },
+  socso_act4: { wage_ceiling: 6000, effective: '2024-10-01', first_category_under60: { employer_amount_at_ceiling: 104.15, employee_amount_at_ceiling: 29.75, approx_employer_pct: 1.75, approx_employee_pct: 0.5 }, second_category_60plus: { employer_amount_at_ceiling: 74.40, approx_employer_pct: 1.25 } },
+  eis_act800: { wage_ceiling: 6000, employer_pct: 0.2, employee_pct: 0.2, amount_each_at_ceiling: 11.90, age_range: '18-60' },
+  hrd_corp_levy: { mandatory_pct: 1, optional_pct: 0.5, mandatory_min_employees: 10, optional_employees: '5-9', paid_by: 'employer' },
+});
+
+// THAILAND — PIT + Social Security Fund / Workmen's Compensation
+const thTaxBands = [
+  { over: 0, not_over: 150000, base_tax: 0, rate: 0.00, of_excess_over: 0 },
+  { over: 150000, not_over: 300000, base_tax: 0, rate: 0.05, of_excess_over: 150000 },
+  { over: 300000, not_over: 500000, base_tax: 7500, rate: 0.10, of_excess_over: 300000 },
+  { over: 500000, not_over: 750000, base_tax: 27500, rate: 0.15, of_excess_over: 500000 },
+  { over: 750000, not_over: 1000000, base_tax: 65000, rate: 0.20, of_excess_over: 750000 },
+  { over: 1000000, not_over: 2000000, base_tax: 115000, rate: 0.25, of_excess_over: 1000000 },
+  { over: 2000000, not_over: 5000000, base_tax: 365000, rate: 0.30, of_excess_over: 2000000 },
+  { over: 5000000, not_over: null, base_tax: 1265000, rate: 0.35, of_excess_over: 5000000 },
+];
+const buildTHIncomeTax = () => ({
+  topic: 'Thailand personal income tax (PIT) on net income', country: 'TH', effective_date: '2017-01-01', currency: 'THB', volatility: 'stable',
+  source: srcBlock('Thai Revenue Department — PIT rates (2024 PND.91 guide)', 'th/revenue/income_tax_2025.md', '2026-06-29', { url: 'https://www.rd.go.th/fileadmin/download/english_form/2024/GUIDE_91_67_Complete.pdf' }),
+  notes: 'tax = base_tax + rate*(net_income - of_excess_over). Net income = gross - 50%/100,000 expense deduction - allowances. Non-resident employment income = flat 20% (withheld). Employer withholds monthly (PND.1, within 7 days of month-end).',
+  non_resident_rate: 0.20, annual: thTaxBands, formula: 'tax = base_tax + rate * (net_income - of_excess_over)',
+});
+const buildTHSocialSecurity = () => ({
+  topic: 'Thailand Social Security Fund (SSF) + Workmen\'s Compensation Fund (WCF)', country: 'TH', effective_date: '2026-01-01', currency: 'THB', volatility: 'stable',
+  source: srcBlock('Social Security Office; Royal Gazette Ministerial Regulation (12 Dec 2025, SSF wage ceiling)', 'th/sso/social_security.md', '2026-06-29', { url: 'https://www.sso.go.th/wpr/download/download_by_pool_file/47755' }),
+  notes: 'SSF 5% employee + 5% employer on wages floored at 1,650 and capped at the ceiling for the period (17,500 from 1 Jan 2026; rising to 20,000 in 2029 and 23,000 in 2032). max = 5% × ceiling. WCF is employer-only, 0.2%–1.0% of annual wages by risk class, capped at 240,000/year.',
+  ssf: { employee_pct: 5, employer_pct: 5, wage_floor: 1650, ceiling_schedule: { '2026': 17500, '2029': 20000, '2032': 23000 }, current_ceiling: 17500, max_each_current: 875, min_each: 82.5 },
+  wcf: { paid_by: 'employer', rate_pct_min: 0.2, rate_pct_max: 1.0, annual_wage_cap: 240000 },
+});
+
+// INDONESIA — PPh 21 annual brackets + PTKP; BPJS Ketenagakerjaan + Kesehatan
+const idTaxBands = [
+  { over: 0, not_over: 60000000, base_tax: 0, rate: 0.05, of_excess_over: 0 },
+  { over: 60000000, not_over: 250000000, base_tax: 3000000, rate: 0.15, of_excess_over: 60000000 },
+  { over: 250000000, not_over: 500000000, base_tax: 31500000, rate: 0.25, of_excess_over: 250000000 },
+  { over: 500000000, not_over: 5000000000, base_tax: 94000000, rate: 0.30, of_excess_over: 500000000 },
+  { over: 5000000000, not_over: null, base_tax: 1444000000, rate: 0.35, of_excess_over: 5000000000 },
+];
+const buildIDIncomeTax = () => ({
+  topic: 'Indonesia PPh 21 annual income tax + PTKP', country: 'ID', effective_date: '2022-01-01', currency: 'IDR', volatility: 'stable',
+  source: srcBlock('DJP — UU HPP No. 7/2021 (rates); PTKP (PMK 101/2016); TER monthly method (PP 58/2023)', 'id/pajak/income_tax_2025.md', '2026-06-30', { url: 'https://www.pajak.go.id/en/node/72315' }),
+  notes: 'Annual progressive tax on PKP (taxable income = annual net - PTKP). tax = base_tax + rate*(PKP - of_excess_over). MONTHLY withholding (Jan-Nov) uses the TER effective-rate tables by category A/B/C (NOT modeled here — the full TER grids are in a scanned PMK 168/2023; use the DJP TER tables); December reconciles on this annual scale.',
+  annual: idTaxBands,
+  ptkp: { 'TK/0': 54000000, 'TK/1': 58500000, 'TK/2': 63000000, 'TK/3': 67500000, 'K/0': 58500000, 'K/1': 63000000, 'K/2': 67500000, 'K/3': 72000000 },
+  formula: 'tax = base_tax + rate * (PKP - of_excess_over); PKP = annual net income - PTKP',
+});
+const buildIDBpjs = () => ({
+  topic: 'Indonesia BPJS — Ketenagakerjaan (JHT/JKK/JKM/JP) + Kesehatan', country: 'ID', effective_date: '2026-03-01', currency: 'IDR', volatility: 'stable',
+  source: srcBlock('BPJS Ketenagakerjaan (PP 44/45/46-2015; JP cap Surat Edaran B/1226/022026); BPJS Kesehatan (Perpres 64/2020)', 'id/bpjs/contributions.md', '2026-06-30'),
+  notes: 'Base = monthly wage (basic + fixed allowance). JHT no cap. JKK employer-only by 5 risk classes. JP capped at the wage cap (rises every March; 11,086,300 from 1 Mar 2026). Kesehatan capped at 12,000,000 (lower bound = UMK).',
+  jht: { total_pct: 5.7, employer_pct: 3.7, employee_pct: 2.0, wage_cap: null },
+  jkk: { paid_by: 'employer', classes_pct: [0.24, 0.54, 0.89, 1.27, 1.74] },
+  jkm: { paid_by: 'employer', employer_pct: 0.3 },
+  jp: { total_pct: 3.0, employer_pct: 2.0, employee_pct: 1.0, wage_cap: 11086300, wage_cap_effective: '2026-03-01' },
+  kesehatan: { total_pct: 5.0, employer_pct: 4.0, employee_pct: 1.0, wage_cap_upper: 12000000, wage_floor: 'UMK' },
+});
+
+// VIETNAM — PIT (new 5-bracket Law 109/2025, 2026 tax period) + Social/Health/Unemployment insurance
+const vnTaxBands = [
+  { over: 0, not_over: 10000000, base_tax: 0, rate: 0.05, of_excess_over: 0 },
+  { over: 10000000, not_over: 30000000, base_tax: 500000, rate: 0.10, of_excess_over: 10000000 },
+  { over: 30000000, not_over: 60000000, base_tax: 2500000, rate: 0.20, of_excess_over: 30000000 },
+  { over: 60000000, not_over: 100000000, base_tax: 8500000, rate: 0.30, of_excess_over: 60000000 },
+  { over: 100000000, not_over: null, base_tax: 20500000, rate: 0.35, of_excess_over: 100000000 },
+];
+const buildVNIncomeTax = () => ({
+  topic: 'Vietnam resident PIT — 5-bracket monthly scale (Law 109/2025, from 2026 tax period)', country: 'VN', effective_date: '2026-01-01', currency: 'VND', volatility: 'stable',
+  source: srcBlock('Law on Personal Income Tax 109/2025/QH15 (Dieu 9 rates, Dieu 10 deductions); Circular 111/2013 (withholding)', 'vn/tax/income_tax_2025.md', '2026-06-30', { url: 'https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/01/luat109-2025.pdf' }),
+  notes: 'New 5-bracket monthly scale applies to resident salary income from the 2026 tax period (Law 109/2025/QH15). tax = base_tax + rate*(assessable_monthly_income - of_excess_over). Assessable = gross - compulsory insurance - personal/dependent deductions. Non-resident = flat 20%. The pre-2026 7-bracket scale is in the markdown (historical).',
+  non_resident_rate: 0.20,
+  personal_deduction: { self_monthly_2026: 15500000, dependent_monthly_2026: 6200000, self_monthly_through_2025: 11000000, dependent_monthly_through_2025: 4400000 },
+  monthly: vnTaxBands, formula: 'tax = base_tax + rate * (assessable_monthly_income - of_excess_over)',
+});
+const buildVNInsurance = () => ({
+  topic: 'Vietnam compulsory insurances — Social (BHXH) + Health (BHYT) + Unemployment (BHTN)', country: 'VN', effective_date: '2025-07-01', currency: 'VND', volatility: 'stable',
+  source: srcBlock('Law on Social Insurance 41/2024/QH15; Decree 73/2024 (base salary); Law on Health Insurance; Law on Employment (UI)', 'vn/insurance/contributions.md', '2026-06-30'),
+  notes: 'Base = contract salary + fixed allowances. SI employer 17.5% includes 0.5% occupational accident. SI+HI capped at 20× the reference level (= base salary 2,340,000 → 46,800,000); UI capped at 20× the regional minimum wage. Foreigners pay SI+HI but not UI (9.5%/20.5%).',
+  social_insurance: { employee_pct: 8, employer_pct: 17.5, employer_includes_occupational_accident_pct: 0.5 },
+  health_insurance: { employee_pct: 1.5, employer_pct: 3 },
+  unemployment_insurance: { employee_pct: 1, employer_pct: 1 },
+  totals: { employee_pct: 10.5, employer_pct: 21.5 },
+  foreign_totals: { employee_pct: 9.5, employer_pct: 20.5, note: 'SI + HI only (no unemployment insurance)' },
+  reference_level: 2340000, si_hi_wage_cap: 46800000, ui_wage_cap: '20x regional minimum wage',
+});
+
+async function validateSEA(o) {
+  // MALAYSIA
+  chainOK(myTaxBands, 'MY income-tax');
+  assert(taxFrom(myTaxBands)(100000) === 9400 && taxFrom(myTaxBands)(2000000) === 528400 && taxFrom(myTaxBands)(600000) === 136400, 'MY income-tax anchors (100k→9,400 / 2M→528,400 / 600k→136,400)');
+  const myTaxMd = await readMd('my/lhdn/income_tax_2025.md');
+  assert(/528,400/.test(myTaxMd) && /84,400/.test(myTaxMd), 'MY income-tax cumulative anchors drift vs markdown');
+  const myCMd = await readMd('my/socso/socso_eis.md'), myEpfMd = await readMd('my/epf/contributions.md');
+  assert(/104\.15/.test(myCMd) && o.myC.socso_act4.first_category_under60.employer_amount_at_ceiling === 104.15, 'MY SOCSO 104.15 drift');
+  assert(/29\.75/.test(myCMd) && /11\.90/.test(myCMd) && o.myC.eis_act800.amount_each_at_ceiling === 11.90, 'MY SOCSO/EIS amounts drift');
+  assert(/6,000/.test(myCMd) && o.myC.socso_act4.wage_ceiling === 6000 && o.myC.eis_act800.wage_ceiling === 6000, 'MY RM6,000 ceiling drift');
+  assert(/\*\*11%\*\*/.test(myEpfMd) && /\*\*13%\*\*/.test(myEpfMd) && o.myC.epf.employee_pct === 11 && o.myC.epf.employer_pct_wage_le_5000 === 13, 'MY EPF 11/13 drift');
+  assert(/2% employer \+ 2% employee/.test(myEpfMd) && o.myC.epf.non_citizen.employer_pct === 2, 'MY non-citizen EPF 2%+2% drift');
+  // THAILAND
+  chainOK(thTaxBands, 'TH income-tax');
+  assert(taxFrom(thTaxBands)(500000) === 27500 && taxFrom(thTaxBands)(1000000) === 115000 && taxFrom(thTaxBands)(5000000) === 1265000, 'TH income-tax anchors (500k→27,500 / 1M→115,000 / 5M→1,265,000)');
+  const thTaxMd = await readMd('th/revenue/income_tax_2025.md'), thSMd = await readMd('th/sso/social_security.md');
+  assert(/1,265,000/.test(thTaxMd) && /65,000/.test(thTaxMd), 'TH income-tax anchors drift vs markdown');
+  assert(o.thS.ssf.max_each_current === r2(o.thS.ssf.employee_pct / 100 * o.thS.ssf.current_ceiling) && o.thS.ssf.max_each_current === 875, 'TH SSF max = 5% × 17,500 = 875');
+  assert(/17,500/.test(thSMd) && /875/.test(thSMd) && /1,650/.test(thSMd) && /240,000/.test(thSMd), 'TH SSF/WCF anchors drift vs markdown');
+  // INDONESIA
+  chainOK(idTaxBands, 'ID income-tax');
+  assert(taxFrom(idTaxBands)(250000000) === 31500000 && taxFrom(idTaxBands)(5000000000) === 1444000000, 'ID income-tax anchors (250M→31.5M / 5B→1,444M)');
+  const idTaxMd = await readMd('id/pajak/income_tax_2025.md'), idBMd = await readMd('id/bpjs/contributions.md');
+  assert(/60,000,000/.test(idTaxMd) && /5,000,000,000/.test(idTaxMd), 'ID income-tax band anchors drift');
+  assert(/54,000,000/.test(idTaxMd) && /72,000,000/.test(idTaxMd) && o.idB && o.idTax.ptkp['TK/0'] === 54000000 && o.idTax.ptkp['K/3'] === 72000000, 'ID PTKP anchors drift');
+  assert(r2(o.idB.jht.employer_pct + o.idB.jht.employee_pct) === o.idB.jht.total_pct && r2(o.idB.jp.employer_pct + o.idB.jp.employee_pct) === o.idB.jp.total_pct && r2(o.idB.kesehatan.employer_pct + o.idB.kesehatan.employee_pct) === o.idB.kesehatan.total_pct, 'ID BPJS employer+employee≠total');
+  assert(/11,086,300/.test(idBMd) && o.idB.jp.wage_cap === 11086300 && /12,000,000/.test(idBMd) && o.idB.kesehatan.wage_cap_upper === 12000000 && /5\.7%/.test(idBMd), 'ID BPJS cap/rate anchors drift');
+  // VIETNAM
+  chainOK(vnTaxBands, 'VN income-tax');
+  assert(taxFrom(vnTaxBands)(25000000) === 2000000, 'VN income-tax anchor (25M assessable → 2,000,000)');
+  const vnTaxMd = await readMd('vn/tax/income_tax_2025.md'), vnIMd = await readMd('vn/insurance/contributions.md');
+  assert(/10,000,000/.test(vnTaxMd) && /100,000,000/.test(vnTaxMd) && /2,000,000/.test(vnTaxMd), 'VN income-tax band/example anchors drift');
+  assert(/15,500,000/.test(vnTaxMd) && /6,200,000/.test(vnTaxMd) && o.vnTax.personal_deduction.self_monthly_2026 === 15500000, 'VN personal-deduction anchors drift');
+  assert(r2(o.vnI.social_insurance.employee_pct + o.vnI.health_insurance.employee_pct + o.vnI.unemployment_insurance.employee_pct) === o.vnI.totals.employee_pct, 'VN employee total ≠ 10.5');
+  assert(r2(o.vnI.social_insurance.employer_pct + o.vnI.health_insurance.employer_pct + o.vnI.unemployment_insurance.employer_pct) === o.vnI.totals.employer_pct, 'VN employer total ≠ 21.5');
+  assert(r2(o.vnI.social_insurance.employee_pct + o.vnI.health_insurance.employee_pct) === o.vnI.foreign_totals.employee_pct && r2(o.vnI.social_insurance.employer_pct + o.vnI.health_insurance.employer_pct) === o.vnI.foreign_totals.employer_pct, 'VN foreign totals ≠ 9.5/20.5');
+  assert(o.vnI.si_hi_wage_cap === 20 * o.vnI.reference_level && o.vnI.si_hi_wage_cap === 46800000, 'VN SI/HI cap ≠ 20 × 2,340,000');
+  assert(/46,800,000/.test(vnIMd) && /2,340,000/.test(vnIMd) && /10\.5%/.test(vnIMd) && /21\.5%/.test(vnIMd), 'VN insurance anchors drift vs markdown');
+  // schema conformance
+  for (const [n, obj] of Object.entries(o)) checkSchema(obj, n);
+}
+
 // Dependency-free conformance check against schemas/payroll-data.schema.json:
 // the envelope every rate file must satisfy (topic, country, and a provenance source block).
 function checkSchema(obj, name) {
@@ -513,9 +679,14 @@ const premium = buildPremiumPay();
 const leaves = buildLeaves();
 const sgTax = buildSGIncomeTax();
 const sgCpf = buildSGCpf();
+const myTax = buildMYIncomeTax(), myC = buildMYContributions();
+const thTax = buildTHIncomeTax(), thS = buildTHSocialSecurity();
+const idTax = buildIDIncomeTax(), idB = buildIDBpjs();
+const vnTax = buildVNIncomeTax(), vnI = buildVNInsurance();
 
 await validate(sss, tax, ph, pagibig, m13, minw, examples, premium, leaves);
 await validateSG(sgTax, sgCpf);
+await validateSEA({ myTax, myC, thTax, thS, idTax, idB, vnTax, vnI });
 
 if (fails.length) {
   console.error(`\n❌ build-data: ${fails.length} validation failure(s) — JSON would drift from the markdown:`);
@@ -535,6 +706,14 @@ const files = {
   'examples.json': examples,
   'sg_income_tax_2025.json': sgTax,
   'sg_cpf_2025.json': sgCpf,
+  'my_income_tax_2025.json': myTax,
+  'my_contributions_2025.json': myC,
+  'th_income_tax_2025.json': thTax,
+  'th_social_security_2025.json': thS,
+  'id_income_tax_2025.json': idTax,
+  'id_bpjs_2025.json': idB,
+  'vn_income_tax_2025.json': vnTax,
+  'vn_insurance_2025.json': vnI,
 };
 const index = {
   name: 'Payroll Knowledge Base — machine-readable data layer',
