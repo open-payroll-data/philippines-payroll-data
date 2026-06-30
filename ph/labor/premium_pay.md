@@ -7,9 +7,8 @@ effective_date_start:
 effective_date_end:
 source: "DOLE Handbook on Workers' Statutory Monetary Benefits (2024 Edition), DOLE Bureau of Working Conditions; Labor Code of the Philippines (PD 442) Arts. 82–94 — https://bwc.dole.gov.ph/wp-content/uploads/2024/10/Workers-Statutory-Monetary-Benefits-Handbook-2024-Edition.pdf"
 source_tier: primary
-mirror_url: "https://library.laborlaw.ph/wp-content/uploads/2023/10/2023-Handbook-on-Workers-Statutory-Benefits.pdf"
 last_verified: 2026-06-29
-verified_from: "Read from the DOLE Bureau of Working Conditions 'Handbook on Workers' Statutory Monetary Benefits' (the unmodified DOLE-BWC file — the live bwc.dole.gov.ph host is Cloudflare-gated to bots, so the same government PDF was read via the laborlaw.ph mirror) plus the Labor Code Arts. 82–94. The combined-multiplier matrix below is transcribed from the Handbook's own 'Guide Computations' table. These multipliers are statutory and unchanged across the 2022–2024 editions and through 2026."
+verified_from: "Read from the DOLE Bureau of Working Conditions 'Handbook on Workers' Statutory Monetary Benefits' (the unmodified DOLE-BWC file — the live bwc.dole.gov.ph host is Cloudflare-gated to bots, so the same government PDF was read via a public mirror of the DOLE-BWC file) plus the Labor Code Arts. 82–94. The combined-multiplier matrix below is transcribed from the Handbook's own 'Guide Computations' table. These multipliers are statutory and unchanged across the 2022–2024 editions and through 2026."
 tags: [labor-standards, overtime, night-differential, holiday-pay, premium-pay, rest-day, special-day, dole, labor-code, eemr, 2026]
 ---
 
@@ -103,7 +102,7 @@ Factors are DOLE "suggestions/guides," subject to company policy/CBA.
 ---
 
 ## Source & Notes
-- **Primary source:** DOLE **Handbook on Workers' Statutory Monetary Benefits, 2024 Edition** — [landing](https://bwc.dole.gov.ph/workers-statutory-monetary-benefits/) · [PDF](https://bwc.dole.gov.ph/wp-content/uploads/2024/10/Workers-Statutory-Monetary-Benefits-Handbook-2024-Edition.pdf) (bwc.dole.gov.ph is Cloudflare-gated to bots; open in a browser, or read the unmodified DOLE-BWC file mirrored at library.laborlaw.ph).
+- **Primary source:** DOLE **Handbook on Workers' Statutory Monetary Benefits, 2024 Edition** — [landing](https://bwc.dole.gov.ph/workers-statutory-monetary-benefits/) · [PDF](https://bwc.dole.gov.ph/wp-content/uploads/2024/10/Workers-Statutory-Monetary-Benefits-Handbook-2024-Edition.pdf) (bwc.dole.gov.ph is Cloudflare-gated to bots — open the official PDF in a browser).
 - Legal basis: Labor Code (PD 442) **Arts. 82, 86, 87, 91–94**. Renumbered by RA 10151.
 - All rates are **statutory minimums**; CBA/company practice may be higher. No 2024–2026 change to any multiplier — annual advisories set holiday **dates** only.
 

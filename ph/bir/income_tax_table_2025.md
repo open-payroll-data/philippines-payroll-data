@@ -112,7 +112,7 @@ Tax on ₱38,000 using monthly table:
 ---
 
 ## Source & Notes
-- Official source: [BIR — TRAIN Law Tax Table](https://bir.gov.ph)
+- Official source: [BIR Revenue Regulations No. 8-2018 (PDF, bir-cdn)](https://bir-cdn.bir.gov.ph/local/pdf/Digest%20RR%208-2018_copy.pdf) — the issuance implementing the TRAIN graduated tax table
 - Regulation: BIR Revenue Regulations No. 8-2018; amended by RR 2-2023
 - Last verified against source: 2026-06-24
 - The 2023+ rates are the current applicable rates as of 2025. No further changes announced.

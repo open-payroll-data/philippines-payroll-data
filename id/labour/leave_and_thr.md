@@ -51,7 +51,7 @@ Indonesian employees get at least **12 days paid annual leave** after 12 months 
 ---
 
 ## Source & Notes
-- Official sources: [UU 13/2003](https://kemenperin.go.id/kompetensi/UU_13_2003.pdf) · [Permenaker 6/2016 (THR)](https://jdih.kemnaker.go.id/asset/data_puu/permenaker_6_2016.pdf) · PP 36/2021 Pasal 9 · [UU 4/2024 (UU KIA) — BPK](https://peraturan.bpk.go.id/Details/289997/uu-no-4-tahun-2024).
+- Official sources: [UU 13/2003 — BPK](https://peraturan.bpk.go.id/Details/43013/uu-no-13-tahun-2003) (official legal database; 403s to bots, open in a browser) · [Permenaker 6/2016 (THR)](https://jdih.kemnaker.go.id/asset/data_puu/permenaker_6_2016.pdf) · PP 36/2021 Pasal 9 · [UU 4/2024 (UU KIA) — BPK](https://peraturan.bpk.go.id/Details/289997/uu-no-4-tahun-2024).
 - Use directly. THR is the highest-stakes recurring item — it is mandatory and time-bound (7 days before the holiday).
 
 ## See Also
