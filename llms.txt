@@ -62,6 +62,17 @@ Start at the Thailand answer router (`th/INDEX.md`). Currency THB (฿); authori
 - [Severance](th/labour/severance.md): 30 / 90 / 180 / 240 / 300 / 400 days' wages by tenure (≥20 yrs = 400, added by the 2019 amendment) — LPA §118
 - [Minimum wage](th/wages/minimum_wage.md): provincial daily ฿337–฿400 (฿400 in Bangkok, Chon Buri, Phuket, Rayong, Chachoengsao, Koh Samui + nationwide for hotels types 2-4 / entertainment venues), effective 1 Jul 2025 — Wage Committee Notification No. 14 (Bangkok rose ฿372→฿400)
 
+## Indonesia — rule & rate files (verified, source_tier: primary)
+
+Start at the Indonesia answer router (`id/INDEX.md`). Currency IDR (Rp); authorities DJP (tax), BPJS Ketenagakerjaan + BPJS Kesehatan (social security), Kemnaker (labour). Primary sources are Bahasa Indonesia; the full TER rate grids are in a scanned PMK PDF (use DJP TER tables for the monthly rate).
+
+- [Income tax PPh 21](id/pajak/income_tax_2025.md): annual 5%–35% (UU HPP; top 35% above Rp5bn); PTKP from Rp54,000,000 (TK/0); since 1 Jan 2024 monthly withholding uses the TER method (PP 58/2023) — TER categories A/B/C by PTKP for Jan–Nov, full annual reconciliation in December; deposit by 15th, file SPT Masa by 20th, Bukti Potong 1721-A1 — DJP
+- [BPJS contributions](id/bpjs/contributions.md): Ketenagakerjaan — JHT 5.7% (employer 3.7% + employee 2%, no cap), JKK 0.24–1.74% + JKM 0.3% (employer-only), JP 3% (employer 2% + employee 1%) capped at Rp11,086,300/mo (from 1 Mar 2026); Kesehatan health 5% (employer 4% + employee 1%) capped at Rp12,000,000/mo — BPJS
+- [Hours & overtime](id/labour/working_hours_overtime.md): 40-hour week (7×6 or 8×5); overtime 1.5× first hour, 2× subsequent; hourly wage = 1/173 of monthly wage; cap 4h/day, 18h/week — PP 35/2021
+- [Leave & THR](id/labour/leave_and_thr.md): annual leave ≥12 days after 12 months; mandatory THR (1 month's wage at ≥12 months, pro-rata below, paid ≥7 days before the religious holiday); maternity 3 months baseline, up to 6 months under UU KIA (UU 4/2024) with pay 100% months 1–4 / 75% months 5–6; paternity 2 days — Kemnaker
+- [Severance](id/labour/severance.md): uang pesangon 1–9× monthly wage by tenure + uang penghargaan masa kerja 2–10×, multiplied by a reason-specific factor — PP 35/2021
+- [Minimum wage](id/wages/minimum_wage.md): provincial UMP + regency/city UMK, set yearly (eff 1 Jan); 2026 = per-region growth formula (PP 49/2025); Jakarta UMP 2026 = Rp5,729,876 — Kemnaker / SK Gubernur
+
 ## BIR & SSS issuance catalogs (direct official PDF links)
 
 - [BIR issuance catalog (ph/bir/issuances/INDEX.md)](ph/bir/issuances/INDEX.md): every Revenue Regulation / Memorandum Order / Memorandum Circular, 2022–2026 (894 total), payroll-tagged, each with a direct bir-cdn PDF link

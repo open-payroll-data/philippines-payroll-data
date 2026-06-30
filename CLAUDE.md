@@ -29,7 +29,8 @@ You should be able to find any specific fact in **2 hops maximum**.
 | `sg` | Singapore | Active (core) — IRAS income tax, CPF + SDL, Employment Act, wage floors. See [`sg/INDEX.md`](sg/INDEX.md) |
 | `my` | Malaysia | Active (core) — LHDN income tax + MTD/PCB, EPF, SOCSO + EIS, HRD Corp, Employment Act, min wage. See [`my/INDEX.md`](my/INDEX.md) |
 | `th` | Thailand | Active (core) — Revenue Dept PIT + PND.1, SSF + Workmen's Comp, Labour Protection Act, provincial min wage. See [`th/INDEX.md`](th/INDEX.md) |
-| `id` / `vn` | Indonesia / Vietnam | Planned (SE Asia rollout) |
+| `id` | Indonesia | Active (core) — PPh 21 + TER method, BPJS Ketenagakerjaan + Kesehatan, PP 35/2021 labour, UMP/UMK min wage. See [`id/INDEX.md`](id/INDEX.md) |
+| `vn` | Vietnam | Planned (SE Asia rollout) |
 | `us` | United States | Planned |
 
 ## File naming convention

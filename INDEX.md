@@ -123,9 +123,24 @@ Full index: [`th/INDEX.md`](th/INDEX.md)
 
 ---
 
+## Indonesia (`id/`)
+
+Full index: [`id/INDEX.md`](id/INDEX.md)
+
+| File | Summary |
+|------|---------|
+| [`id/pajak/income_tax_2025.md`](id/pajak/income_tax_2025.md) | PPh 21: 5–35% annual scale, PTKP, the TER monthly withholding method (PP 58/2023), Bukti Potong 1721-A1 |
+| [`id/bpjs/contributions.md`](id/bpjs/contributions.md) | BPJS Ketenagakerjaan (JHT 5.7%, JKK, JKM, JP) + BPJS Kesehatan (5%), with the 2026 JP wage cap |
+| [`id/labour/working_hours_overtime.md`](id/labour/working_hours_overtime.md) | 40-hour week, overtime (1/173 rule, 1.5×/2×) — PP 35/2021 |
+| [`id/labour/leave_and_thr.md`](id/labour/leave_and_thr.md) | Annual leave, mandatory THR, maternity (UU KIA 2024), paternity |
+| [`id/labour/severance.md`](id/labour/severance.md) | Uang pesangon (1–9×) + uang penghargaan masa kerja (PP 35/2021) |
+| [`id/wages/minimum_wage.md`](id/wages/minimum_wage.md) | UMP/UMK provincial minimum wage (2026; Jakarta Rp5,729,876) |
+
+---
+
 ## Coming soon
 
-- `id/` — Indonesia · `vn/` — Vietnam (Southeast Asia rollout continues)
+- `vn/` — Vietnam (Southeast Asia rollout continues)
 - `us/` — Federal payroll taxes, FICA, state examples
 
 ---

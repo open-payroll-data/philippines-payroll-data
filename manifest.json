@@ -1,7 +1,7 @@
 {
   "name": "Philippine Payroll Knowledge Base",
   "description": "AI-ready, primary-sourced Philippine payroll reference (BIR, SSS, PhilHealth, Pag-IBIG, benefits, minimum wage) + linked catalogs of 894 BIR issuances and 142 SSS circulars.",
-  "generated": "2026-06-29",
+  "generated": "2026-06-30",
   "entry_points": {
     "ai_navigation": "AGENTS.md",
     "ai_navigation_claude": "CLAUDE.md",
@@ -15,7 +15,7 @@
     "ph/bir/issuances/issuances.json": "Every BIR RR/RMO/RMC issuance (2022-2026), one record each (number, type, year, date, subject, payroll tag, source PDF links).",
     "ph/sss/circulars.json": "Every SSS circular (2020-2026), one record each (number, year, title, payroll tag, PDF link)."
   },
-  "file_count": 63,
+  "file_count": 70,
   "files": [
     {
       "path": "AGENTS.md",
@@ -93,6 +93,147 @@
       "volatility": "stable",
       "last_verified": null,
       "tags": []
+    },
+    {
+      "path": "id/INDEX.md",
+      "country": null,
+      "category": null,
+      "record_type": "navigation",
+      "topic": "Navigation / documentation (not a rate file)",
+      "source_tier": "navigation",
+      "volatility": "stable",
+      "last_verified": null,
+      "tags": []
+    },
+    {
+      "path": "id/bpjs/contributions.md",
+      "country": "id",
+      "category": "bpjs",
+      "record_type": "topic",
+      "topic": "Indonesia BPJS contributions — Ketenagakerjaan (JHT, JKK, JKM, JP) and Kesehatan (health), with the 2026 JP wage cap",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "bpjs",
+        "ketenagakerjaan",
+        "kesehatan",
+        "jht",
+        "jkk",
+        "jkm",
+        "jp",
+        "health",
+        "employer-share",
+        "employee-share",
+        "wage-cap",
+        "2026"
+      ]
+    },
+    {
+      "path": "id/labour/leave_and_thr.md",
+      "country": "id",
+      "category": "labour",
+      "record_type": "topic",
+      "topic": "Indonesia annual leave, the mandatory THR religious-holiday allowance, and maternity/paternity leave (incl. the 2024 UU KIA)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "labour",
+        "annual-leave",
+        "thr",
+        "maternity",
+        "uu-kia",
+        "uu-4-2024",
+        "paternity",
+        "permenaker-6-2016",
+        "indonesia",
+        "2024"
+      ]
+    },
+    {
+      "path": "id/labour/severance.md",
+      "country": "id",
+      "category": "labour",
+      "record_type": "topic",
+      "topic": "Indonesia severance pay (uang pesangon) and long-service reward (uang penghargaan masa kerja) — PP 35/2021",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "labour",
+        "severance",
+        "uang-pesangon",
+        "uang-penghargaan",
+        "pp-35-2021",
+        "cipta-kerja",
+        "termination",
+        "indonesia"
+      ]
+    },
+    {
+      "path": "id/labour/working_hours_overtime.md",
+      "country": "id",
+      "category": "labour",
+      "record_type": "topic",
+      "topic": "Indonesia working hours and overtime pay (PP 35/2021 / UU Cipta Kerja)",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "labour",
+        "working-hours",
+        "overtime",
+        "pp-35-2021",
+        "cipta-kerja",
+        "1-173",
+        "kemnaker",
+        "indonesia"
+      ]
+    },
+    {
+      "path": "id/pajak/income_tax_2025.md",
+      "country": "id",
+      "category": "pajak",
+      "record_type": "topic",
+      "topic": "Indonesia personal income tax on employment income (PPh 21) — annual rates, PTKP, the TER monthly withholding method, and employer obligations",
+      "source_tier": "primary",
+      "volatility": "stable",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "income-tax",
+        "pph21",
+        "djp",
+        "ter",
+        "pp-58-2023",
+        "ptkp",
+        "uu-hpp",
+        "withholding",
+        "bukti-potong",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "path": "id/wages/minimum_wage.md",
+      "country": "id",
+      "category": "wages",
+      "record_type": "topic",
+      "topic": "Indonesia minimum wage — provincial (UMP) and regency/city (UMK), 2026 figures",
+      "source_tier": "primary",
+      "volatility": "continuously-changing",
+      "last_verified": "2026-06-30",
+      "tags": [
+        "minimum-wage",
+        "wage-floor",
+        "ump",
+        "umk",
+        "pp-36-2021",
+        "pp-49-2025",
+        "kemnaker",
+        "indonesia",
+        "2026"
+      ]
     },
     {
       "path": "my/INDEX.md",

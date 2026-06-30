@@ -88,6 +88,18 @@ Always verify and cite from these official agency channels — never a summary s
 
 > TH primary sources are often **Thai-language** (English versions lag — the RD English summary page is stale; the Royal Gazette is Thai). Read the Thai Royal Gazette PDF for enacted changes (SSF ceiling, maternity) and cross-check English where available.
 
+**Indonesia golden sources (monitor + cite):**
+
+| Agency | Golden source | Change cadence |
+|--------|---------------|----------------|
+| DJP (income tax PPh 21) | [pajak.go.id](https://www.pajak.go.id/en) — UU HPP rates, PTKP; TER tables in PP 58/2023 + PMK 168/2023 | TER tables stable; deadlines moved to 15th under PMK 81/2024 (Coretax) |
+| BPJS Ketenagakerjaan | [bpjsketenagakerjaan.go.id](https://www.bpjsketenagakerjaan.go.id) + Surat Edaran | **JP wage cap rises every March** (prior-year GDP growth); Rp11,086,300 from Mar 2026 |
+| BPJS Kesehatan | Perpres 82/2018 jo. 64/2020 (Pasal 30) — bpk.go.id | Cap Rp12M stable; watch Perpres amendments |
+| Kemnaker (labour) | [jdih.kemnaker.go.id](https://jdih.kemnaker.go.id) — PP 35/2021, PP 36/2021, UU 4/2024 (UU KIA) | UU KIA (2024) added 6-month maternity; THR rules annual SE |
+| Minimum wage (UMP/UMK) | PP 36/2021 jo. PP 49/2025 + provincial SK Gubernur | Reset yearly (Nov–Dec, eff 1 Jan); 2026 = per-region growth formula |
+
+> ID primary sources are **Bahasa Indonesia**; many are scanned/JS-gated PDFs on peraturan.bpk.go.id (403 to bots) — read the Kemnaker JDIH text-layer PDFs where possible, and pull volatile figures (JP cap, UMP) from the dated Surat Edaran / SK Gubernur. The full **TER rate grids** are in a scanned PMK 168/2023 PDF (use the DJP TER tables/calculator for the monthly rate).
+
 **Note on scanned PDFs:** Some issuances (e.g. SSS circulars) are image-only scans with no text layer — a plain text fetch returns nothing. They must be rendered to images and read visually (or OCR'd). This is exactly the friction this KB removes for every downstream AI.
 
 ## Trust signals — make every derived file self-verifying
@@ -139,8 +151,17 @@ Why it matters: the sources are scanned image PDFs that an AI's own OCR reads *w
 |------|--------|
 | `revenue` | Revenue Department — personal income tax, monthly withholding (PND.1), Form 50 Bis |
 | `sso` | Social Security Office — Social Security Fund (SSF) + Workmen's Compensation Fund (WCF) |
-| `labour` | Labour Protection Act — hours, overtime, leave, severance |
-| `wages` | Provincial minimum wage (Wage Committee notifications) — shared `wages` category |
+| `labour` | Labour Protection Act / Manpower Law — hours, overtime, leave, severance (shared by TH + ID) |
+| `wages` | Provincial / regional minimum wage — shared `wages` category |
+
+**Indonesia (`id/`) categories:**
+
+| Code | Covers |
+|------|--------|
+| `pajak` | DJP — income tax PPh 21, the TER monthly withholding method |
+| `bpjs` | BPJS Ketenagakerjaan (JHT/JKK/JKM/JP) + BPJS Kesehatan (health) |
+| `labour` | Manpower Law / PP 35/2021 — hours, overtime, leave, THR, severance (shared with TH) |
+| `wages` | UMP/UMK provincial minimum wage (shared `wages` category) |
 
 ## Tag vocabulary (reuse these for consistency)
 
