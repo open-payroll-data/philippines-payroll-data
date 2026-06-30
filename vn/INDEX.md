@@ -27,7 +27,7 @@ Match the question to a row, open that one file. Don't scan the repo.
 
 | Item | Rate / Amount | File |
 |------|--------------|------|
-| Income tax (resident) | 5%–35% graduated (monthly); top 35% above 80,000,000/mo | [tax/income_tax_2025.md](tax/income_tax_2025.md) |
+| Income tax (resident) | 5%–35%, 5 brackets (monthly; Law 109/2025); top 35% above 100,000,000/mo | [tax/income_tax_2025.md](tax/income_tax_2025.md) |
 | Personal deduction (from 2026) | 15,500,000/mo self + 6,200,000/mo per dependent | [tax/income_tax_2025.md](tax/income_tax_2025.md) |
 | Income tax (non-resident) | flat 20% on Vietnam-source income | [tax/income_tax_2025.md](tax/income_tax_2025.md) |
 | Social Insurance (BHXH) | employee 8% + employer 17.5%; cap 46,800,000/mo | [insurance/contributions.md](insurance/contributions.md) |
@@ -45,7 +45,7 @@ Match the question to a row, open that one file. Don't scan the repo.
 ## All files
 
 ### Tax (`tax/`)
-- [`tax/income_tax_2025.md`](tax/income_tax_2025.md) — PIT 5–35% (7 brackets), personal deductions (raised for 2026), non-resident 20%, monthly withholding
+- [`tax/income_tax_2025.md`](tax/income_tax_2025.md) — PIT 5–35% (new 5-bracket scale, Law 109/2025, from 2026), personal deductions (raised for 2026), non-resident 20%, monthly withholding
 
 ### Insurance (`insurance/`)
 - [`insurance/contributions.md`](insurance/contributions.md) — Social + Health + Unemployment insurance: rates, the 46.8M cap, foreign-worker rule

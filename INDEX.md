@@ -144,7 +144,7 @@ Full index: [`vn/INDEX.md`](vn/INDEX.md)
 
 | File | Summary |
 |------|---------|
-| [`vn/tax/income_tax_2025.md`](vn/tax/income_tax_2025.md) | PIT 5–35% (7 brackets), personal deductions raised for 2026 (15.5M/6.2M), non-resident 20%, withholding |
+| [`vn/tax/income_tax_2025.md`](vn/tax/income_tax_2025.md) | PIT 5–35% (new 5-bracket scale, Law 109/2025, from 2026), personal deductions raised for 2026 (15.5M/6.2M), non-resident 20%, withholding |
 | [`vn/insurance/contributions.md`](vn/insurance/contributions.md) | Social + Health + Unemployment insurance (employee 10.5% / employer 21.5%), 46.8M cap, foreign-worker rule |
 | [`vn/labour/working_hours_overtime.md`](vn/labour/working_hours_overtime.md) | 8h/48h week, overtime 150/200/300% + caps — Labour Code 2019 |
 | [`vn/labour/leave.md`](vn/labour/leave.md) | Annual leave (12 + 1/5yr), 11 public holidays, maternity (6 months), paternity |
