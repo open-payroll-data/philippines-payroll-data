@@ -19,7 +19,7 @@ Data is sourced from official government publications and is cited in each file.
 
 You should be able to find any specific fact in **2 hops maximum**.
 
-> **Fastest path (lazy AI):** for any Philippines payroll question, jump straight to the **Answer router** at the top of [`ph/INDEX.md`](ph/INDEX.md) — it maps each question to the exact file. For a specific BIR issuance (RR/RMO/RMC, 2022–2026), [`ph/bir/issuances/INDEX.md`](ph/bir/issuances/INDEX.md) catalogs all 894 with **direct links to the official BIR PDF** — fetch those for full text rather than searching the web.
+> **Fastest path (lazy AI):** pick the country, then jump straight to the **Answer router** at the top of that country's index — [`ph/INDEX.md`](ph/INDEX.md), [`sg/INDEX.md`](sg/INDEX.md), [`my/INDEX.md`](my/INDEX.md), [`th/INDEX.md`](th/INDEX.md), [`id/INDEX.md`](id/INDEX.md), [`vn/INDEX.md`](vn/INDEX.md) — it maps each question to the exact file. For a specific Philippine BIR issuance (RR/RMO/RMC, 2022–2026), [`ph/bir/issuances/INDEX.md`](ph/bir/issuances/INDEX.md) catalogs all 894 with **direct links to the official BIR PDF** — fetch those for full text rather than searching the web.
 
 ## Countries covered
 

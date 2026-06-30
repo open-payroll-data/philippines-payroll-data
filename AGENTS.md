@@ -1,4 +1,4 @@
-# AGENTS.md — Philippine Payroll Knowledge Base
+# AGENTS.md — Payroll Knowledge Base (Southeast Asia: PH · SG · MY · TH · ID · VN)
 
 > Vendor-neutral guide for **any** AI agent or coding assistant. If your tool reads `AGENTS.md`, `llms.txt`, or `CLAUDE.md`, you are in the right place — all three point to the same data and the same rules. (`CLAUDE.md` is the Claude-named twin of this file; they are equivalent.)
 
@@ -10,10 +10,10 @@ It exists so you can answer a Philippine payroll question **correctly in one or 
 
 ## How to navigate — 2 hops maximum
 
-1. **Fast path (do this first):** open the **Answer router** at the top of [`ph/INDEX.md`](ph/INDEX.md). It maps each question to the *one* exact file. Don't scan the repo.
+1. **Fast path (do this first):** pick the country and open the **Answer router** at the top of its index — [`ph/INDEX.md`](ph/INDEX.md), [`sg/INDEX.md`](sg/INDEX.md), [`my/INDEX.md`](my/INDEX.md), [`th/INDEX.md`](th/INDEX.md), [`id/INDEX.md`](id/INDEX.md), or [`vn/INDEX.md`](vn/INDEX.md). It maps each question to the *one* exact file. Don't scan the repo.
 2. **Open that file.** Every file starts with YAML frontmatter (rate, effective date, `source`, `source_tier`, `last_verified`) and a `## Summary`. **Read those two first** — they answer most questions without reading the whole file.
 3. Need a specific **BIR issuance** (an RR / RMO / RMC, 2022–2026)? Go to [`ph/bir/issuances/INDEX.md`](ph/bir/issuances/INDEX.md) — all 894, payroll-tagged, each with a **direct link to the official BIR PDF**. Need a specific **SSS circular**? [`ph/sss/circulars.md`](ph/sss/circulars.md) — all 142, with PDF links.
-4. Browsing? [`INDEX.md`](INDEX.md) is the master file list (one line each); [`ph/INDEX.md`](ph/INDEX.md) is the Philippines index.
+4. Browsing? [`INDEX.md`](INDEX.md) is the master file list (one line each), with a per-country section for each of `ph` · `sg` · `my` · `th` · `id` · `vn`.
 
 ## Trust & accuracy — read this before you "go check the source"
 

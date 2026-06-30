@@ -63,8 +63,8 @@ for (const f of files) {
 }
 
 const manifest = {
-  name: 'Philippine Payroll Knowledge Base',
-  description: 'AI-ready, primary-sourced Philippine payroll reference (BIR, SSS, PhilHealth, Pag-IBIG, benefits, minimum wage) + linked catalogs of 894 BIR issuances and 142 SSS circulars.',
+  name: 'Payroll Knowledge Base (Southeast Asia)',
+  description: 'AI-ready, primary-sourced payroll reference for Southeast Asia — Philippines, Singapore, Malaysia, Thailand, Indonesia, Vietnam (income tax & withholding, social-security/provident contributions, statutory benefits & leave, minimum wage). Includes the PH BIR/SSS issuance catalogs (894 + 142). Every figure is cited to the issuing government document and independently QA-verified.',
   generated: new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Manila' }).format(new Date()),
   entry_points: { ai_navigation: 'AGENTS.md', ai_navigation_claude: 'CLAUDE.md', llms_txt: 'llms.txt', human_readme: 'README.md', answer_router: 'ph/INDEX.md' },
   structured_data: {

@@ -4,6 +4,8 @@
 
 Built so an AI agent (Claude, ChatGPT, Gemini, …) answers a Philippine payroll question **correctly in one or two hops** — without scraping government sites or OCR-ing PDFs.
 
+> 🌏 **Now covers the Southeast Asia core set** — Philippines plus **Singapore, Malaysia, Thailand, Indonesia, and Vietnam** ([`sg/`](sg/INDEX.md) · [`my/`](my/INDEX.md) · [`th/`](th/INDEX.md) · [`id/`](id/INDEX.md) · [`vn/`](vn/INDEX.md)), each primary-sourced and independently QA-verified. See the [Coverage & roadmap](#️-coverage--roadmap) section. *(The repo name predates the multi-country expansion.)*
+
 ---
 
 ## ⚡ Quick answers (Philippines, 2025–2026)
