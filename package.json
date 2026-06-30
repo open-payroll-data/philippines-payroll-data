@@ -1,7 +1,7 @@
 {
   "name": "philippines-payroll-data",
-  "version": "1.0.0",
-  "description": "Machine-readable, primary-sourced Philippine payroll reference data — SSS, PhilHealth, Pag-IBIG, BIR withholding & income tax, 13th-month pay, minimum wage, premium pay & leaves — every figure cited to the agency circular.",
+  "version": "2.0.0",
+  "description": "Machine-readable, primary-sourced payroll reference for Southeast Asia (PH, SG, MY, TH, ID, VN) — income tax tables, mandatory contribution rates, labour law, minimum wages — every figure cited to the primary government document.",
   "type": "module",
   "exports": {
     ".": "./index.mjs",
@@ -21,30 +21,44 @@
     "validate": "node tools/build-data.mjs --check"
   },
   "keywords": [
-    "philippines",
     "payroll",
+    "southeast-asia",
+    "asean",
+    "philippines",
+    "singapore",
+    "malaysia",
+    "thailand",
+    "indonesia",
+    "vietnam",
+    "income-tax",
+    "withholding-tax",
+    "contributions",
     "sss",
     "philhealth",
     "pag-ibig",
     "bir",
-    "withholding-tax",
-    "income-tax",
-    "13th-month-pay",
+    "cpf",
+    "epf",
+    "socso",
+    "eis",
+    "bpjs",
     "minimum-wage",
+    "labour-law",
+    "13th-month-pay",
     "de-minimis",
     "train-law",
     "tax",
-    "contribution-table",
-    "json",
+    "open-data",
     "dataset",
-    "open-data"
+    "json",
+    "llms-txt"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/open-payroll-data/philippines-payroll-data.git"
   },
-  "homepage": "https://github.com/open-payroll-data/philippines-payroll-data#readme",
+  "homepage": "https://open-payroll-data.github.io/philippines-payroll-data/",
   "bugs": {
     "url": "https://github.com/open-payroll-data/philippines-payroll-data/issues"
   },
