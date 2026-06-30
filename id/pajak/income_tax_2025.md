@@ -70,7 +70,7 @@ PP 58/2023 + PMK 168/2023 changed how employers withhold **monthly**:
 |------------|----------|------|
 | Deposit withheld PPh 21 | **15th** of the following month (PMK 81/2024) | billing/SSP |
 | File monthly return | **20th** of the following month | SPT Masa PPh 21 (e-Bupot 21/26) |
-| Annual withholding slip to each employee | within 1 month of year-end (or on leaving) | **Bukti Potong 1721-A1** |
+| Annual withholding slip to each employee | by the end of the month following the last tax period (e.g. 31 January; or the month after employment ends) | **Bukti Potong 1721-A1** |
 
 An employee with a single employer for the full year receives one annual 1721-A1 and files the personal annual return (SPT Tahunan 1770 S / 1770 SS).
 

@@ -47,7 +47,7 @@ Sample 2026 provincial UMP (secondary — confirm each against its SK Gubernur):
 ---
 
 ## Source & Notes
-- Official sources: [PP 36/2021 — BPK](https://peraturan.bpk.go.id/Details/161909/pp-no-36-tahun-2021) · [PP 49/2025 — Kemnaker JDIH](https://jdih.kemnaker.go.id/peraturan/detail/2802/peraturan-pemerintah-nomor-49-tahun-2025) · [Permenaker 16/2024 — BPK](https://peraturan.bpk.go.id/Details/309918/permenaker-no-16-tahun-2024) · provincial SK Gubernur decrees.
+- Official sources: [PP 36/2021 — BPK](https://peraturan.bpk.go.id/Details/161909/pp-no-36-tahun-2021) · PP 49/2025 ([Kemnaker JDIH](https://jdih.kemnaker.go.id/peraturan/detail/2802/peraturan-pemerintah-nomor-49-tahun-2025) · [BPK](https://peraturan.bpk.go.id/Details/339037/pp-no-49-tahun-2025)) · [Permenaker 16/2024 — BPK](https://peraturan.bpk.go.id/Details/309918/permenaker-no-16-tahun-2024) · provincial SK Gubernur decrees (Jakarta UMP 2026 = SK Gubernur DKI No. 1142/2025).
 - **Re-pull the current SK Gubernur before relying** (this file is `continuously-changing`). 2026 figures are in force (effective 1 Jan 2026); 2027 figures land ~Nov–Dec 2026.
 
 ## See Also
